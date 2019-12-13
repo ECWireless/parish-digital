@@ -1,6 +1,9 @@
 .footer {
+    grid-column: 2 / -1;
+    grid-row: 3 / 4;
+
+    text-align: center;
+
     background-color: #5B5A5A;
     color: #fff;
-    height: 40rem;
-    text-align: center;
 }

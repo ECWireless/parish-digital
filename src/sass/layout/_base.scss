@@ -15,3 +15,15 @@ body {
     font-family: sans-serif;
     font-size: 1.6rem;
 }
+
+.app-small {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    grid-template-rows: 6rem 50rem 40rem;
+}
+
+.app-large {
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    grid-template-rows: 6rem 50rem 40rem;
+}

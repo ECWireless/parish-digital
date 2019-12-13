@@ -1,0 +1,12 @@
+.smallSidebar {
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+    background-color: #e5e5e5;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 6rem) auto;
+    align-items: center;
+    justify-items: center;
+    
+}
