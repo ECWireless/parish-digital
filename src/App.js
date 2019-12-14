@@ -17,6 +17,7 @@ export default class App extends Component {
 	}
 
 	render() {
+		console.log('test')
 		return (
 			<div className={!this.state.toggleSidebar 
 				? 'app-small'

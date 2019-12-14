@@ -10,31 +10,112 @@
     box-shadow: $shadow-navigation;
 
     display: grid;
-    grid-template-columns: 8rem 8rem 1fr 8rem 1fr 8rem 8rem;
+    grid-template-columns: 8rem 8rem 1fr 8rem 1fr 2rem 6rem 6rem 2rem;
 
     &__menu {
         grid-column: 1 / 2;
         justify-self: center;
         align-self: center;
 
-        cursor: pointer;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        margin-left: 1rem;
+        margin-right: auto;
+        background-color: transparent;
+
+        border: none;
+        outline: none;
+
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .1);
+            cursor: pointer;
+        }
+    }
+
+    &__menu-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        fill: #fff;
     }
 
     &__logo {
         grid-column: 4 / 5;
-        justify-self: center;
         align-self: center;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__logo-image {
+        align-self: center;
+        height: 40%;
+        width: 40%;
     }
 
     &__email {
-        grid-column: 6 / 7;
-        justify-self: center;
-        align-self: center;
-    }
-
-    &__phone {
         grid-column: 7 / 8;
         justify-self: center;
         align-self: center;
+
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        margin-left: 1rem;
+        margin-right: auto;
+        background-color: transparent;
+
+        border: none;
+        outline: none;
+
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .1);
+            cursor: pointer;
+        }
+    }
+
+    &__email-icon {
+        transform: translate(50%, 50%);
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: #fff;
+    }
+
+    &__phone {
+        grid-column: 8 / 9;
+        justify-self: center;
+        align-self: center;
+
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        margin-left: 1rem;
+        margin-right: auto;
+        background-color: transparent;
+
+        border: none;
+        outline: none;
+
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .1);
+            cursor: pointer;
+        }
+    }
+
+    &__phone-icon {
+        transform: translate(50%, 50%);
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: #fff;
     }
 }

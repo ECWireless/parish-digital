@@ -1,15 +1,31 @@
-import React from 'react'
+import React from 'react';
+
+// Images
+import PDLogo from '../assets/navigation/PD-logo-small.png';
+
+// SVGs
+import { ReactComponent as MenuButton } from '../assets/navigation/menu.svg';
+import { ReactComponent as Email } from '../assets/navigation/envelop.svg';
+import { ReactComponent as Phone } from '../assets/navigation/phone.svg';
 
 export default function Header(props) {
     return (
         <div className="header">
-			<div
+			<button
                 className="header__menu"
                 onClick={props.onToggleSidebar}
-            >Menu</div>
-            <div className="header__logo">Logo</div>
-            <div className="header__email">Email</div>
-            <div className="header__phone">Phone</div>
+            >
+                <MenuButton className="header__menu-icon"/>
+            </button>
+            <div className="header__logo">
+                <img className="header__logo-image" src={PDLogo} alt="Logo"/>
+            </div>
+            <div className="header__email">
+                <Email className="header__email-icon"/>
+            </div>
+            <div className="header__phone">
+                <Phone className="header__phone-icon"/>
+            </div>
         </div>
     )
 }
