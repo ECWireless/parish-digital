@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 // Images
 import PDLogo from '../assets/navigation/PD-logo-small.png';
@@ -17,9 +18,11 @@ export default function Header(props) {
             >
                 <MenuButton className="header__menu-icon"/>
             </button>
-            <div className="header__logo">
+            <NavLink
+                to="/"
+                className="header__logo">
                 <img className="header__logo-image" src={PDLogo} alt="Logo"/>
-            </div>
+            </NavLink>
             <div className="header__email">
                 <Email className="header__email-icon"/>
             </div>

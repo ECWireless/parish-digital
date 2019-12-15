@@ -28,6 +28,14 @@
         grid-template-rows: 1fr;
 
         border-bottom: solid 1px rgba(117, 117, 117, .2);
+        border-right: 3px solid transparent;
+
+        &-active {
+            background-color: #DCDCDC;
+            border-right: solid 3px blue;
+            cursor: pointer;
+            transition: border-right .3s ease;
+        }
 
         &:hover {
             background-color: #DCDCDC;
@@ -55,6 +63,14 @@
         grid-template-rows: 1fr;
 
         border-bottom: solid 1px rgba(117, 117, 117, .2);
+        border-right: 3px solid transparent;
+
+        &-active {
+            background-color: #DCDCDC;
+            border-right: solid 3px blue;
+            cursor: pointer;
+            transition: border-right .3s ease;
+        }
 
         &:hover {
             background-color: #DCDCDC;
@@ -82,6 +98,14 @@
         grid-template-rows: 1fr;
 
         border-bottom: solid 1px rgba(117, 117, 117, .2);
+        border-right: 3px solid transparent;
+
+        &-active {
+            background-color: #DCDCDC;
+            border-right: solid 3px blue;
+            cursor: pointer;
+            transition: border-right .3s ease;
+        }
 
         &:hover {
             background-color: #DCDCDC;
@@ -109,6 +133,14 @@
         grid-template-rows: 1fr;
 
         border-bottom: solid 1px rgba(117, 117, 117, .2);
+        border-right: 3px solid transparent;
+
+        &-active {
+            background-color: #DCDCDC;
+            border-right: solid 3px blue;
+            cursor: pointer;
+            transition: border-right .3s ease;
+        }
 
         &:hover {
             background-color: #DCDCDC;
