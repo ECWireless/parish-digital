@@ -7,6 +7,9 @@ import Footer from './Navigation/Footer';
 import SmallSidebar from './Navigation/SmallSidebar';
 import LargeSidebar from './Navigation/LargeSidebar';
 
+// pages
+import HomePage from './Pages/Home';
+
 export default class App extends Component {
 	state = {
 		toggleSidebar: false,
@@ -28,7 +31,7 @@ export default class App extends Component {
 				? <SmallSidebar />
 				: <LargeSidebar />
 			}
-			<div style={{gridRow: '2 / 3', gridColumn: '2 / -1', textAlign: 'center'}}>Body</div>
+				<HomePage />			
 			<Footer />
 		</div>
 		)

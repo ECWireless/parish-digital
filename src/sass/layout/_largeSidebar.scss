@@ -5,7 +5,7 @@
     position: fixed;
     top: 6rem;
     height: 100vh;
-    width: 25rem;
+    width: 20rem;
     z-index: 9;
     background-color: #e5e5e5;
 
@@ -23,7 +23,7 @@
         height: 100%;
 
         display: grid;
-        grid-template-columns: 5rem 1fr 7rem;
+        grid-template-columns: 7rem 1fr;
         grid-template-rows: 1fr;
 
         border-bottom: solid 1px rgba(117, 117, 117, .2);
@@ -34,17 +34,130 @@
         }
     }
 
-    &__work-text {
-        grid-column: 2 / 3;
+    &__work-icon {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 2.5rem;
+        height: 2.5rem;
         fill: #000;
         justify-self: center;
         align-self: center;
     }
 
-    &__work-icon {
-        grid-column: 3 / 4;
+    &__work-text {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        fill: #000;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__about {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: 7rem 1fr;
+        grid-template-rows: 1fr;
+
+        border-bottom: solid 1px rgba(117, 117, 117, .2);
+
+        &:hover {
+            background-color: #DCDCDC;
+            cursor: pointer;
+        }
+    }
+
+    &__about-icon {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
         width: 2.5rem;
         height: 2.5rem;
+        fill: #000;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__about-text {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        fill: #000;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__gear {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: 7rem 1fr;
+        grid-template-rows: 1fr;
+
+        border-bottom: solid 1px rgba(117, 117, 117, .2);
+
+        &:hover {
+            background-color: #DCDCDC;
+            cursor: pointer;
+        }
+    }
+
+    &__gear-icon {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: #000;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__gear-text {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        fill: #000;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__contact {
+        grid-row: 4 / 5;
+        grid-column: 1 / -1;
+
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: 7rem 1fr;
+        grid-template-rows: 1fr;
+
+        border-bottom: solid 1px rgba(117, 117, 117, .2);
+
+        &:hover {
+            background-color: #DCDCDC;
+            cursor: pointer;
+        }
+    }
+
+    &__contact-icon {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: #000;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__contact-text {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
         fill: #000;
         justify-self: center;
         align-self: center;
