@@ -19,6 +19,14 @@ export default class App extends Component {
 		this.setState({ toggleSidebar: !this.state.toggleSidebar })
 	}
 
+	onPageSelection = () => {
+		if (window.matchMedia('(max-width: 600px)').matches) {
+			this.onToggleSidebar()
+		} else {
+			return;
+		}
+	}
+
 	render() {
 		return (
 			<BrowserRouter>
@@ -27,13 +35,17 @@ export default class App extends Component {
 					: 'app-large'}
 				>
 					<Header onToggleSidebar={this.onToggleSidebar} />
-					{!this.state.toggleSidebar 
-						? <SmallSidebar />
-						: <LargeSidebar
-							onToggleSidebar={this.onToggleSidebar} 
+						<SmallSidebar />
+						<LargeSidebar
+							onToggleSidebar={this.onToggleSidebar}
+							onPageSelection={this.onPageSelection}
+							largeSidebarClass={!this.state.toggleSidebar ? 'largeSidebar' : 'largeSidebar largeSidebar__active'}
 						/>
-					}
-							<Router />		
+						<div
+							className={this.state.toggleSidebar ? 'backdrop backdrop__fadeIn' : 'backdrop backdrop__fadeOut'}
+							onClick={this.onToggleSidebar}
+						/>
+						<Router />		
 					<Footer />
 				</div>
 			</BrowserRouter>

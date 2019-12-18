@@ -14,15 +14,21 @@
     grid-template-rows: repeat(5, 6rem) auto;
     align-items: center;
     justify-items: center;
-
-    &-active {
-        @include respond(phone) {
-            transform: translateX(-20rem);
-        }
-    }
+    transform: translateX(-20rem);
 
     @include respond(phone) {
+        transition: all .3s ease;
+        transform: translateX(-20rem);
         z-index: 20;
+    }
+
+    &__active {
+        transform: translateX(0rem);
+
+        @include respond(phone) {
+            transition: all .3s ease;
+            transform: translateX(0rem);
+        }
     }
 
     &__menu {
@@ -52,8 +58,8 @@
     }
 
     &__menu-icon {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 2rem;
+        height: 2rem;
         fill: #000;
     }
     
