@@ -2,14 +2,21 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 // SVGs
+import { ReactComponent as MenuButton } from '../assets/navigation/menu.svg';
 import { ReactComponent as WorkIcon } from '../assets/navigation/film.svg';
 import { ReactComponent as AboutIcon } from '../assets/navigation/info.svg';
 import { ReactComponent as GearIcon } from '../assets/navigation/video-camera.svg';
 import { ReactComponent as ContactIcon } from '../assets/navigation/phone.svg';
 
-export default function LargeSidebar() {
+export default function LargeSidebar(props) {
     return (
         <div className="largeSidebar">
+			<button
+                className="largeSidebar__menu"
+                onClick={props.onToggleSidebar}
+            >
+                <MenuButton className="largeSidebar__menu-icon"/>
+            </button>
             <NavLink
                 to="/work"
                 className="largeSidebar__work"

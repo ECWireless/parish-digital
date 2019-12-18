@@ -6,4 +6,8 @@
 
     background-color: #5B5A5A;
     color: #fff;
+
+    @include respond(phone) {
+        display: none;
+    }
 }

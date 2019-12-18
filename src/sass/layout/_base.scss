@@ -20,6 +20,11 @@ body {
     display: grid;
     grid-template-columns: 7rem 1fr;
     grid-template-rows: 6rem 50rem 40rem;
+
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 6rem 50rem 7rem;
+    }
 }
 
 .app-large {

@@ -29,7 +29,9 @@ export default class App extends Component {
 					<Header onToggleSidebar={this.onToggleSidebar} />
 					{!this.state.toggleSidebar 
 						? <SmallSidebar />
-						: <LargeSidebar />
+						: <LargeSidebar
+							onToggleSidebar={this.onToggleSidebar} 
+						/>
 					}
 							<Router />		
 					<Footer />
