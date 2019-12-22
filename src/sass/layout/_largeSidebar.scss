@@ -110,7 +110,7 @@
         justify-self: left;
         align-self: center;
 
-        animation: fadeIn .5s;
+        animation: textFadeIn .5s;
     }
 
     &__about {
@@ -158,7 +158,7 @@
         justify-self: left;
         align-self: center;
 
-        animation: fadeIn .5s;
+        animation: textFadeIn .5s;
     }
 
     &__gear {
@@ -206,7 +206,7 @@
         justify-self: left;
         align-self: center;
 
-        animation: fadeIn .5s;
+        animation: textFadeIn .5s;
     }
 
     &__contact {
@@ -254,22 +254,20 @@
         justify-self: left;
         align-self: center;
 
-        animation: fadeIn .5s;
+        animation: textFadeIn .5s ease;
     }
 }
 
-@keyframes fadeIn {
+
+
+@keyframes textFadeIn {
     0% {
         opacity: 0;
-        transform: translateX(-5px);
-    }
-
-    50% {
-        opacity: .5;
+        transform: translateX(-10px);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 }

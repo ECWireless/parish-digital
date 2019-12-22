@@ -37,6 +37,7 @@ export default class App extends Component {
 					<Header onToggleSidebar={this.onToggleSidebar} />
 						<SmallSidebar />
 						<LargeSidebar
+							toggleSidebar={this.state.toggleSidebar}
 							onToggleSidebar={this.onToggleSidebar}
 							onPageSelection={this.onPageSelection}
 							largeSidebarClass={!this.state.toggleSidebar ? 'largeSidebar' : 'largeSidebar largeSidebar__active'}

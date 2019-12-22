@@ -24,7 +24,7 @@ export default function LargeSidebar(props) {
                 onClick={props.onPageSelection}
             >
                 <WorkIcon className="largeSidebar__work-icon" />
-                <p className="largeSidebar__work-text">Work</p>
+                <p className={props.toggleSidebar ? "largeSidebar__work-text": ''}>Work</p>
             </NavLink>
             <NavLink
                 to="/about"
@@ -33,7 +33,7 @@ export default function LargeSidebar(props) {
                 onClick={props.onPageSelection}
             >
                 <AboutIcon className="largeSidebar__about-icon" />
-                <p className="largeSidebar__about-text">About</p>
+                <p className={props.toggleSidebar ? "largeSidebar__about-text": ''}>About</p>
             </NavLink>
             <NavLink
                 to="/gear"
@@ -42,7 +42,7 @@ export default function LargeSidebar(props) {
                 onClick={props.onPageSelection}
             >
                 <GearIcon className="largeSidebar__gear-icon" />
-                <p className="largeSidebar__gear-text">Gear</p>
+                <p className={props.toggleSidebar ? "largeSidebar__gear-text": ''}>Gear</p>
             </NavLink>
             <NavLink
                 to="/contact"
@@ -51,7 +51,7 @@ export default function LargeSidebar(props) {
                 onClick={props.onPageSelection}
             >
                 <ContactIcon className="largeSidebar__contact-icon" />
-                <p className="largeSidebar__contact-text">Contact</p>
+                <p className={props.toggleSidebar ? "largeSidebar__contact-text": ''}>Contact</p>
             </NavLink>
         </div>
     )
