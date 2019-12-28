@@ -17,8 +17,11 @@ export default class Home extends Component {
                     <h3 className="homePage__slogan-subheading">Video Production</h3>
                     <div className="homePage__slogan-box">
                         <h3 className="homePage__slogan-box-heading">Our Focus is <span style={{fontWeight: 'bold'}}>video </span>for <span style={{fontWeight: 'bold'}}>business</span></h3>
+                        <div className="homePage__slogan-box-notch" />
                         <p className="homePage__slogan-box-paragraph1">Since 2007, we’ve consistently produced top-notch videos and happy clients.</p>
                         <p className="homePage__slogan-box-paragraph2">Located in Pittsburgh, PA</p>
+                        <button className="homePage__slogan-box-button homePage__slogan-box-button--1">Get a Quote</button>
+                        <button className="homePage__slogan-box-button homePage__slogan-box-button--2">2019 Video Reel</button>
                     </div>
                 </div>
                 <div className="homePage__testimonials">
