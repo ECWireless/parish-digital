@@ -11,7 +11,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 6rem) auto;
+    grid-template-rows: repeat(6, 6rem) auto;
     align-items: center;
     justify-items: center;
     transform: translateX(-20rem);
@@ -62,8 +62,8 @@
         height: 2rem;
         fill: #000;
     }
-    
-    &__work {
+
+    &__home {
         grid-row: 2 / 3;
         grid-column: 1 / -1;
 
@@ -75,6 +75,55 @@
         grid-template-rows: 1fr;
 
         border-top: solid 1px rgba(117, 117, 117, .2);
+        border-bottom: solid 1px rgba(117, 117, 117, .2);
+        border-right: 4px solid transparent;
+        text-decoration: none;
+
+        &-active {
+            background-color: #DCDCDC;
+            border-right: solid 4px $color-blue;
+            cursor: pointer;
+            transition: border-right .3s ease;
+        }
+
+        &:hover {
+            background-color: #DCDCDC;
+            cursor: pointer;
+        }
+    }
+
+    &__home-icon {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: #000;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__home-text {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        color: #000;
+        text-decoration: none;
+        justify-self: left;
+        align-self: center;
+
+        animation: textFadeIn .5s;
+    }
+    
+    &__work {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: 7rem 1rem 1fr;
+        grid-template-rows: 1fr;
+
         border-bottom: solid 1px rgba(117, 117, 117, .2);
         border-right: 4px solid transparent;
         text-decoration: none;
@@ -114,7 +163,7 @@
     }
 
     &__about {
-        grid-row: 3 / 4;
+        grid-row: 4 / 5;
         grid-column: 1 / -1;
 
         width: 100%;
@@ -162,7 +211,7 @@
     }
 
     &__gear {
-        grid-row: 4 / 5;
+        grid-row: 5 / 6;
         grid-column: 1 / -1;
 
         width: 100%;
@@ -210,7 +259,7 @@
     }
 
     &__contact {
-        grid-row: 5 / 6;
+        grid-row: 6 / 7;
         grid-column: 1 / -1;
 
         width: 100%;

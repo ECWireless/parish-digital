@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 // SVGs
 import { ReactComponent as WorkIcon } from '../assets/navigation/film.svg';
+import { ReactComponent as HomeIcon } from '../assets/navigation/home.svg';
 import { ReactComponent as AboutIcon } from '../assets/navigation/info.svg';
 import { ReactComponent as GearIcon } from '../assets/navigation/video-camera.svg';
 import { ReactComponent as ContactIcon } from '../assets/navigation/phone.svg';
@@ -10,6 +11,13 @@ import { ReactComponent as ContactIcon } from '../assets/navigation/phone.svg';
 export default function SmallSidebar() {
     return (
         <div className="smallSidebar">
+            <NavLink
+                to="/" exact
+                className="smallSidebar__home"
+                activeClassName="smallSidebar__home-active"
+                >
+                <HomeIcon className="smallSidebar__home-icon"/>
+            </NavLink>
             <NavLink
                 to="/work"
                 className="smallSidebar__work"

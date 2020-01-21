@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 // SVGs
 import { ReactComponent as Close } from '../assets/navigation/cross.svg';
+import { ReactComponent as HomeIcon } from '../assets/navigation/home.svg';
 import { ReactComponent as WorkIcon } from '../assets/navigation/film.svg';
 import { ReactComponent as AboutIcon } from '../assets/navigation/info.svg';
 import { ReactComponent as GearIcon } from '../assets/navigation/video-camera.svg';
@@ -17,6 +18,15 @@ export default function LargeSidebar(props) {
             >
                 <Close className="largeSidebar__menu-icon"/>
             </button>
+            <NavLink
+                to="/" exact
+                className="largeSidebar__home"
+                activeClassName="largeSidebar__home-active"
+                onClick={props.onPageSelection}
+            >
+                <HomeIcon className="largeSidebar__home-icon" />
+                <p className={props.toggleSidebar ? "largeSidebar__home-text": ''}>Home</p>
+            </NavLink>
             <NavLink
                 to="/work"
                 className="largeSidebar__work"
