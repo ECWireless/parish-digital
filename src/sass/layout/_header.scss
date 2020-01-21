@@ -34,12 +34,12 @@
         transition: all .3s ease;
 
         &:hover {
-            background-color: rgba(255, 255, 255, .1);
+            background-color: $svg-grey;
             cursor: pointer;
         }
 
         &:active {
-            background-color: rgba(255, 255, 255, .3);
+            background-color: $svg-grey-light;
         }
     }
 
@@ -90,7 +90,7 @@
         }
 
         &:hover {
-            background-color: rgba(255, 255, 255, .1);
+            background-color: $svg-grey;
             cursor: pointer;
         }
     }
@@ -131,7 +131,7 @@
         }
 
         &:hover {
-            background-color: rgba(255, 255, 255, .1);
+            background-color: $svg-grey;
             cursor: pointer;
         }
     }

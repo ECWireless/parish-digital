@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 
 import { ReactComponent as Chevron } from '../assets/home-page/circle-down.svg';
+import webVideo from '../assets/home-page/hero-video-2.mov';
 
 export default class Home extends Component {
     render() {
         return (
             <div className="homePage">
                 <div className="homePage__web-hero">
-                    {/* <video src={webVideo} className="homePage__web-hero-video" autoPlay loop muted playsInline /> */}
+                    <div className="homePage__web-hero-container">
+                        <video src={webVideo} className="homePage__web-hero-video" autoPlay loop muted playsInline />
+                    </div>
                     <div className="homePage__chevron-container">
                         <Chevron className="homePage__chevron-svg" />
                     </div>
