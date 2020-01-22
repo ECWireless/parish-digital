@@ -28,14 +28,35 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div className="homePage__testimonials">
-                    <div className="homepage__testimonial-container--1">Testimonial 1</div>
-                    <div className="homepage__testimonial-container--2">Testimonial 2</div>
-                    <div className="homepage__testimonial-container--3">Testimonial 3</div>
+                    <h3 className="homePage__testimonials-heading">What People Say</h3>
+                    <div className="homePage__testimonials-line" />
+                    <div className="homePage__testimonial-container homePage__testimonial-container--1">
+                        <p className="homePage__testimonial-quote">"(An) ability to capture the spirit of a subject."</p>
+                        <div className="homePage__testimonial-line" />
+                        <p className="homePage__testimonial-name">Dorothy Fadiman</p>
+                        <p className="homePage__testimonial-title-1">Oscar-Nominated Filmmaker</p>
+                        <p className="homePage__testimonial-title-2">Concentric Media</p>
+                    </div>
+                    <div className="homePage__testimonial-container homePage__testimonial-container--2">
+                        <p className="homePage__testimonial-quote">"Serious about what they do and awesome to work with."</p>
+                        <div className="homePage__testimonial-line" />
+                        <p className="homePage__testimonial-name">Shannon Barr</p>
+                        <p className="homePage__testimonial-title-1">Creative Director</p>
+                        <p className="homePage__testimonial-title-2">Howard Hanna Real Estate</p>
+                    </div>
+                    <div className="homePage__testimonial-container homePage__testimonial-container--3">
+                        <p className="homePage__testimonial-quote">"A level higher than most. They deliver. A+."</p>
+                        <div className="homePage__testimonial-line" />
+                        <p className="homePage__testimonial-name">Greg Yost</p>
+                        <p className="homePage__testimonial-title-1">Chief Creative Officer</p>
+                        <p className="homePage__testimonial-title-2">LazorYost Marketing & Design</p>
+                    </div>
                 </div>
                 <div className="homePage__photos">
-                    <div className="homePage__photo-container--1">Corporate Video</div>
-                    <div className="homePage__photo-container--2">Commercial Video</div>
-                    <div className="homePage__photo-container--3">Informational Video</div>
+                    <h3 className="homePage__photos-heading">What We Do</h3>
+                    <div className="homePage__photo-container homePage__photo-container--1">Corporate Video</div>
+                    <div className="homePage__photo-container homePage__photo-container--2">Commercial Video</div>
+                    <div className="homePage__photo-container homePage__photo-container--3">Informational Video</div>
                 </div>
                 <div className="homePage__stat">
                     <p className="homePage__stat-paragraph">Over 1,000 videos produced.</p>
