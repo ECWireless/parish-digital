@@ -16,12 +16,14 @@ export default function Header(props) {
                 className="header__menu"
                 onClick={props.onToggleSidebar}
             >
-                <MenuButton className="header__menu-icon"/>
+                <MenuButton
+                    className="header__menu-icon"
+                />
             </button>
             <NavLink
                 to="/"
                 className="header__logo">
-                <img className="header__logo-image" src={PDLogo} alt="Logo"/>
+                <img onClick={props.windowScroll.bind(this, 0)} className="header__logo-image" src={PDLogo} alt="Logo"/>
             </NavLink>
             <div className="header__email">
                 <Email className="header__email-icon"/>

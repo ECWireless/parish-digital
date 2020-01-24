@@ -9,13 +9,13 @@ const AboutPage = React.lazy(() => import('../Pages/About'));
 const GearPage = React.lazy(() => import('../Pages/Gear'));
 const ContactPage = React.lazy(() => import('../Pages/Contact'));
 
-export default function Router() {
+export default function Router(props) {
     return (
         <React.Fragment>
             <Switch>
                 <Route path="/" exact
                     render={() => <React.Suspense fallback={<Loading />}>
-                        <HomePage />
+                        <HomePage windowScroll={props.windowScroll} />
                     </React.Suspense>}
                 />
                 <Route path="/work" exact

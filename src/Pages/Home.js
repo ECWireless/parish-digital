@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 
 import { ReactComponent as Chevron } from '../assets/home-page/circle-down.svg';
 import webVideo from '../assets/home-page/hero-video-2.mov';
 
 export default class Home extends Component {
+
+    state = {
+        myRef: createRef(),
+    }
+
     render() {
+        console.log(this.state.myRef)
         return (
             <div className="homePage">
                 <div className="homePage__web-hero">
                     <div className="homePage__web-hero-container">
                         <video src={webVideo} className="homePage__web-hero-video" autoPlay loop muted playsInline />
                     </div>
-                    <div className="homePage__chevron-container">
+                    <div className="homePage__chevron-container" onClick={this.props.windowScroll.bind(this, 850)}>
                         <Chevron className="homePage__chevron-svg" />
                     </div>
                 </div>
-                <div className="homePage__slogan">
+                <div className="homePage__slogan" ref={this.state.myRef}>
                     <h1 className="homePage__slogan-heading">Parish Digital</h1>
                     <h3 className="homePage__slogan-subheading">Video Production</h3>
                     <div className="homePage__slogan-box">

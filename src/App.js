@@ -15,6 +15,13 @@ export default class App extends Component {
 		toggleSidebar: false,
 	}
 
+	windowScroll = (location) => {
+		window.scroll({
+            top: location,
+            behavior: 'smooth'
+		});
+	}
+
 	onToggleSidebar = () => {
 		this.setState({ toggleSidebar: !this.state.toggleSidebar })
 	}
@@ -34,7 +41,10 @@ export default class App extends Component {
 					? 'app-small'
 					: 'app-large'}
 				>
-					<Header onToggleSidebar={this.onToggleSidebar} />
+					<Header
+						onToggleSidebar={this.onToggleSidebar}
+						windowScroll={this.windowScroll}
+					/>
 						<SmallSidebar />
 						<LargeSidebar
 							toggleSidebar={this.state.toggleSidebar}
@@ -46,7 +56,9 @@ export default class App extends Component {
 							className={this.state.toggleSidebar ? 'backdrop backdrop__fadeIn' : 'backdrop backdrop__fadeOut'}
 							onClick={this.onToggleSidebar}
 						/>
-						<Router />		
+						<Router
+							windowScroll={this.windowScroll}
+						/>		
 					<Footer />
 				</div>
 			</BrowserRouter>
