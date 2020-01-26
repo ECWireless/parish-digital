@@ -5,7 +5,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80rem 80rem 65rem 60rem 20rem;
+    grid-template-rows: 100vh 80rem 65rem 60rem 20rem;
 
     align-items: center;
     font-size: 2.4rem;
@@ -23,7 +23,7 @@
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 70rem 10rem;
+        grid-template-rows: 80% 20%;
     }
 
     &__web-hero-container {
@@ -368,7 +368,8 @@
 
         height: 100%;
         width: 100%;
-        background-image: linear-gradient(90deg, $color-blue, $color-blue-light);
+        background: linear-gradient(90deg, $color-blue, $color-blue-light);
+        animation: gradient 5s ease infinite;
 
         display: grid;
         justify-items: center;
@@ -382,4 +383,16 @@
         align-self: flex-start;
         letter-spacing: $spacing-subheading;
     }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

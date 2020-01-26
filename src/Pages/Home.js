@@ -5,23 +5,30 @@ import webVideo from '../assets/home-page/hero-video-2.mov';
 
 export default class Home extends Component {
 
-    state = {
-        myRef: createRef(),
+    constructor(props) {
+        super(props)
+        this.myRef = createRef()  
     }
 
+    windowScroll = () => {
+		window.scroll({
+            top: this.myRef.current.offsetTop,
+            behavior: 'smooth'
+		});
+	}
+
     render() {
-        console.log(this.state.myRef)
         return (
             <div className="homePage">
                 <div className="homePage__web-hero">
                     <div className="homePage__web-hero-container">
                         <video src={webVideo} className="homePage__web-hero-video" autoPlay loop muted playsInline />
                     </div>
-                    <div className="homePage__chevron-container" onClick={this.props.windowScroll.bind(this, 850)}>
+                    <div className="homePage__chevron-container" onClick={this.windowScroll}>
                         <Chevron className="homePage__chevron-svg" />
                     </div>
                 </div>
-                <div className="homePage__slogan" ref={this.state.myRef}>
+                <div className="homePage__slogan" ref={this.myRef}>
                     <h1 className="homePage__slogan-heading">Parish Digital</h1>
                     <h3 className="homePage__slogan-subheading">Video Production</h3>
                     <div className="homePage__slogan-box">
