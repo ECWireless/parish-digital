@@ -15,7 +15,7 @@ export default class Home extends Component {
             top: this.myRef.current.offsetTop,
             behavior: 'smooth'
 		});
-	}
+    }
 
     render() {
         return (
