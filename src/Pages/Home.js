@@ -1,7 +1,7 @@
 import React, { Component, createRef } from 'react';
 
 import { ReactComponent as Chevron } from '../assets/home-page/circle-down.svg';
-import webVideo from '../assets/home-page/hero-video-2.mov';
+import webVideo from '../assets/home-page/hero-video-main.mp4';
 
 export default class Home extends Component {
 
@@ -29,6 +29,7 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div className="homePage__slogan" ref={this.myRef}>
+                    <div className="homePage__slogan-filter" />
                     <h1 className="homePage__slogan-heading">Parish Digital</h1>
                     <h3 className="homePage__slogan-subheading">Video Production</h3>
                     <div className="homePage__slogan-box">

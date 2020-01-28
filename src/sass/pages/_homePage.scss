@@ -77,6 +77,18 @@
         display: grid;
         grid-template-columns: 1fr 10rem 35rem 35rem 10rem 1fr;
         grid-template-rows: 10rem 8rem 6rem 45rem 1fr;
+        background-image: url('../../assets/home-page/DSC00192.JPG.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__slogan-filter {
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
+
+        background: linear-gradient(to bottom, rgba(255, 255, 255, .95), rgba(255, 255, 255, .2));
+        width: 100%;
+        height: 100%;
     }
 
     &__slogan-heading {
@@ -86,8 +98,9 @@
 
         font-size: 5.6rem;
         text-transform: uppercase;
-        color: $color-blue;
+        color: $color-blue-dark;
         letter-spacing: $spacing-heading;
+        text-shadow: 0px 1px 1.5px rgba($color: #000000, $alpha: .5);
     }
 
     &__slogan-subheading {
@@ -96,7 +109,7 @@
 
         font-size: 2.8rem;
         font-weight: 100;
-        color: $color-blue;
+        color: $color-blue-dark;
         align-self: flex-start;
         letter-spacing: $spacing-subheading;
     }
@@ -111,6 +124,7 @@
         grid-template-rows: 1fr 5rem 3rem 4rem 7rem 10rem 10rem 1fr;
 
         box-shadow: 1px 1px 3px 2px rgba($color: #000000, $alpha: .2);
+        background: #fff;
         transition: all .3s ease;
 
         &:hover {
