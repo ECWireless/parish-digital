@@ -68,11 +68,12 @@ export default class Home extends Component {
                         <p className="homePage__testimonial-title-2">LazorYost Marketing & Design</p>
                     </div>
                 </div>
+                <div className="homePage__photos-line" />
                 <div className="homePage__photos">
                     <h3 className="homePage__photos-heading">What We Do</h3>
-                    <div className="homePage__photo-container homePage__photo-container--1">Corporate Video</div>
-                    <div className="homePage__photo-container homePage__photo-container--2">Commercial Video</div>
-                    <div className="homePage__photo-container homePage__photo-container--3">Informational Video</div>
+                    <div className="homePage__photo-container homePage__photo-container--1"></div>
+                    <div className="homePage__photo-container homePage__photo-container--2"></div>
+                    <div className="homePage__photo-container homePage__photo-container--3"></div>
                 </div>
                 <div className="homePage__stat">
                     <p className="homePage__stat-paragraph">Over 1,000 videos produced.</p>
