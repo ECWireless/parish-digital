@@ -28,6 +28,7 @@ export default class Home extends Component {
                         <Chevron className="homePage__chevron-svg" />
                     </div>
                 </div>
+                
                 <div className="homePage__slogan" ref={this.myRef}>
                     <div className="homePage__slogan-filter" />
                     <h1 className="homePage__slogan-heading">Parish Digital</h1>
@@ -41,6 +42,7 @@ export default class Home extends Component {
                         <button className="homePage__slogan-box-button homePage__slogan-box-button--2">2019 Video Reel</button>
                     </div>
                 </div>
+
                 <div className="homePage__testimonials">
                     <h3 className="homePage__testimonials-heading">What People Say</h3>
                     <div className="homePage__testimonial-container homePage__testimonial-container--1">
@@ -68,12 +70,33 @@ export default class Home extends Component {
                         <p className="homePage__testimonial-title-2">LazorYost Marketing & Design</p>
                     </div>
                 </div>
+
                 <div className="homePage__photos">
-                    <h3 className="homePage__photos-heading">What We Do</h3>
+                    <h3 className="homePage__photos-heading-1">What We Do</h3>
                     <div className="homePage__photo-container homePage__photo-container--1">
-                        .homePage__photo-
+                        <div className="homePage__photo1-container1">
+                            <p className="homePage__photo1-text1">Corporate Video</p>
+                        </div>
+                        <div className="homePage__photo1-container2">
+                            <p className="homePage__photo1-text2">See Examples</p>
+                        </div>
                     </div>
+                    <p className="homePage__photo1-text3">Corporate Videos</p>
+                    <p className="homePage__photo1-text4">We've worked with everyone from international Fortune 500 corporations to small businesses.</p>
+
                     <div className="homePage__photo-container homePage__photo-container--2"></div>
+                    <h3 className="homePage__photos-heading-2">What We Do</h3>
+                    <div className="homePage__photo-container homePage__photo-container--2">
+                        <div className="homePage__photo1-container1">
+                            <p className="homePage__photo1-text2">Corporate Video</p>
+                        </div>
+                        <div className="homePage__photo2-container2">
+                            <p className="homePage__photo2-text2">See Examples</p>
+                        </div>
+                    </div>
+                    <p className="homePage__photo2-text3">Corporate Videos</p>
+                    <p className="homePage__photo2-text4">We've worked with everyone from international Fortune 500 corporations to small businesses.</p>
+
                     <div className="homePage__photo-container homePage__photo-container--3"></div>
                     <div className="homePage__photos-line" />
                 </div>
