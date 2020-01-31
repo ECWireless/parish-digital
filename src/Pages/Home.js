@@ -12,7 +12,7 @@ export default class Home extends Component {
 
     windowScroll = () => {
 		window.scroll({
-            top: this.myRef.current.offsetTop,
+            top: this.myRef.current.offsetTop - 50,
             behavior: 'smooth'
 		});
     }
@@ -72,32 +72,41 @@ export default class Home extends Component {
                 </div>
 
                 <div className="homePage__photos">
-                    <h3 className="homePage__photos-heading-1">What We Do</h3>
+                    <h3 className="homePage__photos-heading">What We Do</h3>
                     <div className="homePage__photo-container homePage__photo-container--1">
-                        <div className="homePage__photo1-container1">
-                            <p className="homePage__photo1-text1">Corporate Video</p>
+                        <div className="homePage__photo-text-container homePage__photo-text-container--green">
+                            <p className="homePage__photo-text1 homePage__photo-text1--white">Corporate Video</p>
                         </div>
-                        <div className="homePage__photo1-container2">
-                            <p className="homePage__photo1-text2">See Examples</p>
+                        <div className="homePage__photo-text-container homePage__photo-text-container--white">
+                            <p className="homePage__photo-text1 homePage__photo-text1--blue">See Examples</p>
                         </div>
                     </div>
-                    <p className="homePage__photo1-text3">Corporate Videos</p>
-                    <p className="homePage__photo1-text4">We've worked with everyone from international Fortune 500 corporations to small businesses.</p>
 
-                    <div className="homePage__photo-container homePage__photo-container--2"></div>
-                    <h3 className="homePage__photos-heading-2">What We Do</h3>
                     <div className="homePage__photo-container homePage__photo-container--2">
-                        <div className="homePage__photo1-container1">
-                            <p className="homePage__photo1-text2">Corporate Video</p>
+                        <div className="homePage__photo-text-container homePage__photo-text-container--green">
+                            <p className="homePage__photo-text1 homePage__photo-text1--white">Commercial Video</p>
                         </div>
-                        <div className="homePage__photo2-container2">
-                            <p className="homePage__photo2-text2">See Examples</p>
+                        <div className="homePage__photo-text-container homePage__photo-text-container--white">
+                            <p className="homePage__photo-text1 homePage__photo-text1--blue">See Examples</p>
                         </div>
                     </div>
-                    <p className="homePage__photo2-text3">Corporate Videos</p>
-                    <p className="homePage__photo2-text4">We've worked with everyone from international Fortune 500 corporations to small businesses.</p>
 
-                    <div className="homePage__photo-container homePage__photo-container--3"></div>
+                    <div className="homePage__photo-container homePage__photo-container--3">
+                        <div className="homePage__photo-text-container homePage__photo-text-container--green">
+                            <p className="homePage__photo-text1 homePage__photo-text1--white">Informational Video</p>
+                        </div>
+                        <div className="homePage__photo-text-container homePage__photo-text-container--white">
+                            <p className="homePage__photo-text1 homePage__photo-text1--blue">See Examples</p>
+                        </div>
+                    </div>
+
+                    <p className="homePage__photo-text2 homePage__photo-text2--corporate">Corporate Videos</p>
+                    <p className="homePage__photo-text3 homePage__photo-text3--corporate">We've worked with everyone from international Fortune 500 corporations to small businesses.</p>
+                    <p className="homePage__photo-text2 homePage__photo-text2--commercial">Commercial Videos</p>
+                    <p className="homePage__photo-text3 homePage__photo-text3--commercial">Whether for TV, web or social, we can help your brand reach a wider audience.</p>
+                    <p className="homePage__photo-text2 homePage__photo-text2--informational">Informational Videos</p>
+                    <p className="homePage__photo-text3 homePage__photo-text3--informational">Need to train your new employees or create a "how to" video for your products? We can help!</p>
+
                     <div className="homePage__photos-line" />
                 </div>
                 <div className="homePage__stat">
