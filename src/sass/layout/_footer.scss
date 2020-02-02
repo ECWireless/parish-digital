@@ -5,9 +5,104 @@
     text-align: center;
 
     background-color: #5B5A5A;
-    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 40rem 25rem 25rem 1fr;
+    grid-template-rows: 2fr 1fr;
 
     @include respond(phone) {
         display: none;
+    }
+
+    // Contact
+    &__contact {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        
+        color: #fff;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    &__contact-heading {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+
+    &__contact-paragraph {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+
+    &__contact-number {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+    }
+
+    &__contact-social {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+    }
+
+    // Form
+    &__form {
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    &__form-email-label {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        z-index: 1;
+    }
+
+    &__form-email-input {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    &__form-name-label {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        z-index: 1;
+    }
+
+    &__form-name-input {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    &__form-subject-label {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        z-index: 1;
+    }
+
+    &__form-subject-input {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    &__form-message-label {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+        z-index: 1;
+    }
+
+    &__form-message-input {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
+
+    // Bottom
+    &__bottom {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        background: black;
     }
 }
