@@ -19,7 +19,7 @@ body {
 .app-small {
     display: grid;
     grid-template-columns: 7rem 1fr;
-    grid-template-rows: 6rem auto 40rem;
+    grid-template-rows: 6rem auto 50rem;
 
     @include respond(phone) {
         grid-template-columns: 1fr;
@@ -30,5 +30,5 @@ body {
 .app-large {
     display: grid;
     grid-template-columns: 20rem 1fr;
-    grid-template-rows: 6rem auto 40rem;
+    grid-template-rows: 6rem auto 50rem;
 }
