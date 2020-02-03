@@ -45,20 +45,23 @@ export default class App extends Component {
 						onToggleSidebar={this.onToggleSidebar}
 						windowScroll={this.windowScroll}
 					/>
-						<SmallSidebar />
-						<LargeSidebar
-							toggleSidebar={this.state.toggleSidebar}
-							onToggleSidebar={this.onToggleSidebar}
-							onPageSelection={this.onPageSelection}
-							largeSidebarClass={!this.state.toggleSidebar ? 'largeSidebar' : 'largeSidebar largeSidebar__active'}
-						/>
-						<div
-							className={this.state.toggleSidebar ? 'backdrop backdrop__fadeIn' : 'backdrop backdrop__fadeOut'}
-							onClick={this.onToggleSidebar}
-						/>
+					<SmallSidebar />
+					<LargeSidebar
+						toggleSidebar={this.state.toggleSidebar}
+						onToggleSidebar={this.onToggleSidebar}
+						onPageSelection={this.onPageSelection}
+						largeSidebarClass={!this.state.toggleSidebar ? 'largeSidebar' : 'largeSidebar largeSidebar__active'}
+					/>
+					<div
+						className={this.state.toggleSidebar ? 'backdrop backdrop__fadeIn' : 'backdrop backdrop__fadeOut'}
+						onClick={this.onToggleSidebar}
+					/>
+					<div className="main">
 						<Router
+							className="router-class"
 							windowScroll={this.windowScroll}
-						/>		
+						/>
+					</div>
 					<Footer />
 				</div>
 			</BrowserRouter>

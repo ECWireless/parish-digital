@@ -32,3 +32,8 @@ body {
     grid-template-columns: 20rem 1fr;
     grid-template-rows: 6rem auto 50rem;
 }
+
+.main {
+    grid-row: 2 / 3;
+    grid-column: 2 / -1;
+}

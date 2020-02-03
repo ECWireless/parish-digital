@@ -1,6 +1,4 @@
 .homePage {
-    grid-row: 2 / 3;
-    grid-column: 2 / -1;
     text-align: center;
 
     display: grid;
@@ -9,6 +7,11 @@
 
     align-items: center;
     font-size: 2.4rem;
+
+    @include respond(tab-port) {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+    }
 
     @include respond(phone) {
         grid-row: 2 / 3;
@@ -357,6 +360,11 @@
         transform: skew(-15deg) rotate(-5deg) translateY(4rem);
 
         transition: transform .5s .15s ease;
+
+
+        @include respond(tab-land) {
+            width: 100rem;
+        }
     }
 
     &__photos-heading {
@@ -515,7 +523,7 @@
         transform: translateY(0);
         opacity: 0;
         transition: all .5s .1s ease;
-        background: $color-green;
+        background: rgba(82, 174, 167, .8);
         color: #fff;
         // border: 1px solid $color-green;
         padding: 1rem;
