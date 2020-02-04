@@ -9,8 +9,7 @@
     font-size: 2.4rem;
 
     @include respond(tab-port) {
-        grid-row: 2 / 3;
-        grid-column: 1 / -1;
+        text-align: center;
     }
 
     @include respond(phone) {
@@ -83,6 +82,10 @@
         background-image: url('../../assets/home-page/DSC00192.JPG.jpg');
         background-size: cover;
         background-position: center;
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr 5rem 30rem 30rem 5rem 1fr;
+        }
     }
 
     &__slogan-filter {
@@ -214,6 +217,10 @@
         display: grid;
         grid-template-columns: 1fr repeat(3, 30rem) 1fr;
         grid-template-rows: 8rem 10rem 42rem 5rem;
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr repeat(3, 23.333rem) 1fr;
+        }
     }
 
     &__testimonials-heading {
@@ -276,7 +283,7 @@
         justify-self: center;
 
         border-top: 2px solid #fff;
-        width: 8rem
+        width: 8rem;
     }
 
     &__testimonial-photo {
@@ -345,6 +352,10 @@
         display: grid;
         grid-template-columns: 1fr repeat(3, 30rem) 1fr;
         grid-template-rows: 1fr 8rem 40rem 1fr;
+        
+        @include respond(tab-land) {
+            grid-template-columns: 1fr repeat(3, 23.333rem) 1fr;
+        }
     }
 
     &__photos-line {
@@ -363,7 +374,7 @@
 
 
         @include respond(tab-land) {
-            width: 100rem;
+            width: 80rem;
         }
     }
 

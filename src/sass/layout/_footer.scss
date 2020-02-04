@@ -9,6 +9,10 @@
     grid-template-columns: 1fr 40rem 25rem 25rem 1fr;
     grid-template-rows: 2fr 1fr;
 
+    @include respond(tab-land) {
+        grid-template-columns: 1fr 30rem 20rem 20rem 1fr;
+    }
+
     @include respond(phone) {
         display: none;
     }
