@@ -185,6 +185,10 @@
         display: grid;
         grid-template-columns: 1fr 29rem 1.5rem 29rem 1.5rem 29rem 1fr;
         grid-template-rows: 2fr 1fr;
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr 23rem 1.5rem 23rem 1.5rem 23rem 1fr;
+        }
     }
 
     &__bottom-location {
