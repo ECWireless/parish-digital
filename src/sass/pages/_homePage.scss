@@ -19,6 +19,7 @@
     @include respond(phone) {
         grid-row: 2 / 3;
         grid-column: 1 / -1;
+        grid-template-rows: 80rem 150rem 95rem 20rem;
     }
 
     // WEB HERO
@@ -115,6 +116,11 @@
             grid-row: 1 / 2;
             grid-template-columns: 1fr 25rem 25rem 1fr;
         }
+
+        @include respond(phone) {
+            grid-template-columns: 1fr 20rem 20rem 1fr;
+            grid-template-rows: 8rem 6rem 6rem 50rem 1fr;
+        }
     }
 
     &__slogan-filter {
@@ -144,6 +150,10 @@
         @include respond(tab-port) {
             grid-column: 1 / -1;
         }
+
+        @include respond(phone) {
+            font-size: 3.6rem;
+        }
     }
 
     &__slogan-subheading {
@@ -162,6 +172,10 @@
 
         @include respond(tab-port) {
             grid-column: 1 / -1;
+        }
+
+        @include respond(phone) {
+            font-size: 2.4rem;
         }
     }
 
@@ -185,7 +199,12 @@
         }
 
         @include respond(tab-port) {
+            grid-template-rows: 1fr 5rem 3rem 6rem 7rem 8rem 10rem 1fr;
             grid-column: 2 / 4;
+        }
+
+        @include respond(phone) {
+            grid-template-rows: 1fr 8rem 3rem 6rem 6rem 8rem 10rem 1fr;
         }
 
         &:hover {
@@ -229,6 +248,11 @@
 
         @include respond(tab-land) {
             font-size: 1.6rem;
+        }
+
+        @include respond(tab-port) {
+            width: 40rem;
+            justify-self: center;
         }
     }
 
@@ -302,6 +326,10 @@
             grid-template-rows: 8rem 10rem repeat(3, 42rem) 5rem;
             grid-template-columns: 1fr 50rem 1fr;
         }
+
+        @include respond(phone) {
+            grid-template-columns: 1fr 40rem 1fr;
+        }
     }
 
     &__testimonials-heading {
@@ -317,6 +345,10 @@
 
         @include respond(tab-land) {
             font-size: 3.8rem;
+        }
+
+        @include respond(phone) {
+            font-size: 3.2rem;
         }
     }
 
@@ -342,6 +374,7 @@
         }
 
         @include respond(tab-port) {
+            grid-template-rows: 1fr 10rem 2rem 9rem 5rem 3rem 3rem 1fr;
             width: 27rem;
         }
 
@@ -388,6 +421,11 @@
             font-size: 1.6rem;
             width: 20rem;
             justify-self: center;
+        }
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+            width: 23rem;
         }
     }
 
@@ -442,6 +480,10 @@
         @include respond(tab-land) {
             font-size: 1.4rem;
         }
+
+        @include respond(tab-port) {
+            font-size: 1.8rem;
+        }
     }
 
     &__testimonial-title-1 {
@@ -455,6 +497,10 @@
         @include respond(tab-land) {
             font-size: 1.2rem;
         }
+
+        @include respond(tab-port) {
+            font-size: 1.4rem;
+        }
     }
 
     &__testimonial-title-2 {
@@ -467,6 +513,10 @@
 
         @include respond(tab-land) {
             font-size: 1.2rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 1.4rem;
         }
     }
 
@@ -488,6 +538,10 @@
             grid-row: 3 / 4;
             grid-template-columns: 1fr 25rem 25rem 1fr;
             grid-template-rows: 1fr 8rem repeat(3, 24rem) 1fr;
+        }
+
+        @include respond(phone) {
+            grid-template-columns: 1fr 20rem 20rem 1fr;
         }
     }
 
@@ -793,10 +847,10 @@
 
         @include respond(tab-port) {
             align-self: center;
-            font-size: 1.6rem;
-            margin-bottom: 3rem;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
             opacity: 1;
-            font-weight: bold;
+            font-weight: 300;
         }
     }
 
@@ -824,5 +878,9 @@
         font-weight: 100;
         align-self: flex-start;
         letter-spacing: $spacing-subheading;
+
+        @include respond(phone) {
+            font-size: 2.4rem;
+        }
     }
 }
