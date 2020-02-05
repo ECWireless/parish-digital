@@ -27,7 +27,7 @@ export default class App extends Component {
 	}
 
 	onPageSelection = () => {
-		if (window.matchMedia('(max-width: 600px)').matches) {
+		if (window.matchMedia('(max-width: 900px)').matches) {
 			this.onToggleSidebar()
 		} else {
 			return;

@@ -8,8 +8,12 @@
     align-items: center;
     font-size: 2.4rem;
 
+    @include respond(tab-land) {
+        grid-template-rows: 90vh 90rem 70rem 60rem 20rem;
+    }
+
     @include respond(tab-port) {
-        text-align: center;
+        grid-template-rows: 90rem 150rem 95rem 20rem;
     }
 
     @include respond(phone) {
@@ -26,6 +30,10 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 80% 20%;
+
+        @include respond(tab-port) {
+            display: none;
+        }
     }
 
     &__web-hero-container {
@@ -35,11 +43,19 @@
         flex-direction: column;
         overflow: hidden;
         border-bottom: 5px solid $color-blue;
+
+        @include respond(tab-port) {
+            display: none;
+        }
     }
     
     &__web-hero-video {
         object-fit: cover;
         transform: scale(1.1);
+
+        @include respond(tab-port) {
+            display: none;
+        }
     }
 
     &__chevron-container {
@@ -57,6 +73,10 @@
 
         transition: all .3s ease;
 
+        @include respond(tab-port) {
+            display: none;
+        }
+
         &:hover {
             background: #fff;
             cursor: pointer;
@@ -68,6 +88,10 @@
     &__chevron-svg {
         width: 5rem;
         height: 5rem;
+
+        @include respond(tab-port) {
+            display: none;
+        }
     }
 
     // SLOGAN
@@ -85,6 +109,11 @@
 
         @include respond(tab-land) {
             grid-template-columns: 1fr 5rem 30rem 30rem 5rem 1fr;
+        }
+
+        @include respond(tab-port) {
+            grid-row: 1 / 2;
+            grid-template-columns: 1fr 25rem 25rem 1fr;
         }
     }
 
@@ -107,6 +136,14 @@
         color: $color-blue-dark;
         letter-spacing: $spacing-heading;
         text-shadow: 0px 1px 1.5px rgba($color: #000000, $alpha: .5);
+
+        @include respond(tab-land) {
+            font-size: 4.8rem;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 1 / -1;
+        }
     }
 
     &__slogan-subheading {
@@ -118,6 +155,14 @@
         color: $color-blue-dark;
         align-self: flex-start;
         letter-spacing: $spacing-subheading;
+
+        @include respond(tab-land) {
+            font-size: 2.4rem;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 1 / -1;
+        }
     }
 
     &__slogan-box {
@@ -135,6 +180,14 @@
         background: #fff;
         transition: all .3s ease;
 
+        @include respond(tab-land) {
+            grid-template-rows: 1fr 5rem 3rem 4rem 7rem 8rem 10rem 1fr;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+        }
+
         &:hover {
             box-shadow: 2px 2px 8px 5px rgba($color: #000000, $alpha: .2);
         }
@@ -148,6 +201,10 @@
         font-weight: 100;
         color: $color-blue;
         letter-spacing: $spacing-subheading;
+
+        @include respond(tab-land) {
+            font-size: 2.4rem;
+        }
     }
 
     &__slogan-box-notch {
@@ -157,6 +214,10 @@
         border-bottom: solid 5px $color-blue;
         width: 5rem;
         margin: 0 auto;
+
+        @include respond(tab-land) {
+            border-bottom: solid 3px $color-blue;
+        }
     }
 
     &__slogan-box-paragraph1 {
@@ -165,6 +226,10 @@
 
         font-size: 1.8rem;
         color: $color-blue;
+
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
     }
 
     &__slogan-box-paragraph2 {
@@ -173,6 +238,10 @@
 
         font-size: 1.8rem;
         color: $color-blue;
+
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
     }
 
     &__slogan-box-button {
@@ -191,6 +260,12 @@
         outline: none;
 
         transition: all .3s ease;
+
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+            height: 6rem;
+            width: 22rem;
+        }
 
         &:hover {
             background-color: $color-blue;
@@ -221,6 +296,12 @@
         @include respond(tab-land) {
             grid-template-columns: 1fr repeat(3, 23.333rem) 1fr;
         }
+
+        @include respond(tab-port) {
+            grid-row: 2 / 3;
+            grid-template-rows: 8rem 10rem repeat(3, 42rem) 5rem;
+            grid-template-columns: 1fr 50rem 1fr;
+        }
     }
 
     &__testimonials-heading {
@@ -233,6 +314,10 @@
         font-weight: 100;
         align-self: flex-start;
         letter-spacing: $spacing-subheading;
+
+        @include respond(tab-land) {
+            font-size: 3.8rem;
+        }
     }
 
     &__testimonial-container {
@@ -251,16 +336,40 @@
         grid-template-rows: 1fr 10rem 2rem 9rem 5rem 3rem 3rem 1fr;
         background: $color-green;
 
+        @include respond(tab-land) {
+            width: 22rem;
+            grid-template-rows: 1fr 8rem 2rem 9rem 5rem 3rem 3rem 1fr;
+        }
+
+        @include respond(tab-port) {
+            width: 27rem;
+        }
+
         &--1 {
             grid-column: 2 / 3;
+
+            @include respond(tab-port) {
+                grid-row: 3 / 4;
+                grid-column: 1 / -1;
+            }
         }
 
         &--2 {
             grid-column: 3 / 4;
+
+            @include respond(tab-port) {
+                grid-row: 4 / 5;
+                grid-column: 1 / -1;
+            }
         }
 
         &--3 {
             grid-column: 4 / 5;
+
+            @include respond(tab-port) {
+                grid-row: 5 / 6;
+                grid-column: 1 / -1;
+            }
         }
     }
 
@@ -274,6 +383,12 @@
         font-weight: bold;
         align-self: flex-start;
         letter-spacing: $spacing-subheading;
+
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+            width: 20rem;
+            justify-self: center;
+        }
     }
 
     &__testimonial-line {
@@ -323,6 +438,10 @@
         font-weight: 100;
         align-self: center;
         letter-spacing: $spacing-subheading;
+
+        @include respond(tab-land) {
+            font-size: 1.4rem;
+        }
     }
 
     &__testimonial-title-1 {
@@ -332,6 +451,10 @@
 
         color: #fff;
         font-size: 1.4rem;
+
+        @include respond(tab-land) {
+            font-size: 1.2rem;
+        }
     }
 
     &__testimonial-title-2 {
@@ -341,10 +464,13 @@
 
         color: #fff;
         font-size: 1.4rem;
+
+        @include respond(tab-land) {
+            font-size: 1.2rem;
+        }
     }
 
     // PHOTOS
-
     &__photos {
         grid-row: 4 / 5;
         grid-column: 1 / 2;
@@ -355,6 +481,13 @@
         
         @include respond(tab-land) {
             grid-template-columns: 1fr repeat(3, 23.333rem) 1fr;
+            grid-template-rows: 1fr 8rem 34rem 1fr;
+        }
+
+        @include respond(tab-port) {
+            grid-row: 3 / 4;
+            grid-template-columns: 1fr 25rem 25rem 1fr;
+            grid-template-rows: 1fr 8rem repeat(3, 24rem) 1fr;
         }
     }
 
@@ -372,9 +505,13 @@
 
         transition: transform .5s .15s ease;
 
-
         @include respond(tab-land) {
             width: 80rem;
+            height: 16rem;
+        }
+
+        @include respond(tab-port) {
+            display: none;
         }
     }
 
@@ -387,6 +524,10 @@
         font-weight: 100;
         align-self: flex-start;
         letter-spacing: $spacing-subheading;
+
+        @include respond(tab-land) {
+            font-size: 3.8rem;
+        }
     }
 
     &__photo-container {
@@ -409,13 +550,31 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
 
+        @include respond(tab-land) {
+            height: 22rem;
+            width: 22rem;
+        }
+
         &--1 {
             grid-column: 2 / 3;
             background-image: url('../../assets/home-page/what-we-do-1.jpg');
 
+            @include respond(tab-port) {
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+            }
+
             &:hover ~ .homePage__photo-text2--corporate {
                 transform: translateY(-18rem);
                 opacity: 1;
+
+                @include respond(tab-land) {
+                    transform: translateY(-15rem);
+                }
+
+                @include respond(tab-port) {
+                    display: none;
+                }
             }
 
             &:hover ~ .homePage__photo-text3--corporate {
@@ -427,9 +586,22 @@
             grid-column: 3 / 4;
             background-image: url('../../assets/home-page/what-we-do-2.jpg');
 
+            @include respond(tab-port) {
+                grid-column: 3 / 4;
+                grid-row: 4 / 5;
+            }
+
             &:hover ~ .homePage__photo-text2--commercial {
                 transform: translateY(-18rem);
                 opacity: 1;
+
+                @include respond(tab-land) {
+                    transform: translateY(-15rem);
+                }
+
+                @include respond(tab-port) {
+                    display: none;
+                }
             }
 
             &:hover ~ .homePage__photo-text3--commercial {
@@ -441,9 +613,22 @@
             grid-column: 4 / 5;
             background-image: url('../../assets/home-page/what-we-do-3.jpg');
 
+            @include respond(tab-port) {
+                grid-column: 2 / 3;
+                grid-row: 5 / 6;
+            }
+
             &:hover ~ .homePage__photo-text2--informational {
                 transform: translateY(-18rem);
                 opacity: 1;
+
+                @include respond(tab-land) {
+                    transform: translateY(-15rem);
+                }
+
+                @include respond(tab-port) {
+                    display: none;
+                }
             }
 
             &:hover ~ .homePage__photo-text3--informational {
@@ -460,10 +645,18 @@
             cursor: pointer;
             box-shadow: 1px 1px 10px 5px rgba($color: #000000, $alpha: .3);
             transform: scale(1.02);
+
+            @include respond(tab-port) {
+                transform: scale(.9);
+            }
         }
 
         &:hover > .homePage__photo-text-container--white {
             opacity: 1;
+
+            @include respond(tab-port) {
+                opacity: 0;
+            }
         }
 
         &:active {
@@ -471,6 +664,10 @@
             box-shadow: 1px 1px 3px 2px rgba($color: #000000, $alpha: .2);
             transform: scale(.95);
             border: 3px solid $color-green;
+
+            @include respond(tab-port) {
+                transform: scale(.9);
+            }
         }
 
         overflow: hidden;
@@ -540,6 +737,11 @@
         padding: 1rem;
         font-size: 2.2rem;
 
+        @include respond(tab-land) {
+            font-size: 1.8rem;
+            width: 25rem;
+        }
+
         &--corporate {
             grid-column: 2 / 3;
         }
@@ -550,6 +752,10 @@
 
         &--informational {
             grid-column: 4 / 5;
+
+            @include respond(tab-port) {
+                display: none;
+            }
         }
     }
 
@@ -560,6 +766,38 @@
         color: $color-blue;
         opacity: 0;
         transition: all .5s ease;
+
+        &--corporate {
+            @include respond(tab-port) {
+                grid-column: 3 / 4;
+                grid-row: 3 / 4;
+                margin-left: 2rem;
+            }
+        }
+
+        &--commercial {
+            @include respond(tab-port) {
+                grid-column: 2 / 3;
+                grid-row: 4 / 5;
+                margin-right: 2rem;
+            }
+        }
+
+        &--informational {
+            @include respond(tab-port) {
+                grid-column: 3 / 4;
+                grid-row: 5 / 6;
+                margin-left: 2rem;
+            }
+        }
+
+        @include respond(tab-port) {
+            align-self: center;
+            font-size: 1.6rem;
+            margin-bottom: 3rem;
+            opacity: 1;
+            font-weight: bold;
+        }
     }
 
     // STAT
@@ -574,6 +812,10 @@
         display: grid;
         justify-items: center;
         align-content: center;
+
+        @include respond(tab-port) {
+            grid-row: 4 / 5;
+        }
     }
 
     &__stat-paragraph {

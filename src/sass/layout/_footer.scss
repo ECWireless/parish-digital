@@ -13,8 +13,9 @@
         grid-template-columns: 1fr 30rem 20rem 20rem 1fr;
     }
 
-    @include respond(phone) {
-        display: none;
+    @include respond(tab-port) {
+        grid-template-columns: 1fr 25rem 25rem 1fr;
+        grid-template-rows: 3fr 3fr 2fr;
     }
 
     // Contact
@@ -27,6 +28,11 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+            grid-template-rows: repeat(5, 4rem);
+        }
     }
 
     &__contact-heading {
@@ -35,6 +41,16 @@
 
         font-size: 3.2rem;
         text-align: left;
+
+        @include respond(tab-land) {
+            font-size: 2.8rem;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 1 / -1;
+            grid-row: 2 / 3;
+            text-align: center;
+        }
     }
 
     &__contact-paragraph {
@@ -44,6 +60,10 @@
         font-weight: 100;
         text-align: left;
         align-self: center;
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
     }
 
     &__contact-number {
@@ -57,6 +77,11 @@
 
         color: #fff;
         text-decoration: none;
+
+        @include respond(tab-port) {
+            text-align: center;
+            justify-self: center;
+        }
     }
 
     &__contact-social {
@@ -76,6 +101,12 @@
         outline: none;
 
         transition: all .3s ease;
+
+        @include respond(tab-port) {
+            justify-self: center;
+            text-align: center;
+            margin: 0 auto;
+        }
 
         @include respond(phone) {
             width: 4.5rem;
@@ -109,6 +140,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(6, 1fr);
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+            grid-row: 2 / 3;
+            grid-template-rows: 1fr repeat(4, 4.5rem) 1fr;
+        }
     }
 
     &__form-inactive {
@@ -125,6 +162,10 @@
         font-weight: bold;
         margin-left: 1rem;
         transition: all .3s ease;
+
+        @include respond(tab-port) {
+            margin-left: 3.5rem;
+        }
 
         &:hover {
             cursor: text;
@@ -147,6 +188,10 @@
             grid-row: 2 / 5;
             align-self: flex-start;
             margin-top: 2rem;
+
+            @include respond(tab-land) {
+                margin-left: 3rem;
+            }
         }
     }
 
@@ -170,6 +215,10 @@
         text-transform: uppercase;
         font-size: 1.6rem;
 
+        @include respond(tab-land) {
+            margin-right: 1rem;
+        }
+
         &:hover {
             cursor: pointer;
             border: 3px solid $color-blue;
@@ -189,6 +238,11 @@
         @include respond(tab-land) {
             grid-template-columns: 1fr 23rem 1.5rem 23rem 1.5rem 23rem 1fr;
         }
+
+        @include respond(tab-port) {
+            grid-row: 3 / 4;
+            grid-template-columns: 1fr 16rem 1rem 16rem 1rem 16rem 1fr;
+        }
     }
 
     &__bottom-location {
@@ -198,6 +252,15 @@
         justify-self: flex-end;
         margin-right: 5rem;
         color: white;
+
+        @include respond(tab-land) {
+            font-size: 1.2rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 1.4rem;
+            justify-self: center;
+        }
     }
 
     &__bottom-email {
@@ -205,6 +268,15 @@
         grid-row: 1 / 2;
         align-self: center;
         color: white;
+
+        @include respond(tab-land) {
+            font-size: 1.2rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 1rem;
+            justify-self: center;
+        }
     }
 
     &__bottom-number {
@@ -214,6 +286,16 @@
         justify-self: flex-start;
         margin-left: 5rem;
         color: white;
+
+        @include respond(tab-land) {
+            font-size: 1.2rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 1.4rem;
+            justify-self: center;
+            margin-left: 0;
+        }
     }
 
     &__bottom-login {
@@ -223,6 +305,10 @@
         color: white;
         text-transform: uppercase;
         font-size: 1.4rem;
+
+        @include respond(tab-land) {
+            font-size: 1.2rem;
+        }
     }
 
     &__bottom-line {
@@ -263,6 +349,14 @@
 
     transition: all .3s ease;
 
+    @include respond(tab-land) {
+        width: 20rem;
+    }
+
+    @include respond(tab-land) {
+        justify-self: center;
+    }
+
     &:hover {
         border: 3px solid $color-blue;
     }
@@ -300,6 +394,14 @@
     padding-left: 1rem;
 
     transition: all .3s ease;
+
+    @include respond(tab-land) {
+        width: 20rem;
+    }
+
+    @include respond(tab-land) {
+        justify-self: center;
+    }
 
     &:hover {
         border: 3px solid $color-blue;
@@ -339,6 +441,14 @@
 
     transition: all .3s ease;
 
+    @include respond(tab-land) {
+        width: 20rem;
+    }
+
+    @include respond(tab-land) {
+        justify-self: center;
+    }
+
     &:hover {
         border: 3px solid $color-blue;
     }
@@ -377,6 +487,15 @@
     padding: 1rem;
 
     transition: all .3s ease;
+
+    @include respond(tab-land) {
+        justify-self: flex-end;
+        width: 90%;
+    }
+
+    @include respond(tab-land) {
+        justify-self: center;
+    }
 
     &:hover {
         border: 3px solid $color-blue;

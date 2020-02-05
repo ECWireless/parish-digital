@@ -1,7 +1,7 @@
 .backdrop {
     content: none;
     
-    @include respond(phone) {
+    @include respond(tab-port) {
         position: fixed;
         top: 0;
         left: 0;
@@ -15,7 +15,7 @@
     &__fadeIn {
         content: none;
         
-        @include respond(phone) {
+        @include respond(tab-port) {
             animation: fadeIn .3s;
             z-index: 10 !important;
             opacity: 1 !important;
@@ -25,7 +25,7 @@
     &__fadeOut {
         content: none;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             animation: fadeOut .3s;
             z-index: -1 !important;
             opacity: 0 !important;
