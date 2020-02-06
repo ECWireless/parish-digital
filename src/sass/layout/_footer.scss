@@ -23,6 +23,10 @@
         grid-template-columns: 1fr 20rem 20rem 1fr;
     }
 
+    @include respond(small-phone) {
+        grid-template-columns: 1fr 15rem 15rem 1fr;
+    }
+
     // Contact
     &__contact {
         grid-column: 2 / 3;
@@ -251,6 +255,10 @@
 
         @include respond(phone) {
             grid-template-columns: 1fr 13rem 1rem 13rem 1rem 13rem 1fr;
+        }
+
+        @include respond(small-phone) {
+            grid-template-columns: 1fr 9rem 1rem 9rem 1rem 9rem 1fr;
         }
     }
 
