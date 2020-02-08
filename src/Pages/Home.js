@@ -3,6 +3,8 @@ import React, { Component, createRef } from 'react';
 import { ReactComponent as Chevron } from '../assets/home-page/circle-down.svg';
 import webVideo from '../assets/home-page/hero-video-main.mp4';
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
 export default class Home extends Component {
 
     constructor(props) {
@@ -31,8 +33,16 @@ export default class Home extends Component {
                 
                 <div className="homePage__slogan" ref={this.myRef}>
                     <div className="homePage__slogan-filter" />
-                    <h1 className="homePage__slogan-heading">Parish Digital</h1>
-                    <h3 className="homePage__slogan-subheading">Video Production</h3>
+                    <h1 className="homePage__slogan-heading">
+                        <ScrollAnimation animateOnce animateIn="fadeInUp">
+                            Parish Digital
+                        </ScrollAnimation>
+                    </h1>
+                    <h3 className="homePage__slogan-subheading">
+                        <ScrollAnimation animateOnce animateIn="fadeInUp">
+                            Video Production
+                        </ScrollAnimation>
+                    </h3>
                     <div className="homePage__slogan-box">
                         <h3 className="homePage__slogan-box-heading">Our Focus is <span style={{fontWeight: 'bold'}}>video </span>for <span style={{fontWeight: 'bold'}}>business</span></h3>
                         <div className="homePage__slogan-box-notch" />
@@ -44,7 +54,11 @@ export default class Home extends Component {
                 </div>
 
                 <div className="homePage__testimonials">
-                    <h3 className="homePage__testimonials-heading">What People Say</h3>
+                    <h3 className="homePage__testimonials-heading">
+                        <ScrollAnimation animateOnce animateIn="fadeInUp">
+                            What People Say
+                        </ScrollAnimation>
+                    </h3>
                     <div className="homePage__testimonial-container homePage__testimonial-container--1">
                         <p className="homePage__testimonial-quote">"(An) ability to capture the spirit of a subject."</p>
                         <div className="homePage__testimonial-line" />
@@ -72,7 +86,11 @@ export default class Home extends Component {
                 </div>
 
                 <div className="homePage__photos">
-                    <h3 className="homePage__photos-heading">What We Do</h3>
+                    <h3 className="homePage__photos-heading">
+                        <ScrollAnimation animateOnce animateIn="fadeInUp">
+                            What We Do
+                        </ScrollAnimation>
+                    </h3>
                     <div className="homePage__photo-container homePage__photo-container--1">
                         <div className="homePage__photo-text-container homePage__photo-text-container--green">
                             <p className="homePage__photo-text1 homePage__photo-text1--white">Corporate Video</p>
@@ -102,15 +120,22 @@ export default class Home extends Component {
 
                     <p className="homePage__photo-text2 homePage__photo-text2--corporate">Corporate Videos</p>
                     <p className="homePage__photo-text3 homePage__photo-text3--corporate">We've worked with everyone from international Fortune 500 corporations to small businesses.</p>
+                    <p className="homePage__photos-text4 homePage__photos-text4--1">See Examples</p>
                     <p className="homePage__photo-text2 homePage__photo-text2--commercial">Commercial Videos</p>
                     <p className="homePage__photo-text3 homePage__photo-text3--commercial">Whether for TV, web or social, we can help your brand reach a wider audience.</p>
+                    <p className="homePage__photos-text4 homePage__photos-text4--2">See Examples</p>
                     <p className="homePage__photo-text2 homePage__photo-text2--informational">Informational Videos</p>
                     <p className="homePage__photo-text3 homePage__photo-text3--informational">Need to train your new employees or create a "how to" video for your products? We can help!</p>
+                    <p className="homePage__photos-text4 homePage__photos-text4--3">See Examples</p>
 
                     <div className="homePage__photos-line" />
                 </div>
                 <div className="homePage__stat">
-                    <p className="homePage__stat-paragraph">Over 1,000 videos produced.</p>
+                    <p className="homePage__stat-paragraph">
+                        <ScrollAnimation animateOnce animateIn="fadeInUp">
+                            Over 1,000 videos produced.
+                        </ScrollAnimation>
+                    </p>
                 </div>
             </div>
         )

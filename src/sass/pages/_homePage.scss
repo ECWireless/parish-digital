@@ -23,7 +23,7 @@
     }
 
     @include respond(small-phone) {
-        grid-template-rows: 70rem 150rem 78rem 15rem;
+        grid-template-rows: 60rem 145rem 78rem 15rem;
     }
 
     // WEB HERO
@@ -128,7 +128,7 @@
 
         @include respond(small-phone) {
             grid-template-columns: 1fr 15rem 15rem 1fr;
-            grid-template-rows: 4rem 5rem 6rem 45rem 1fr;
+            grid-template-rows: 4rem 5rem 6rem 38rem 1fr;
         }
     }
 
@@ -226,7 +226,8 @@
         }
 
         @include respond(small-phone) {
-            grid-template-rows: 1rem 7rem 3rem 5rem 5rem 7rem 1fr;
+            grid-template-rows: 3rem 5rem 3rem 5rem 5rem 7rem 1fr;
+            padding: 0;
         }
 
         &:hover {
@@ -313,7 +314,7 @@
 
         height: 7rem;
         width: 25rem;
-        border-radius: 10px;
+        border-radius: 5px;
 
         background-color: #fff;
         color: $color-blue;
@@ -433,6 +434,11 @@
             width: 27rem;
         }
 
+        @include respond(small-phone) {
+            grid-template-rows: 1fr 7rem 2rem 9rem 5rem 3rem 3rem 1fr;
+            height: 36rem;
+        }
+
         &--1 {
             grid-column: 2 / 3;
 
@@ -481,6 +487,10 @@
         @include respond(tab-port) {
             font-size: 2rem;
             width: 23rem;
+        }
+
+        @include respond(small-phone) {
+            font-size: 1.6rem;
         }
     }
 
@@ -600,7 +610,7 @@
         }
 
         @include respond(small-phone) {
-            grid-template-columns: 1fr 12rem 18rem 1fr;
+            grid-template-columns: 1fr 15rem 15rem 1fr;
             grid-template-rows: 4rem 6rem repeat(3, 20rem) 1fr;
         }
     }
@@ -831,6 +841,11 @@
 
         &--green {
             background: rgba(82, 174, 167, .8);
+
+            @include respond(small-phone) {
+                background: $color-green;
+                height: 6rem;
+            }
         }
     }
 
@@ -842,6 +857,10 @@
         font-weight: bold;
         text-transform: uppercase;
         font-size: 2rem;
+
+        @include respond(small-phone) {
+            font-size: 1.6rem;
+        }
 
         &--white {
             color: #fff;
@@ -869,6 +888,7 @@
         // border: 1px solid $color-green;
         padding: 1rem;
         font-size: 2.2rem;
+        box-shadow: 1px 1px 10px 0px rgba($color: #000000, $alpha: .4);
 
         @include respond(tab-land) {
             font-size: 1.8rem;
@@ -882,7 +902,7 @@
         &--commercial {
             grid-column: 3 / 4;
 
-            @include respond(small-phone) {
+            @include respond(phone) {
                 display: none;
             }
         }
@@ -905,21 +925,27 @@
         transition: all .5s ease;
 
         @include respond(tab-port) {
-            align-self: center;
+            align-self: flex-start;
+            margin-top: 5rem;
             font-size: 1.8rem;
-            margin-bottom: 2rem;
             opacity: 1;
             font-weight: 300;
         }
 
         @include respond(phone) {
             font-size: 1.4rem;
+            margin-top: 6rem;
         }
 
         @include respond(phone) {
             font-size: 1.2rem;
             font-weight: bold;
             margin-bottom: 1rem;
+        }
+
+        @include respond(small-phone) {
+            font-size: 1rem;
+            font-weight: 300;
         }
 
         &--corporate {
@@ -948,6 +974,60 @@
                 grid-row: 5 / 6;
                 margin-left: 2rem;
             }
+        }
+    }
+
+    &__photos-text4 {
+        display: none;
+
+        @include respond(tab-port) {
+            display: inline-block;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            justify-self: center;
+            align-self: center;
+            margin-top: 12rem;
+
+            color: $color-blue;
+            border: 2px solid $color-blue;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 1px 1px 6px 0px rgba($color: #000000, $alpha: .2);
+        }
+
+        @include respond(tab-port) {
+            font-size: 1rem;
+            margin-top: 8rem;
+        }
+
+        @include respond(small-phone) {
+            padding: .8rem;
+        }
+
+        &:hover {
+            color: #fff;
+            background: $color-blue;
+            cursor: pointer;
+            transition: all .3s ease;
+            box-shadow: 1px 1px 4px 0px rgba($color: #000000, $alpha: .4);
+        }
+
+        &--1 {
+            grid-row: 3 / 4;
+            grid-column: 3 / 4;
+            margin-left: 2rem;
+        }
+
+        &--2 {
+            grid-row: 4 / 5;
+            grid-column: 2 / 3;
+            margin-right: 2rem;
+        }
+
+        &--3 {
+            grid-row: 5 / 6;
+            grid-column: 3 / 4;
+            margin-left: 2rem;
         }
     }
 

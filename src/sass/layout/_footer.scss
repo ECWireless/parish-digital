@@ -73,6 +73,10 @@
         @include respond(tab-port) {
             text-align: center;
         }
+
+        @include respond(small-phone) {
+            font-size: 1.4rem;
+        }
     }
 
     &__contact-number {
@@ -90,6 +94,10 @@
         @include respond(tab-port) {
             text-align: center;
             justify-self: center;
+        }
+
+        @include respond(small-phone) {
+            font-size: 1.6rem;
         }
     }
 
@@ -122,6 +130,10 @@
             height: 4.5rem;
         }
 
+        @include respond(small-phone) {
+            justify-self: center;
+        }
+
         &:hover {
             background-color: $svg-grey;
             cursor: pointer;
@@ -135,7 +147,13 @@
         fill: #fff;
 
         @include respond(phone) {
-            transform: translate(65%, 60%);
+            transform: translate(0%, 50%);
+            width: 2rem;
+            height: 2rem;
+        }
+
+        @include respond(small-phone) {
+            transform: translate(0%, 50%);
             width: 2rem;
             height: 2rem;
         }
@@ -173,6 +191,10 @@
         transition: all .3s ease;
 
         @include respond(tab-port) {
+            margin-left: 3.5rem;
+        }
+
+        @include respond(phone) {
             margin-left: 1.5rem;
         }
 
@@ -200,6 +222,10 @@
 
             @include respond(tab-land) {
                 margin-left: 3rem;
+            }
+
+            @include respond(small-phone) {
+                margin-left: 1.5rem;
             }
         }
     }
@@ -283,6 +309,11 @@
             font-size: 1rem;
             margin-right: 0rem;
         }
+
+        @include respond(small-phone) {
+            margin-right: 2rem;
+            text-align: right;
+        }
     }
 
     &__bottom-email {
@@ -327,6 +358,11 @@
             font-size: 1rem;
             margin-left: 0rem;
         }
+
+        @include respond(small-phone) {
+            margin-left: 2rem;
+            text-align: left;
+        }
     }
 
     &__bottom-login {
@@ -357,11 +393,19 @@
         &--1 {
             grid-column: 3 / 4;
             grid-row: 1 / 2;
+
+            @include respond(small-phone) {
+                margin-right: 2.5rem;
+            }
         }
 
         &--2 {
             grid-column: 5 / 6;
             grid-row: 1 / 2;
+
+            @include respond(small-phone) {
+                margin-left: 2.5rem;
+            }
         }
     }
 }
@@ -390,6 +434,11 @@
 
     @include respond(tab-land) {
         justify-self: center;
+    }
+
+    @include respond(small-phone) {
+        width: 14rem;
+        justify-self: flex-start;
     }
 
     &:hover {
@@ -438,6 +487,11 @@
         justify-self: center;
     }
 
+    @include respond(small-phone) {
+        width: 14rem;
+        justify-self: flex-start;
+    }
+
     &:hover {
         border: 3px solid $color-blue;
     }
@@ -482,6 +536,11 @@
 
     @include respond(tab-land) {
         justify-self: center;
+    }
+
+    @include respond(small-phone) {
+        width: 14rem;
+        justify-self: flex-start;
     }
 
     &:hover {
@@ -530,6 +589,11 @@
 
     @include respond(tab-land) {
         justify-self: center;
+    }
+
+    @include respond(small-phone) {
+        width: 14rem;
+        justify-self: flex-start;
     }
 
     &:hover {
