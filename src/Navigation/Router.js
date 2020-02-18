@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 // pages
 import Loading from '../Pages/Loading';
-const HomePage = React.lazy(() => import('../Pages/Home'));
+const HomePage = React.lazy(() => import('../Pages/HomePage/HomePage'));
 const WorkPage = React.lazy(() => import('../Pages/Work'));
 const AboutPage = React.lazy(() => import('../Pages/About'));
 const GearPage = React.lazy(() => import('../Pages/Gear'));

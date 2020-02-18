@@ -1,0 +1,25 @@
+.homePage {
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75rem 75rem 75rem 150rem 75rem;
+
+    align-items: center;
+    font-size: 2.4rem;
+}
+
+// H1: Web Hero
+@import './sass/pages/homePage/h1';
+
+// H2: What makes us great
+@import './sass/pages/homePage/h2';
+
+// H3: Parish Digital
+@import './sass/pages/homePage/h3';
+
+// H4: What we do
+@import './sass/pages/homePage/h4';
+
+// H5: What people say
+@import './sass/pages/homePage/h5';
