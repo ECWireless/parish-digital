@@ -1,7 +1,65 @@
 .h3 {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
-
-    background: lightyellow;
     height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 70rem 70rem 1fr;
+    grid-template-rows: 1fr 15rem 18rem 10rem 5rem 1fr;
+    background: #000;
+
+    &__photo {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        justify-self: flex-end;
+        
+        height: 75rem;
+    }
+
+    &__heading {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        justify-self: flex-start;
+
+        color: #fff;
+        font-size: 7.5rem;
+    }
+
+    &__paragraph {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        justify-self: flex-start;
+
+        color: #fff;
+        text-align: left;
+        font-size: 3.5rem;
+    }
+
+    &__button {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        justify-self: flex-start;
+
+        color: #fff;
+        height: 10rem;
+        width: 45rem;
+        background: $color-blue;
+        font-size: 3.5rem;
+        border: none;
+
+        transition: .5s all ease;
+
+        &:hover {
+            cursor: pointer;
+            color: #000;
+            background: $color-yellow;
+        }
+    }
+
+    &__line {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+        width: 45rem;
+        border-bottom: 5px dotted $color-yellow;
+    }
 }
