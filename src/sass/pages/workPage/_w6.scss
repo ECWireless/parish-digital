@@ -1,0 +1,65 @@
+.w6 {
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 46.66666rem) 1fr;
+    grid-template-rows: 1fr 10rem 8rem 40rem 1fr;
+
+    &__photo {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+
+        background-image: url('../../../assets/home-page/testimonials.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__overlay {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+
+        background: rgba(0, 0, 0, .7);
+    }
+
+    &__heading {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+
+        color: #fff;
+        font-size: 7.5rem;
+    }
+
+    &__line {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        align-self: center;
+        justify-self: center;
+
+        width: 60rem;
+        height: 5px;
+        background: $color-yellow;
+    }
+
+    &__video {
+        grid-row: 4 / 5;
+        align-self: center;
+
+        width: 400px;
+        height: 225px;
+
+        &--1 {
+            grid-column: 2 / 3;
+            justify-self: flex-start;
+        }
+
+        &--2 {
+            grid-column: 3 / 4;
+        }
+
+        &--3 {
+            grid-column: 4 / 5;
+        }
+    }
+}

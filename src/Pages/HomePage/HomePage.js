@@ -9,6 +9,10 @@ import H5 from './H5';
 
 export default class HomePage extends Component {
 
+    componentDidMount() {
+        this.props.scrollToTop();
+    }
+
     render() {
         return (
             <div className="homePage">

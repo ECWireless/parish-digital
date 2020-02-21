@@ -1,0 +1,29 @@
+.workPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 75rem);
+
+    align-items: center;
+    font-size: 2.4rem;
+    text-align: center;
+
+    background: #F0F0F0;
+}
+
+// W1: Our Work
+@import './sass/pages/workPage/w1';
+
+// W2: Featured Video
+@import './sass/pages/workPage/w2';
+
+// W3: Corporate Video
+@import './sass/pages/workPage/w3';
+
+// W4: Commercial Video
+@import './sass/pages/workPage/w4';
+
+// W5: Informational Video
+@import './sass/pages/workPage/w5';
+
+// W6: More of our work
+@import './sass/pages/workPage/w6';

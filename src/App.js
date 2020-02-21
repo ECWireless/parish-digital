@@ -15,6 +15,12 @@ export default class App extends Component {
 		toggleSidebar: false,
 	}
 
+	scrollToTop = () => {
+		window.scroll({
+            top: 0
+		});
+	}
+
 	windowScroll = (location) => {
 		window.scroll({
             top: location,
@@ -60,6 +66,7 @@ export default class App extends Component {
 						<Router
 							className="router-class"
 							windowScroll={this.windowScroll}
+							scrollToTop={this.scrollToTop}
 						/>
 					</div>
 					<Footer />

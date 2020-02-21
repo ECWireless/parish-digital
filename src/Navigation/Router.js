@@ -4,7 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 // pages
 import Loading from '../Pages/Loading';
 const HomePage = React.lazy(() => import('../Pages/HomePage/HomePage'));
-const WorkPage = React.lazy(() => import('../Pages/Work'));
+const WorkPage = React.lazy(() => import('../Pages/WorkPage/WorkPage'));
 const AboutPage = React.lazy(() => import('../Pages/About'));
 const GearPage = React.lazy(() => import('../Pages/Gear'));
 const ContactPage = React.lazy(() => import('../Pages/Contact'));
@@ -15,12 +15,12 @@ export default function Router(props) {
             <Switch>
                 <Route path="/" exact
                     render={() => <React.Suspense fallback={<Loading />}>
-                        <HomePage windowScroll={props.windowScroll} />
+                        <HomePage scrollToTop={props.scrollToTop} windowScroll={props.windowScroll} />
                     </React.Suspense>}
                 />
                 <Route path="/work" exact
                     render={() => <React.Suspense fallback={<Loading />}>
-                        <WorkPage />
+                        <WorkPage scrollToTop={props.scrollToTop} />
                     </React.Suspense>}
                 />
                 <Route path="/about" exact
