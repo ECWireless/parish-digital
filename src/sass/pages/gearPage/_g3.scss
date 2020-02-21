@@ -1,0 +1,107 @@
+.g3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 70rem 70rem 1fr;
+    grid-template-rows: 10rem 10rem 3rem 3rem 3rem 3rem 3rem 3rem auto 5rem;
+
+    text-align: left;
+
+    &__heading {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        font-size: 5rem;
+        color: $color-blue;
+    }
+
+    &__line {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        align-self: flex-start;
+
+        width: 100rem;
+        height: 5px;
+        background: $color-yellow;
+    }
+
+    &__paragraph-1 {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    &__paragraph-2 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+
+    &__paragraph-3 {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+    }
+
+    &__paragraph-4 {
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+    }
+
+    &__paragraph-5 {
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+    }
+
+    &__photo-container {
+        grid-column: 3 / 4;
+        grid-row: 1 / -2;
+
+        background: #D8D8D8;
+
+        display: grid;
+        grid-template-columns: 1fr 60rem 1fr;
+        grid-template-rows: 1fr 3rem 10rem 3rem;
+
+    }
+
+    &__photo {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        background-image: url('../../../assets/gear-page/camera.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__bar {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+
+        background: #000;
+    }
+
+    &__name {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        align-self: center;
+
+        color: #fff;
+        font-size: 6rem;
+    }
+
+    &__line-top {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        width: 30rem;
+        border-bottom: dotted 5px $color-yellow;
+    }
+
+    &__line-bottom {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+
+        width: 12rem;
+        border-bottom: solid 5px $color-yellow;
+    }
+}

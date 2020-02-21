@@ -6,7 +6,7 @@ import Loading from '../Pages/Loading';
 const HomePage = React.lazy(() => import('../Pages/HomePage/HomePage'));
 const WorkPage = React.lazy(() => import('../Pages/WorkPage/WorkPage'));
 const TeamPage = React.lazy(() => import('../Pages/TeamPage/TeamPage'));
-const GearPage = React.lazy(() => import('../Pages/Gear'));
+const GearPage = React.lazy(() => import('../Pages/GearPage/GearPage'));
 
 export default function Router(props) {
     return (
