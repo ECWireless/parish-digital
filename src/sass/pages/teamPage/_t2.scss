@@ -1,0 +1,294 @@
+.t2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 55rem 55rem 1fr;
+    grid-template-rows: 1fr 1fr 10rem;
+
+    // PHOTO 1
+    &__photo-container-1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        &:hover > .t2__description-container-1 {
+            opacity: 1;
+        }
+    }
+
+    &__photo-1 {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        background-image: url('../../../assets/team-page/Keith-bnw.png');
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+    &__description-container-1 {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        opacity: 0;
+
+        background: rgba(78, 96, 119, .8);
+        transition: opacity .5s ease;
+        z-index: 1;
+        text-align: left;
+
+        display: grid;
+        grid-template-columns: 1fr 45rem 1fr;
+        grid-template-rows: 5rem 13rem 15rem 20rem auto 1rem 5rem;
+    }
+
+    &__line-top {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        border-top: dotted 5px $color-yellow;
+
+        &--1 {
+            width: 29rem;
+        }
+
+        &--2 {
+            width: 42rem;
+        }
+
+        &--3 {
+            width: 25rem;
+        }
+    }
+
+    &__name {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        font-size: 5.5rem;
+        color: #fff;
+    }
+
+    &__title {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        align-self: flex-end;
+
+        font-size: 3rem;
+        color: $color-yellow;
+    }
+
+    &__paragraph-1 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        align-self: flex-end;
+
+        font-size: 1.8rem;
+        color: #fff;
+    }
+
+    &__paragraph-2 {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        align-self: flex-end;
+
+        font-size: 1.8rem;
+        color: #fff;
+    }
+
+    &__line-bottom {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+        
+        width: 15rem;
+        border-bottom: solid 5px $color-yellow;
+    }
+
+    // PHOTO 2
+    &__photo-container-2 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        &:hover > .t2__description-container-2 {
+            opacity: 1;
+        }
+    }
+
+    &__photo-2 {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        background-image: url('../../../assets/team-page/mike-bnw.png');
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+    &__description-container-2 {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        opacity: 0;
+
+        background: rgba(78, 96, 119, .8);
+        transition: opacity .5s ease;
+        z-index: 1;
+        text-align: left;
+
+        display: grid;
+        grid-template-columns: 1fr 45rem 1fr;
+        grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
+    }
+
+    &__name {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        font-size: 5.5rem;
+        color: #fff;
+    }
+
+    &__title {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        align-self: flex-end;
+
+        font-size: 3rem;
+        color: $color-yellow;
+    }
+
+    &__line-bottom {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+        
+        width: 15rem;
+        border-bottom: solid 5px $color-yellow;
+    }
+
+    // PHOTO 3
+    &__photo-container-3 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        &:hover > .t2__description-container-3 {
+            opacity: 1;
+        }
+    }
+
+    &__photo-3 {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        background-image: url('../../../assets/team-page/Alex-bnw.png');
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+    &__description-container-3 {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        opacity: 0;
+
+        background: rgba(78, 96, 119, .8);
+        transition: opacity .5s ease;
+        z-index: 1;
+        text-align: left;
+
+        display: grid;
+        grid-template-columns: 1fr 45rem 1fr;
+        grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
+    }
+
+    &__name {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        font-size: 5.5rem;
+        color: #fff;
+    }
+
+    &__title {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        align-self: flex-end;
+
+        font-size: 3rem;
+        color: $color-yellow;
+    }
+
+    &__line-bottom {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+        
+        width: 15rem;
+        border-bottom: solid 5px $color-yellow;
+    }
+
+// PHOTO 4
+&__photo-container-4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    &:hover > .t2__description-container-4 {
+        opacity: 1;
+    }
+}
+
+&__photo-4 {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    background-image: url('../../../assets/team-page/Tyler-bnw.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+&__description-container-4 {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    opacity: 0;
+
+    background: rgba(78, 96, 119, .8);
+    transition: opacity .5s ease;
+    z-index: 1;
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 1fr 45rem 1fr;
+    grid-template-rows: 5rem 13rem 27rem 5rem auto 1rem 5rem;
+}
+
+&__name {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    font-size: 5.5rem;
+    color: #fff;
+}
+
+&__title {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: flex-end;
+
+    font-size: 3rem;
+    color: $color-yellow;
+}
+
+&__line-bottom {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+    
+    width: 15rem;
+    border-bottom: solid 5px $color-yellow;
+}
+}

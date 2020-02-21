@@ -162,7 +162,7 @@
         animation: textFadeIn .5s;
     }
 
-    &__about {
+    &__team {
         grid-row: 4 / 5;
         grid-column: 1 / -1;
 
@@ -190,7 +190,7 @@
         }
     }
 
-    &__about-icon {
+    &__team-icon {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         width: 2.5rem;
@@ -200,7 +200,7 @@
         align-self: center;
     }
 
-    &__about-text {
+    &__team-text {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
         color: #000;
@@ -256,54 +256,6 @@
         align-self: center;
 
         animation: textFadeIn .5s;
-    }
-
-    &__contact {
-        grid-row: 6 / 7;
-        grid-column: 1 / -1;
-
-        width: 100%;
-        height: 100%;
-
-        display: grid;
-        grid-template-columns: 7rem 1rem 1fr;
-        grid-template-rows: 1fr;
-
-        border-bottom: solid 1px rgba(117, 117, 117, .2);
-        border-right: 4px solid transparent;
-        text-decoration: none;
-
-        &-active {
-            background-color: #DCDCDC;
-            border-right: solid 4px $color-blue;
-            cursor: pointer;
-            transition: border-right .3s ease;
-        }
-
-        &:hover {
-            background-color: #DCDCDC;
-            cursor: pointer;
-        }
-    }
-
-    &__contact-icon {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        width: 2.5rem;
-        height: 2.5rem;
-        fill: #000;
-        justify-self: center;
-        align-self: center;
-    }
-
-    &__contact-text {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-        color: #000;
-        justify-self: left;
-        align-self: center;
-
-        animation: textFadeIn .5s ease;
     }
 }
 

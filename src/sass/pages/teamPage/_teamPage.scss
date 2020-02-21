@@ -1,0 +1,17 @@
+.teamPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75rem 150rem;
+
+    align-items: center;
+    font-size: 2.4rem;
+    text-align: center;
+
+    background: #F0F0F0;
+}
+
+// T1: Meet the team
+@import './sass/pages/teamPage/t1';
+
+// T2: Photos
+@import './sass/pages/teamPage/t2';

@@ -5,9 +5,8 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Loading from '../Pages/Loading';
 const HomePage = React.lazy(() => import('../Pages/HomePage/HomePage'));
 const WorkPage = React.lazy(() => import('../Pages/WorkPage/WorkPage'));
-const AboutPage = React.lazy(() => import('../Pages/About'));
+const TeamPage = React.lazy(() => import('../Pages/TeamPage/TeamPage'));
 const GearPage = React.lazy(() => import('../Pages/Gear'));
-const ContactPage = React.lazy(() => import('../Pages/Contact'));
 
 export default function Router(props) {
     return (
@@ -23,19 +22,14 @@ export default function Router(props) {
                         <WorkPage scrollToTop={props.scrollToTop} />
                     </React.Suspense>}
                 />
-                <Route path="/about" exact
+                <Route path="/team" exact
                     render={() => <React.Suspense fallback={<Loading />}>
-                        <AboutPage />
+                        <TeamPage scrollToTop={props.scrollToTop} />
                     </React.Suspense>}
                 />
                 <Route path="/gear" exact
                     render={() => <React.Suspense fallback={<Loading />}>
-                        <GearPage />
-                    </React.Suspense>}
-                />
-                <Route path="/contact" exact
-                    render={() => <React.Suspense fallback={<Loading />}>
-                        <ContactPage />
+                        <GearPage scrollToTop={props.scrollToTop} />
                     </React.Suspense>}
                 />
                 <Redirect to="/" exact />
