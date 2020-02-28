@@ -5,7 +5,7 @@
 
     display: grid;
     grid-template-columns: 1fr 30rem 30rem 1fr;
-    grid-template-rows: 1fr 20rem 1rem 10rem 20rem 1fr;
+    grid-template-rows: 1fr 20rem 1rem 7rem 7rem 25rem;
     
 
     @include respond(tab-port) {
@@ -49,7 +49,8 @@
         z-index: 1;
 
         color: #fff;
-        font-size: 10rem;
+        font-size: 7.5rem;
+        letter-spacing: 2.5px;
     }
 
     &__line {
@@ -59,7 +60,7 @@
         align-content: center;
         z-index: 1;
         background: $color-yellow;
-        width: 95rem;
+        width: 78rem;
         height: 5px;
     }
 
@@ -70,7 +71,9 @@
         z-index: 1;
 
         color: $color-grey;
-        font-size: 4.5rem;
+        font-size: 2.5rem;
+        font-weight: 100;
+        text-transform: uppercase;
     }
 
     // Button
@@ -80,25 +83,25 @@
         justify-self: center;
         z-index: 1;
 
-        width: 25rem;
-        height: 7rem;
+        width: 18rem;
+        height: 5rem;
         color: #fff;
         border: none;
 
-        font-size: 2.5rem;
-        font-weight: 300;
+        font-size: 2rem;
+        font-weight: 100;
 
         transition: .3s all ease;
 
         &--1 {
             grid-column: 2 / 3;
-            background: rgba(255, 220, 28, .5);
+            background: rgba(78, 96, 119, .5);
 
             &:hover {
                 cursor: pointer;
                 background: $color-yellow;
                 color: #000;
-                font-weight: 600;
+                font-weight: 300;
             }
         }
 
@@ -108,8 +111,9 @@
 
             &:hover {
                 cursor: pointer;
-                background: #4E6077;
-                font-weight: 600;
+                background: $color-yellow;
+                color: #000;
+                font-weight: 300;
             }
         }
     }
