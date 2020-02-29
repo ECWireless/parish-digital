@@ -65,7 +65,46 @@ export default function H3() {
             </div>
 
             <div className="h3__section-3">
+                <h2 className="h3__heading3">What people say</h2>
+                <div className="h3__heading3-bar" />
+                <div className="h3__heading3-line" />
 
+                <div className="h3__testimonial-container h3__testimonial-container--1">
+                    <div className="h3__box" />
+                    <p className="h3__quotation-mark">&ldquo;</p>
+                    <p className="h3__quote">Whether onsite filming, or in-studio creative 
+                        editing, Parish Digital continually exceeds our 
+                        expectations for top-notch videos.
+                    </p>
+                    <p className="h3__name">ERIC DZUBA</p>
+                    <p className="h3__title">Director, Marketing & Innovation</p>
+                    <p className="h3__company">Carmeuse Lime & Stone</p>
+                </div>
+
+                <div className="h3__testimonial-container h3__testimonial-container--2">
+                    <div className="h3__box" />
+                    <p className="h3__quotation-mark">&ldquo;</p>
+                    <p className="h3__quote">Our videos are now bringing in millions of views. 
+                        I would highly recommend Parish Digital to 
+                        anyone looking to take their video 
+                        portfolio to the next level.
+                    </p>
+                    <p className="h3__name">Brandon Fandel</p>
+                    <p className="h3__title">Digital Marketing Analyst</p>
+                    <p className="h3__company">Kennemetal, Inc.</p>
+                </div>
+
+                <div className="h3__testimonial-container h3__testimonial-container--3">
+                    <div className="h3__box" />
+                    <p className="h3__quotation-mark">&ldquo;</p>
+                    <p className="h3__quote">Serious about what they do and awesome to work with.
+                    </p>
+                    <p className="h3__name">Shannon Barr</p>
+                    <p className="h3__title">Creative Director</p>
+                    <p className="h3__company">Howard Hanna Real Estate</p>
+                </div>
+
+                <div className="h3__line-bottom" />
             </div>
         </div>
     )
