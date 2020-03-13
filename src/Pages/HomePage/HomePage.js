@@ -17,7 +17,11 @@ export default class HomePage extends Component {
             <div className="homePage">
                 <H1 />
                 <H2 />
+
                 <H3 />
+                <div className="h3__background-1" />
+                <div className="h3__background-2" />
+
                 <H4 />
             </div>
         )

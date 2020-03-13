@@ -4,62 +4,98 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: 1fr repeat(3, 46.66666rem) 1fr;
-    grid-template-rows: 1fr 10rem 8rem 40rem 1fr;
+    grid-template-columns: 1fr 40rem 40rem 30rem 30rem 1fr;
+    grid-template-rows: repeat(3, 1fr);
 
-    &__photo {
+    &__background {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
 
-        background-image: url('../../../assets/home-page/testimonials.jpg');
+        background: #000;
+    }
+
+    &__photo {
+        grid-column: 4 / -1;
+        grid-row: 1 / -1;
+
+        background-image: url('../../../assets/work-page/w6/mike.png');
         background-size: cover;
         background-position: center;
     }
 
-    &__overlay {
-        grid-column: 1 / -1;
-        grid-row: 1 / -1;
-
-        background: rgba(0, 0, 0, .7);
-    }
-
     &__heading {
-        grid-column: 1 / -1;
-        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        align-self: center;
+        justify-self: flex-start;
 
         color: #fff;
-        font-size: 7.5rem;
+        font-size: 3.5rem;
+        margin-bottom: 8rem;
     }
 
     &__line {
-        grid-column: 1 / -1;
-        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
         align-self: center;
-        justify-self: center;
+        justify-self: flex-start;
 
-        width: 60rem;
+        width: 50rem;
         height: 5px;
         background: $color-yellow;
     }
 
-    &__video {
-        grid-row: 4 / 5;
+    &__paragraph {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
         align-self: center;
+        justify-self: flex-start;
 
-        width: 400px;
-        height: 225px;
+        color: #fff;
+        font-size: 1.8rem;
+        margin-top: 8rem;
+    }
+
+    &__vimeo-icon {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        align-self: center;
+        justify-self: flex-start;
+
+        fill: #fff;
+        margin-top: 8rem;
+        margin-left: 29.5rem;
+
+        height: 3rem;
+        width: 3rem;
+
+        transition: all .3s ease;
+
+        &:hover {
+            cursor: pointer;
+            fill: $color-yellow;
+            transform: scale(1.1);
+        }
+    }
+
+    &__video {
+        grid-column: 3 / 4;
+        align-self: center;
+        justify-self: flex-end;
+
+        width: 356px;
+        height: 200px;
 
         &--1 {
-            grid-column: 2 / 3;
-            justify-self: flex-start;
+            grid-row: 1 / 2;
         }
 
         &--2 {
-            grid-column: 3 / 4;
+            grid-row: 2 / 3;
         }
 
         &--3 {
-            grid-column: 4 / 5;
+            grid-row: 3 / 4;
         }
     }
 }

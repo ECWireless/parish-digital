@@ -4,10 +4,6 @@ export default function H3() {
     return (
         <div className="h3">
 
-            <div className="h3__background-1" />
-            <div className="h3__background-2" />
-            <div className="h3__background-3" />
-
             <div className="h3__section-1">
                 <div className="h3__photo-background" />
                 <div className="h3__photo" />

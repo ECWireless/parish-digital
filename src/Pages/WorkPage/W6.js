@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { ReactComponent as VimeoIcon } from '../../assets/work-page/w6/vimeo.svg'
 
 export default function W6() {
     return (
         <div className="w6">
+            <div className="w6__background" />
             <div className="w6__photo" />
-            <div className="w6__overlay" />
             <h2 className="w6__heading">More of our work</h2>
             <div className="w6__line" />
+            <p className="w6__paragraph">See more of our projects on Vimeo</p>
+            <VimeoIcon className="w6__vimeo-icon" />
 
             <iframe
                 src="https://player.vimeo.com/video/257541956"

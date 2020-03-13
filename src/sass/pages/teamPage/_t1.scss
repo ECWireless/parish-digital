@@ -9,33 +9,61 @@
 
     text-align: left;
 
-    &__heading {
+    &__background {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        align-self: center;
+        height: 100%;
+
+        background-image: url('../../../assets/work-page/w1/w1__background.png');
+        background-size: cover;
+        background-position: bottom;
+        opacity: .9;
+        z-index: 0;
+    }
+
+    &__photo {
         grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        align-self: center;
+        height: 50rem;
+
+        background-image: url('../../../assets/team-page/t1__photo.png');
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+
+    &__heading {
+        grid-column: 3 / 4;
         grid-row: 2 / 3;
         align-self: flex-start;
 
         font-size: 6.5rem;
+        z-index: 1;
     }
 
     &__line {
-        grid-column: 2 / 3;
+        grid-column: 3 / 4;
         grid-row: 2 / 3;
 
         width: 15rem;
         border-bottom: solid 5px $color-yellow;
         transform: translate(28.5rem, -5rem);
+        z-index: 1;
     }
 
     &__paragraph-1 {
-        grid-column: 2 / 3;
+        grid-column: 3 / 4;
         grid-row: 3 / 4;
 
         font-size: 2.5rem;
         font-weight: 500;
+        z-index: 1;
     }
 
     &__button {
-        grid-column: 2 / 3;
+        grid-column: 3 / 4;
         grid-row: 4 / 5;
         align-self: flex-end;
 
@@ -47,6 +75,7 @@
         font-size: 2.5rem;
         text-transform: uppercase;
         font-weight: 600;
+        z-index: 1;
 
         transition: all .3s ease;
 

@@ -7,6 +7,34 @@
     grid-template-columns: 1fr 70rem 70rem 1fr;
     grid-template-rows: repeat(3, 75rem);
 
+    // Background Accents
+    &__background-1 {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        align-self: flex-start;
+        height: 100rem;
+
+        background-image: url('../../../assets/home-page/h3/corner-fade.png');
+        background-size: cover;
+        background-position: center;
+        opacity: .1;
+        
+    }
+
+    &__background-2 {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        align-self: flex-end;
+        height: 100rem;
+
+        background-image: url('../../../assets/home-page/h3/corner-fade.png');
+        transform: rotate(180deg);
+        background-size: cover;
+        background-position: center;
+        opacity: .06;
+        
+    }
+
 
     // Section 1
     &__section-1 {
@@ -379,8 +407,8 @@
         background-image: url('../../../assets/home-page/h3/comment-bubble.png');
         background-size: contain;
         background-position: center;
-        width: 87%;
-        height: 70%;
+        width: 86%;
+        height: 69%;
     }
 
     &__quotation-mark {

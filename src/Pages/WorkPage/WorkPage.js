@@ -18,10 +18,14 @@ export default class Work extends Component {
         return (
             <div className="workPage">
                 <W1 />
+
                 <W2 />
                 <W3 />
                 <W4 />
                 <W5 />
+                <div className="w2-5__background" />
+                <div className="w2-5__background-overlay" />
+                
                 <W6 />
             </div>
         )

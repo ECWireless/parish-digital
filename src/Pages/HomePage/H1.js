@@ -1,5 +1,5 @@
 import React from 'react';
-import webVideo from '../../assets/home-page/hero-video-main.mp4';
+import webVideo from '../../assets/home-page/hero-video-final.mp4';
 
 export default function H1() {
     return (
