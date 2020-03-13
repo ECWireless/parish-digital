@@ -1,7 +1,7 @@
 .teamPage {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75rem 150rem;
+    grid-template-rows: 75rem 75rem 75rem;
 
     align-items: center;
     font-size: 2.4rem;
@@ -15,3 +15,6 @@
 
 // T2: Photos
 @import './sass/pages/teamPage/t2';
+
+// Summary
+@import './sass/pages/teamPage/t3';

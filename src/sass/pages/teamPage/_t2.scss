@@ -4,8 +4,9 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 55rem 55rem 1fr;
-    grid-template-rows: 1fr 1fr 10rem;
+    grid-template-columns: 1fr repeat(3, 46.666rem) 1fr;
+    grid-template-rows: 1fr 10rem;
+
 
     // PHOTO 1
     &__photo-container-1 {
@@ -23,10 +24,32 @@
     &__photo-1 {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
-        background-image: url('../../../assets/team-page/Keith-bnw.png');
+        background-image: url('../../../assets/team-page/keith-bnw.png');
         background-size: cover;
         background-position: center;
         z-index: 0;
+    }
+
+    &__banner {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        align-self: flex-end;
+
+        height: 4rem;
+        width: 100%;
+        background: #000;
+        z-index: 1;
+    }
+
+    &__line {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        align-self: flex-end;
+
+        border-top: dotted 5px $color-yellow;
+        width: 30rem;
+        margin: 0 auto 1.5rem;
+        z-index: 1;
     }
 
     &__description-container-1 {
@@ -47,6 +70,7 @@
     &__line-top {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        justify-self: center;
 
         border-top: dotted 5px $color-yellow;
 
@@ -69,6 +93,7 @@
 
         font-size: 5.5rem;
         color: #fff;
+        text-align: center;
     }
 
     &__title {
@@ -78,32 +103,40 @@
 
         font-size: 3rem;
         color: $color-yellow;
+        text-align: center;
     }
 
     &__paragraph-1 {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
         align-self: flex-end;
+        justify-self: center;
 
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: #fff;
+        width: 40rem;
     }
 
     &__paragraph-2 {
         grid-column: 2 / 3;
         grid-row: 4 / 5;
         align-self: flex-end;
+        justify-self: center;
 
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: #fff;
+        width: 40rem;
     }
 
     &__line-bottom {
         grid-column: 2 / 3;
-        grid-row: 6 / 7;
+        grid-row: 6 / -1;
+        justify-self: center;
+        align-self: flex-end;
         
-        width: 15rem;
+        width: 30rem;
         border-bottom: solid 5px $color-yellow;
+        margin-bottom: 1.5rem;
     }
 
     // PHOTO 2
@@ -160,18 +193,10 @@
         color: $color-yellow;
     }
 
-    &__line-bottom {
-        grid-column: 2 / 3;
-        grid-row: 6 / 7;
-        
-        width: 15rem;
-        border-bottom: solid 5px $color-yellow;
-    }
-
     // PHOTO 3
     &__photo-container-3 {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -184,7 +209,7 @@
     &__photo-3 {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
-        background-image: url('../../../assets/team-page/Alex-bnw.png');
+        background-image: url('../../../assets/team-page/alex-bnw.png');
         background-size: cover;
         background-position: center;
         z-index: 0;
@@ -222,73 +247,4 @@
         color: $color-yellow;
     }
 
-    &__line-bottom {
-        grid-column: 2 / 3;
-        grid-row: 6 / 7;
-        
-        width: 15rem;
-        border-bottom: solid 5px $color-yellow;
-    }
-
-// PHOTO 4
-&__photo-container-4 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-
-    &:hover > .t2__description-container-4 {
-        opacity: 1;
-    }
-}
-
-&__photo-4 {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    background-image: url('../../../assets/team-page/Tyler-bnw.png');
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-}
-
-&__description-container-4 {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    opacity: 0;
-
-    background: rgba(78, 96, 119, .8);
-    transition: opacity .5s ease;
-    z-index: 1;
-    text-align: left;
-
-    display: grid;
-    grid-template-columns: 1fr 45rem 1fr;
-    grid-template-rows: 5rem 13rem 27rem 5rem auto 1rem 5rem;
-}
-
-&__name {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-
-    font-size: 5.5rem;
-    color: #fff;
-}
-
-&__title {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    align-self: flex-end;
-
-    font-size: 3rem;
-    color: $color-yellow;
-}
-
-&__line-bottom {
-    grid-column: 2 / 3;
-    grid-row: 6 / 7;
-    
-    width: 15rem;
-    border-bottom: solid 5px $color-yellow;
-}
 }

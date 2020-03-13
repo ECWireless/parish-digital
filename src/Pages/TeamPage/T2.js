@@ -5,6 +5,9 @@ export default function T2() {
         <div className="t2">
             <div className="t2__photo-container-1">
                 <div className="t2__photo-1" />
+                <div className="t2__banner" />
+                <div className="t2__line" />
+
                 <div className="t2__description-container-1">
                     <div className="t2__line-top t2__line-top--1" />
                     <h2 className="t2__name">Keith Parish</h2>
@@ -27,6 +30,9 @@ export default function T2() {
             
             <div className="t2__photo-container-2">
                 <div className="t2__photo-2" />
+                <div className="t2__banner" />
+                <div className="t2__line" />
+
                 <div className="t2__description-container-2">
                     <div className="t2__line-top t2__line-top--2" />
                     <h2 className="t2__name">Mike Diguglielmo</h2>
@@ -51,6 +57,9 @@ export default function T2() {
 
             <div className="t2__photo-container-3">
                 <div className="t2__photo-3" />
+                <div className="t2__banner" />
+                <div className="t2__line" />
+
                 <div className="t2__description-container-3">
                     <div className="t2__line-top t2__line-top--3" />
                     <h2 className="t2__name">Alex Grant</h2>
@@ -63,25 +72,6 @@ export default function T2() {
                         higher education, professional sports, and the 
                         entertainment industry, Alex can adapt his style 
                         to any project.
-                    </p>
-                    <div className="t2__line-bottom" />
-                </div>
-            </div>
-            
-            <div className="t2__photo-container-4">
-                <div className="t2__photo-4" />
-                <div className="t2__description-container-4">
-                    <div className="t2__line-top t2__line-top--4" />
-                    <h2 className="t2__name">Tyler Thrower</h2>
-                    <p className="t2__title">Video Producer, Editor</p>
-                    <p className="t2__paragraph-1">Tyler graduated from Edinboro University of 
-                        Pennsylvania with a B.S. in Marketing. Tyler is 
-                        passionate about video production and has 
-                        learned how to direct, frame, expose, and 
-                        shoot in a fast-paced environments. Ever since 
-                        he can remember, he’s loved telling stories and 
-                        continues to hone this skill by creating engaging 
-                        video and photo content for businesses.
                     </p>
                     <div className="t2__line-bottom" />
                 </div>

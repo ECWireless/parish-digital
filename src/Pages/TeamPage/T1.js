@@ -8,12 +8,13 @@ export default function T1() {
 
             <h1 className="t1__heading">Meet the Team</h1>
             <div className="t1__line" />
-            <p className="t1__paragraph-1">At Parish Digital, we leave our ego at the door. Our team is made 
-                up of talented individuals each with a dynamic set of skills. 
-                We’re not afraid to do things differently. We will work with you 
-                to create your vision by any means necessary.
+            <p className="t1__paragraph-1">We’re not afraid to do things differently.</p>
+            <p className="t1__paragraph-2">At Parish Digital, we leave our ego at the door. We will 
+                work with you to create your vision by any means necessary. 
+                Our team is made up of talented individuals each with a 
+                dynamic set of skills.
             </p>
-            <button className="t1__button">View Projects</button>
+            <button className="t1__button">Say Hello</button>
         </div>
     )
 }
