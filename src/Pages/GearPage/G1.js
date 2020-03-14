@@ -3,13 +3,12 @@ import React from 'react'
 export default function G1() {
     return (
         <div className="g1">
+            <div className="g1__background" />
+            <div className="g1__photo" />
             <h1 className="g1__heading">Our Gear</h1>
             <div className="g1__line" />
-            <p className="g1__paragraph-1">From GoPros to 4k cinema cameras like the 
-                Canon C300 mkIIs, our wide range of camera, 
-                stabilizers, lighting and audio gear provides 
-                optimal flexibility for any project.</p>
-            <button className="g1__button">View Projects</button>
+            <p className="g1__paragraph-1">Four equipment is versatile, practical, and professional.</p>
+            <p className="g1__paragraph-2">We’ll create your project exactly how you want without the hoo-ha.</p>
         </div>
     )
 }
