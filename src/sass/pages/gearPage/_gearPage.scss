@@ -21,6 +21,19 @@
     background-position: center;
 }
 
+.g2-4__background-overlay {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+    height: 100%;
+
+    background-image: url('../../../assets/work-page/w2-5/w1__background.png');
+    background-size: cover;
+    background-position: bottom;
+    transform: rotate(180deg);
+    z-index: 0;
+    opacity: .7;
+}
+
 // W1: Our Work
 @import './sass/pages/gearPage/g1';
 

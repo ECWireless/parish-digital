@@ -8,6 +8,7 @@
     grid-template-rows: 10rem 8rem 3rem 3rem 3rem 3rem 3rem 3rem auto 4rem;
 
     text-align: left;
+    z-index: 1;
 
     &__heading {
         grid-column: 2 / 3;
