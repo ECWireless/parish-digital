@@ -15,6 +15,7 @@ export default class GearPage extends Component {
                 <G2 />
                 <G3 />
                 <G4 />
+                <div className="g2-4__background" />
                 <G5 />
             </div>
         )

@@ -14,8 +14,8 @@ export default function G3() {
             <div className="g3__photo-container">
                 <div className="g3__photo" />
                 <div className="g3__bar" />
-                <div className="g3__line-top" />
-                <h3 className="g3__name">Kino Flo Celeb 200</h3>
+                <div className="g3__pattern" />
+                
                 <div className="g3__line-bottom" />
             </div>
         </div>

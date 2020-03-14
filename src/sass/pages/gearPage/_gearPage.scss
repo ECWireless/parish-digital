@@ -1,13 +1,24 @@
 .gearPage {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 75rem);
+    grid-template-rows: 75rem repeat(4, 60rem);
 
     align-items: center;
     font-size: 2.4rem;
     text-align: center;
 
     background: #F0F0F0;
+}
+
+.g2-4__background {
+    grid-column: 1 / -1;
+    grid-row: 2/ 6;
+    height: 100%;
+    opacity: .1;
+
+    background-image: url('../../../assets/gear-page/g2-4__background.png');
+    background-size: cover;
+    background-position: center;
 }
 
 // W1: Our Work
