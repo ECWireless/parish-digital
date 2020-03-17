@@ -13,17 +13,35 @@ export default function H3() {
 
                 <h3 className="h3__sub-heading h3__sub-heading--1">Corporate Video</h3>
                 <p className="h3__paragraph h3__paragraph--1">Effectively communicate to your company</p>
-                <button className="h3__button h3__button--1">View Example</button>
+                <a
+                    href="https://vimeo.com/320622734"
+                    target="_blank" rel="noopener noreferrer"
+                    className="h3__button-link h3__button-link--1"
+                >
+                    <button className="h3__button h3__button--1">View Example</button>
+                </a>
                 <div className="h3__line h3__line--1" />
 
                 <h3 className="h3__sub-heading h3__sub-heading--2">Marketing Video</h3>
                 <p className="h3__paragraph h3__paragraph--2">Reach a wider audience in an engaging way</p>
-                <button className="h3__button h3__button--2">View Example</button>
+                <a
+                    href="https://vimeo.com/128684206"
+                    target="_blank" rel="noopener noreferrer"
+                    className="h3__button-link h3__button-link--2"
+                >
+                    <button className="h3__button h3__button--2">View Example</button>
+                </a>
                 <div className="h3__line h3__line--2" />
 
                 <h3 className="h3__sub-heading h3__sub-heading--3">Industrial Video</h3>
                 <p className="h3__paragraph h3__paragraph--3">Show off your facilities, equipment, or industrial capabilities</p>
-                <button className="h3__button h3__button--3">View Example</button>
+                <a
+                    href="https://vimeo.com/365644402"
+                    target="_blank" rel="noopener noreferrer"
+                    className="h3__button-link h3__button-link--3"
+                >
+                    <button className="h3__button h3__button--3">View Example</button>
+                </a>
                 <div className="h3__line h3__line--3" />
 
             </div>
@@ -93,11 +111,16 @@ export default function H3() {
                 <div className="h3__testimonial-container h3__testimonial-container--3">
                     <div className="h3__box" />
                     <p className="h3__quotation-mark">&ldquo;</p>
-                    <p className="h3__quote">Serious about what they do and awesome to work with.
+                    <p className="h3__quote">
+                        (Parish Digital) always delivers quality work, 
+                        even when an unexpected project comes up. 
+                        We appreciate how are easy they are to work 
+                        with, and that they are flexible to our needs. 
+                        They have my full recommendation.
                     </p>
-                    <p className="h3__name">Shannon Barr</p>
-                    <p className="h3__title">Creative Director</p>
-                    <p className="h3__company">Howard Hanna Real Estate</p>
+                    <p className="h3__name">Lindsay Ackman</p>
+                    <p className="h3__title">Product Manager</p>
+                    <p className="h3__company">LivaNova</p>
                 </div>
 
                 <div className="h3__line-bottom" />

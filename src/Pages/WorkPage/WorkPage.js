@@ -13,11 +13,18 @@ export default class Work extends Component {
     componentDidMount() {
         this.props.scrollToTop();
     }
+
+    scrollDown = () => {
+        window.scroll({
+            top: 700,
+            behavior: 'smooth',
+        })
+    }
     
     render() {
         return (
             <div className="workPage">
-                <W1 />
+                <W1 scrollDown={this.scrollDown} />
 
                 <W2 />
                 <W3 />

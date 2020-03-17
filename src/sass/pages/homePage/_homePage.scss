@@ -9,6 +9,69 @@
     font-size: 2.4rem;
 
     background: #F0F0F0;
+
+    &__dotted-line {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        align-self: center;
+        justify-self: center;
+
+        &--1 {
+            height: 30rem;
+            width: 5px;
+            border-left: dotted 5px #DDDDDD;
+            z-index: 0;
+            transform: translate(-25rem, -23rem);
+        }
+
+        &--2 {
+            height: 5px;
+            width: 20rem;
+            border-bottom: dotted 5px #DDDDDD;
+            z-index: 0;
+            transform: translate(-15.2rem, -7.4rem);
+        }
+
+        &--3 {
+            height: 17rem;
+            width: 5px;
+            border-left: dotted 5px #DDDDDD;
+            z-index: 0;
+            transform: translate(40rem, 42rem);
+        }
+
+        &--4 {
+            height: 5px;
+            width: 50rem;
+            border-bottom: dotted 5px #DDDDDD;
+            z-index: 0;
+            transform: translate(15.3rem, 51.3rem);
+        }
+
+        &--5 {
+            height: 22rem;
+            width: 5px;
+            border-left: dotted 5px #DDDDDD;
+            z-index: 0;
+            transform: translate(-23rem, 60rem);
+        }
+
+        &--6 {
+            height: 5px;
+            width: 10rem;
+            border-bottom: dotted 5px #DDDDDD;
+            z-index: 0;
+            transform: translate(-23rem, 71.7rem);
+        }
+
+        &--7 {
+            height: 5px;
+            width: 10rem;
+            border-bottom: dotted 5px #DDDDDD;
+            z-index: 0;
+            transform: translate(23rem, 80rem);
+        }
+    }
 }
 
 // H1: Web Hero

@@ -21,6 +21,15 @@ export default class HomePage extends Component {
                 <H3 />
                 <div className="h3__background-1" />
                 <div className="h3__background-2" />
+                <div className="h3__background-3" />
+
+                <div className="homePage__dotted-line homePage__dotted-line--1" />
+                <div className="homePage__dotted-line homePage__dotted-line--2" />
+                <div className="homePage__dotted-line homePage__dotted-line--3" />
+                <div className="homePage__dotted-line homePage__dotted-line--4" />
+                <div className="homePage__dotted-line homePage__dotted-line--5" />
+                <div className="homePage__dotted-line homePage__dotted-line--6" />
+                <div className="homePage__dotted-line homePage__dotted-line--7" />
 
                 <H4 />
             </div>

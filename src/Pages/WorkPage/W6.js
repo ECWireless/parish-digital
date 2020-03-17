@@ -12,21 +12,21 @@ export default function W6() {
             <VimeoIcon className="w6__vimeo-icon" />
 
             <iframe
-                src="https://player.vimeo.com/video/257541956"
+                src="https://player.vimeo.com/video/333626083"
                 frameborder="0"
                 allow="autoplay; fullscreen" allowfullscreen
                 className="w6__video w6__video--1" title="Featured Video">
             </iframe>
 
             <iframe
-                src="https://player.vimeo.com/video/273583603"
+                src="https://player.vimeo.com/video/320622734"
                 frameborder="0"
                 allow="autoplay; fullscreen" allowfullscreen
                 className="w6__video w6__video--2" title="Featured Video">
             </iframe>
 
             <iframe
-                src="https://player.vimeo.com/video/111688091"
+                src="https://player.vimeo.com/video/326643470"
                 frameborder="0"
                 allow="autoplay; fullscreen" allowfullscreen
                 className="w6__video w6__video--3" title="Featured Video">

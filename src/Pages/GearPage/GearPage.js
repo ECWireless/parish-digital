@@ -8,6 +8,10 @@ import G4 from './G4';
 import G5 from './G5';
 
 export default class GearPage extends Component {
+    componentDidMount() {
+        this.props.scrollToTop();
+    }
+    
     render() {
         return (
             <div className="gearPage">

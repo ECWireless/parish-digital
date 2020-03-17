@@ -24,6 +24,7 @@ export default function Header(props) {
                 to="/"
                 className="header__logo">
                 <img onClick={props.windowScroll.bind(this, 0)} className="header__logo-image" src={PDLogo} alt="Logo"/>
+                <p className="header__company">Parish Digital</p>
             </NavLink>
             <div className="header__email">
                 <Email className="header__email-icon"/>

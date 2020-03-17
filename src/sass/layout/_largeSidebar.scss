@@ -11,7 +11,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 6rem) auto;
+    grid-template-rows: 8rem repeat(5, 6rem) auto;
     align-items: center;
     justify-items: center;
     transform: translateX(-20rem);

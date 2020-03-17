@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function W1() {
+export default function W1(props) {
     return (
         <div className="w1">
             <div className="w1__background" />
@@ -12,7 +12,7 @@ export default function W1() {
                 successful video projects for Pittsburgh-based, national, 
                 and international clients.</p>
             <p className="w1__paragraph-2">See some of our favorites below.</p>
-            <button className="w1__button">View Projects</button>
+            <button className="w1__button" onClick={props.scrollDown}>View Projects</button>
         </div>
     )
 }

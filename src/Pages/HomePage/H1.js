@@ -12,8 +12,16 @@ export default function H1() {
             <h1 className="h1__slogan">Your Partner in Video</h1>
             <div className="h1__line" />
             <h2 className="h1__sub-slogan">Our focus is video for business</h2>
-            <button className="h1__button h1__button--1">Get a Quote</button>
-            <button className="h1__button h1__button--2">Demo Reel</button>
+            <a href="mailto: keith@parishdigital.com" className="h1__button-1-link">
+                <button className="h1__button h1__button--1">Get a Quote</button>
+            </a>
+            <a
+                href="https://vimeo.com/392027059"
+                target="_blank" rel="noopener noreferrer"
+                className="h1__button-2-link"
+            >
+                <button className="h1__button h1__button--2">Demo Reel</button>
+            </a>
         </div>
     )
 }

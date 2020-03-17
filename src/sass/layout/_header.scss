@@ -10,7 +10,7 @@
     box-shadow: $shadow-navigation;
 
     display: grid;
-    grid-template-columns: 8rem 8rem 1fr 8rem 1fr 2rem 6rem 6rem 2rem;
+    grid-template-columns: 8rem 8rem 1fr 10rem 1fr 2rem 6rem 6rem 2rem;
 
     @include respond(phone) {
         grid-template-columns: 8rem 3rem 1fr 8rem 1fr 2rem 5rem 5rem 1rem;
@@ -55,10 +55,20 @@
         justify-self: center;
         display: flex;
         flex-direction: column;
+        text-decoration: none;
         
         &:hover {
             cursor: pointer;
         }
+    }
+
+    &__company {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        padding-top: .2rem;
     }
 
     &__logo-image {

@@ -14,7 +14,12 @@ export default function T1() {
                 Our team is made up of talented individuals each with a 
                 dynamic set of skills.
             </p>
-            <button className="t1__button">Say Hello</button>
+            <a
+                href="mailto: keith@parishdigital.com"
+                className="t1__button-link"
+            >
+                <button className="t1__button">Say Hello</button>
+            </a>
         </div>
     )
 }
