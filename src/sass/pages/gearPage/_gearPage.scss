@@ -16,9 +16,10 @@
     height: 100%;
     opacity: .1;
 
-    background-image: url('../../../assets/gear-page/g2-4__background.png');
+    background-image: url('../../../assets/gear-page/fade-thin.jpg');
     background-size: cover;
     background-position: center;
+    transform: rotate(180deg);
 }
 
 .g2-4__background-overlay {

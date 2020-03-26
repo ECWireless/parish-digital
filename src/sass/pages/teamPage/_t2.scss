@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 1fr repeat(3, 46.666rem) 1fr;
     grid-template-rows: 1fr 10rem;
+    z-index: 1;
 
 
     // PHOTO 1

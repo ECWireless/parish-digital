@@ -1,7 +1,7 @@
 import React from 'react';
 import webVideo from '../../assets/home-page/hero-video-final.mp4';
 
-export default function H1() {
+export default function H1(props) {
     return (
         <div className="h1">
             <div className="h1__web-hero-container">
@@ -15,13 +15,7 @@ export default function H1() {
             <a href="mailto: keith@parishdigital.com" className="h1__button-1-link">
                 <button className="h1__button h1__button--1">Get a Quote</button>
             </a>
-            <a
-                href="https://vimeo.com/392027059"
-                target="_blank" rel="noopener noreferrer"
-                className="h1__button-2-link"
-            >
-                <button className="h1__button h1__button--2">Demo Reel</button>
-            </a>
+                <button className="h1__button h1__button--2" onClick={props.onDemoReelScroll}>Demo Reel</button>
         </div>
     )
 }

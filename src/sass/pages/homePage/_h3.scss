@@ -70,8 +70,9 @@
         background-image: url('../../../assets/home-page/h3/h3__pattern.png');
         background-position: center;
         background-size: cover;
-        height: 65rem;
+        height: 66rem;
         width: 50rem;
+        opacity: .5;
     }
 
     &__photo {
@@ -97,7 +98,7 @@
         font-weight: 900;
         margin-bottom: 2.5rem;
         margin-right: 5rem;
-        z-index: 1;
+        z-index: 2;
     }
 
     &__heading1-bar {
@@ -109,6 +110,7 @@
         background: #000;
         height: 10rem;
         width: 50rem;
+        z-index: 1;
     }
 
     &__heading1-line {

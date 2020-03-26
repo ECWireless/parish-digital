@@ -10,6 +10,19 @@
     background: #F0F0F0;
 }
 
+.t2__background {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    height: 100%;
+
+    background-image: url('../../../assets/team-page/fade-thin.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+    z-index: 0;
+    opacity: .1;
+}
+
 // T1: Meet the team
 @import './sass/pages/teamPage/t1';
 

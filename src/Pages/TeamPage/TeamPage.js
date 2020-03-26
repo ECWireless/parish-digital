@@ -16,6 +16,7 @@ export default class TeamPage extends Component {
             <div className="teamPage">
                 <T1 />
                 <T2 />
+                <div className="t2__background" />
                 <T3 />
             </div>
         )

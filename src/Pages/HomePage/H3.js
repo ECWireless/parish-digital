@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function H3() {
+export default function H3(props) {
     return (
         <div className="h3">
 
@@ -46,7 +46,7 @@ export default function H3() {
 
             </div>
 
-            <div className="h3__section-2">
+            <div className="h3__section-2" ref={props.demoReelRef}>
                 <h2 className="h3__heading2">Parish Digital</h2>
                 <div className="h3__heading2-bar" />
                 <div className="h3__heading2-line" />
@@ -54,7 +54,7 @@ export default function H3() {
                 <iframe
                     className="h3__video"
                     title="Demo Reel"
-                    src="https://player.vimeo.com/video/392027059"
+                    src={`https://player.vimeo.com/video/392027059${props.autoplayToggle}`}
                     frameBorder="0" allow="autoplay; fullscreen" allowFullScreen>
                 </iframe>
 
