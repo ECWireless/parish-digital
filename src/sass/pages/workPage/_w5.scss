@@ -16,6 +16,7 @@
 
         font-size: 3.5rem;
         color: $color-blue;
+        font-weight: $font-weight-regular;
     }
 
     &__line {
@@ -32,6 +33,7 @@
         grid-column: 2 / 3;
         grid-row: 4 / 5;
         font-size: 1.8rem;
+        font-weight: $font-weight-light;
     }
 
     &__video {

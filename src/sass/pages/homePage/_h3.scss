@@ -95,7 +95,7 @@
 
         color: #fff;
         font-size: 3.5rem;
-        font-weight: 900;
+        font-weight: $font-weight-bold;
         margin-bottom: 2.5rem;
         margin-right: 5rem;
         z-index: 2;
@@ -132,7 +132,7 @@
         text-align: right;
 
         color: $color-blue;
-        font-weight: 100;
+        font-weight: $font-weight-regular;
         text-transform: uppercase;
 
         &--1 {
@@ -165,7 +165,7 @@
 
         text-align: right;
         font-size: 1.4rem;
-        font-weight: 100;
+        font-weight: $font-weight-light;
         margin-top: 11rem;
 
         &--1 {
@@ -232,7 +232,6 @@
     }
 
     &__button {
-
         height: 4rem;
         width: 12rem;
         font-size: 1rem;
@@ -267,7 +266,7 @@
 
         color: #fff;
         font-size: 3rem;
-        font-weight: 900;
+        font-weight: $font-weight-bold;
         text-transform: uppercase;
         margin-bottom: 6rem;
         z-index: 1;
@@ -303,7 +302,7 @@
         align-self: flex-end;
 
         font-size: 1.4rem;
-        font-weight: 100;
+        font-weight: $font-weight-light;
     }
 
     &__video {
@@ -336,7 +335,7 @@
 
         text-align: left;
         font-size: 1.4rem;
-        font-weight: 100;
+        font-weight: $font-weight-light;
         list-style-type: none;
         margin-top: 10rem;
         margin-left: 10rem;
@@ -360,7 +359,7 @@
 
         color: #fff;
         font-size: 3.5rem;
-        font-weight: 900;
+        font-weight: $font-weight-bold;
         text-transform: uppercase;
         margin-bottom: 9.5rem;
         z-index: 1;
@@ -449,6 +448,7 @@
         font-size: 1.6rem;
         margin-top: 4rem;
         width: 70%;
+        font-weight: $font-weight-regular;
     }
 
     &__name {
@@ -459,7 +459,7 @@
 
         font-size: 2rem;
         color: $color-blue;
-        font-weight: 100;
+        font-weight: $font-weight-light;
         margin-bottom: 3rem;
         text-transform: uppercase;
     }
@@ -471,7 +471,7 @@
         justify-self: center;
 
         font-size: 1.4rem;
-        font-weight: 100;
+        font-weight: $font-weight-light;
     }
 
     &__company {
@@ -481,7 +481,7 @@
         justify-self: center;
 
         font-size: 1.4rem;
-        font-weight: 100;
+        font-weight: $font-weight-light;
         margin-bottom: -2rem;
     }
 

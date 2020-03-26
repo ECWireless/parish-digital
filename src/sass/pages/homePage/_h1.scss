@@ -51,6 +51,7 @@
         color: #fff;
         font-size: 7.5rem;
         letter-spacing: 2.5px;
+        font-weight: $font-weight-bold;
     }
 
     &__line {
@@ -72,7 +73,7 @@
 
         color: $color-grey;
         font-size: 2.5rem;
-        font-weight: 100;
+        font-weight: $font-weight-light;
         text-transform: uppercase;
     }
 
@@ -93,7 +94,7 @@
         border: none;
 
         font-size: 2rem;
-        font-weight: 100;
+        font-weight: $font-weight-light;
 
         transition: .3s all ease;
 
@@ -104,7 +105,7 @@
                 cursor: pointer;
                 background: $color-yellow;
                 color: #000;
-                font-weight: 300;
+                font-weight: $font-weight-regular;
             }
         }
 
@@ -120,7 +121,7 @@
                 cursor: pointer;
                 background: $color-yellow;
                 color: #000;
-                font-weight: 300;
+                font-weight: $font-weight-regular;
             }
         }
     }

@@ -26,6 +26,7 @@
 
         font-size: 1.8rem;
         margin-top: 2rem;
+        font-weight: $font-weight-regular;
     }
 
     &__number {
@@ -33,9 +34,12 @@
         grid-row: 2 / 3;
         align-self: flex-end;
 
+        width: 11rem;
+        margin: 0 auto 1rem;
         font-size: 1.8rem;
         text-decoration: none;
         color: #fff;
+        font-weight: $font-weight-regular;
 
         transition: all .3s ease;
 

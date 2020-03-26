@@ -29,7 +29,7 @@
         color: #fff;
         text-align: left;
         font-size: 3.5rem;
-        font-weight: 100;
+        font-weight: $font-weight-regular;
         text-transform: uppercase;
         margin-bottom: 6rem;
         z-index: 2;
@@ -71,6 +71,7 @@
         font-size: 1.4rem;
         margin-bottom: 1.5rem;
         z-index: 1;
+        font-weight: $font-weight-light;
     }
 }
 

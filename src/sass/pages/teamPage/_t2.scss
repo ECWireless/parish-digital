@@ -95,6 +95,7 @@
         font-size: 5.5rem;
         color: #fff;
         text-align: center;
+        font-weight: $font-weight-regular;
     }
 
     &__title {
@@ -105,6 +106,7 @@
         font-size: 3rem;
         color: $color-yellow;
         text-align: center;
+        font-weight: $font-weight-regular;
     }
 
     &__paragraph-1 {
@@ -116,6 +118,7 @@
         font-size: 1.6rem;
         color: #fff;
         width: 40rem;
+        font-weight: $font-weight-regular;
     }
 
     &__paragraph-2 {
@@ -127,6 +130,7 @@
         font-size: 1.6rem;
         color: #fff;
         width: 40rem;
+        font-weight: $font-weight-regular;
     }
 
     &__line-bottom {
@@ -177,23 +181,6 @@
         grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
     }
 
-    &__name {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-
-        font-size: 5.5rem;
-        color: #fff;
-    }
-
-    &__title {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        align-self: flex-end;
-
-        font-size: 3rem;
-        color: $color-yellow;
-    }
-
     // PHOTO 3
     &__photo-container-3 {
         grid-column: 4 / 5;
@@ -230,22 +217,4 @@
         grid-template-columns: 1fr 45rem 1fr;
         grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
     }
-
-    &__name {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-
-        font-size: 5.5rem;
-        color: #fff;
-    }
-
-    &__title {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        align-self: flex-end;
-
-        font-size: 3rem;
-        color: $color-yellow;
-    }
-
 }

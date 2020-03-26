@@ -26,6 +26,7 @@
         font-size: 3.5rem;
         width: 60rem;
         text-align: right;
+        font-weight: $font-weight-regular;
     }
 
     &__line {
@@ -49,6 +50,7 @@
         font-size: 1.6rem;
         width: 60rem;
         text-align: right;
+        font-weight: $font-weight-light;
     }
 
     &__paragraph-2 {
@@ -61,6 +63,7 @@
         font-size: 1.6rem;
         width: 60rem;
         text-align: right;
+        font-weight: $font-weight-light;
     }
 
     &__paragraph-3 {
@@ -73,5 +76,6 @@
         font-size: 1.6rem;
         width: 60rem;
         text-align: right;
+        font-weight: $font-weight-light;
     }
 }
