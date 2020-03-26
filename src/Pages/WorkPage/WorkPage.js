@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 
 // Components
 import W1 from './W1';
@@ -10,13 +10,17 @@ import W6 from './W6';
 
 export default class Work extends Component {
 
+    state = {
+        workRef: createRef(),
+    }
+
     componentDidMount() {
         this.props.scrollToTop();
     }
 
     scrollDown = () => {
         window.scroll({
-            top: 700,
+            top: this.state.workRef.current.offsetTop - 100,
             behavior: 'smooth',
         })
     }
@@ -26,7 +30,7 @@ export default class Work extends Component {
             <div className="workPage">
                 <W1 scrollDown={this.scrollDown} />
 
-                <W2 />
+                <W2 workRef={this.state.workRef} />
                 <W3 />
                 <W4 />
                 <W5 />

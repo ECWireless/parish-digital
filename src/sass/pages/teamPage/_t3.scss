@@ -8,6 +8,17 @@
     grid-template-rows: 20rem 1fr;
     overflow: hidden;
 
+    &__banner {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+        justify-self: flex-start;
+
+        height: 20rem;
+        width: 62rem;
+        background: #000;
+        z-index: 1;
+    }
+
     &__photo {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
@@ -27,6 +38,7 @@
         width: 60rem;
         text-align: right;
         font-weight: $font-weight-regular;
+        z-index: 1;
     }
 
     &__line {
@@ -38,6 +50,7 @@
         width: 60rem;
         background: $color-yellow;
         margin-top: 8rem;
+        z-index: 1;
     }
 
     &__paragraph-1 {
@@ -51,6 +64,7 @@
         width: 60rem;
         text-align: right;
         font-weight: $font-weight-light;
+        z-index: 1;
     }
 
     &__paragraph-2 {
@@ -64,6 +78,7 @@
         width: 60rem;
         text-align: right;
         font-weight: $font-weight-light;
+        z-index: 1;
     }
 
     &__paragraph-3 {
@@ -77,5 +92,6 @@
         width: 60rem;
         text-align: right;
         font-weight: $font-weight-light;
+        z-index: 1;
     }
 }

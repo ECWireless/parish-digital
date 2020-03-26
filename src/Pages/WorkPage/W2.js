@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function W2() {
+export default function W2(props) {
     return (
-        <div className="w2">
+        <div className="w2" ref={props.workRef}>
             <h2 className="w2__heading">Featured Video</h2>
             <div className="w2__line" />
             <p className="w2__paragraph-1">A celebration of the 50th anniversary of the Saturn V rocket</p>

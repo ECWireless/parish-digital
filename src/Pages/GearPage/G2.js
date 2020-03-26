@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function G2() {
+export default function G2(props) {
     return (
-        <div className="g2">
+        <div className="g2" ref={props.gearRef}>
             <h2 className="g2__heading">Cameras</h2>
             <div className="g2__line" />
             <p className="g2__paragraph-1">Canon C300 Mark II (x2), Canon 1DX Mark II, Canon 5D Mark IV,</p>
