@@ -4,8 +4,13 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 30rem 30rem 1fr;
-    grid-template-rows: 1fr 20rem 1rem 7rem 7rem 25rem;
+    grid-template-columns: 1fr 25rem 25rem 1fr;
+    grid-template-rows: 1fr 25rem 1rem 7rem 7rem 20rem;
+
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr 30rem 30rem 1fr;
+        grid-template-rows: 1fr 20rem 1rem 7rem 7rem 25rem;
+    }
     
 
     @include respond(tab-port) {
@@ -49,9 +54,13 @@
         z-index: 1;
 
         color: #fff;
-        font-size: 7.5rem;
+        font-size: 6rem;
         letter-spacing: 2.5px;
         font-weight: $font-weight-bold;
+
+        @include respond(big-desktop) {
+            font-size: 7.5rem;
+        }
     }
 
     &__line {
@@ -61,8 +70,12 @@
         align-content: center;
         z-index: 1;
         background: $color-yellow;
-        width: 78rem;
+        width: 65rem;
         height: 5px;
+
+        @include respond(big-desktop) {
+            width: 78rem;
+        }
     }
 
     &__sub-slogan {
@@ -72,9 +85,13 @@
         z-index: 1;
 
         color: $color-grey;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: $font-weight-light;
         text-transform: uppercase;
+
+        @include respond(big-desktop) {
+            font-size: 2.5rem;
+        }
     }
 
     &__button-1-link {
@@ -87,7 +104,6 @@
 
     // Button
     &__button {
-
         width: 18rem;
         height: 5rem;
         color: #fff;

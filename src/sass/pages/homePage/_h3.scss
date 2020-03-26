@@ -4,9 +4,14 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 70rem 70rem 1fr;
-    grid-template-rows: repeat(3, 75rem);
+    grid-template-columns: 1fr 60rem 60rem 1fr;
+    grid-template-rows: repeat(3, 60rem);
     z-index: 1;
+
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr 70rem 70rem 1fr;
+        grid-template-rows: repeat(3, 75rem);
+    }
 
     // Background Accents
     &__background-1 {
@@ -73,6 +78,7 @@
         height: 66rem;
         width: 50rem;
         opacity: .5;
+        z-index: 1;
     }
 
     &__photo {
@@ -86,6 +92,7 @@
         background-size: cover;
         height: 60rem;
         width: 70rem;
+        z-index: 2;
     }
 
     &__heading1 {
@@ -98,7 +105,7 @@
         font-weight: $font-weight-bold;
         margin-bottom: 2.5rem;
         margin-right: 5rem;
-        z-index: 2;
+        z-index: 3;
     }
 
     &__heading1-bar {
@@ -110,7 +117,7 @@
         background: #000;
         height: 10rem;
         width: 50rem;
-        z-index: 1;
+        z-index: 2;
     }
 
     &__heading1-line {

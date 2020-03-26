@@ -3,12 +3,17 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75rem 37.5rem 225rem 75rem;
+    grid-template-rows: 60rem 30rem 180rem 60rem;
 
     align-items: center;
-    font-size: 2.4rem;
+    font-size: 2rem;
 
     background: #F0F0F0;
+
+    @include respond(big-desktop) {
+        font-size: 2.4rem;
+        grid-template-rows: 75rem 37.5rem 225rem 75rem;
+    }
 
     &__dotted-line {
         grid-column: 1 / -1;
