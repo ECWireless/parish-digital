@@ -1,4 +1,8 @@
 .t2 {
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr repeat(3, 46.666rem) 1fr;
+    }
+
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     height: 100%;
@@ -8,10 +12,10 @@
     grid-template-rows: 1fr 10rem;
     z-index: 1;
 
-    @include respond(big-desktop) {
-        grid-template-columns: 1fr repeat(3, 46.666rem) 1fr;
+    @include respond(tab-land) {
+        grid-template-columns: 1fr 50rem 1fr;
+        grid-template-rows: repeat(3, 1fr);
     }
-
 
     // PHOTO 1
     &__photo-container-1 {
@@ -20,6 +24,13 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+
+        @include respond(tab-land) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            align-self: flex-start;
+            height: 50rem;
+        }
 
         &:hover > .t2__description-container-1 {
             opacity: 1;
@@ -58,6 +69,11 @@
     }
 
     &__description-container-1 {
+        @include respond(big-desktop) {
+            grid-template-columns: 1fr 45rem 1fr;
+            grid-template-rows: 5rem 13rem 15rem 20rem auto 1rem 5rem;
+        }
+
         grid-column: 1 / -1;
         grid-row: 1 / -1;
         opacity: 0;
@@ -71,9 +87,9 @@
         grid-template-columns: 1fr 40rem 1fr;
         grid-template-rows: 4rem 10rem 12rem 17rem auto 1rem 5rem;
 
-        @include respond(big-desktop) {
+        @include respond(tab-land) {
             grid-template-columns: 1fr 45rem 1fr;
-            grid-template-rows: 5rem 13rem 15rem 20rem auto 1rem 5rem;
+            grid-template-rows: 4rem 10rem 12rem 14rem auto 1rem 5rem;
         }
     }
 
@@ -140,6 +156,11 @@
     }
 
     &__paragraph-1 {
+        @include respond(big-desktop) {
+            font-size: 1.6rem;
+            width: 40rem;
+        }
+
         grid-column: 2 / 3;
         grid-row: 3 / 4;
         align-self: flex-end;
@@ -150,13 +171,17 @@
         width: 36rem;
         font-weight: $font-weight-regular;
 
-        @include respond(big-desktop) {
-            font-size: 1.6rem;
-            width: 40rem;
+        @include respond(tab-land) {
+            width: 90%;
         }
     }
 
     &__paragraph-2 {
+        @include respond(big-desktop) {
+            font-size: 1.6rem;
+            width: 40rem;
+        }
+
         grid-column: 2 / 3;
         grid-row: 4 / 5;
         align-self: flex-end;
@@ -167,9 +192,8 @@
         width: 36rem;
         font-weight: $font-weight-regular;
 
-        @include respond(big-desktop) {
-            font-size: 1.6rem;
-            width: 40rem;
+        @include respond(tab-land) {
+            width: 90%;
         }
     }
 
@@ -192,6 +216,13 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
 
+        @include respond(tab-land) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            align-self: flex-start;
+            height: 50rem;
+        }
+
         &:hover > .t2__description-container-2 {
             opacity: 1;
         }
@@ -207,6 +238,11 @@
     }
 
     &__description-container-2 {
+        @include respond(big-desktop) {
+            grid-template-columns: 1fr 45rem 1fr;
+            grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
+        }
+
         grid-column: 1 / -1;
         grid-row: 1 / -1;
         opacity: 0;
@@ -220,9 +256,9 @@
         grid-template-columns: 1fr 40rem 1fr;
         grid-template-rows: 4rem 10rem 19rem 15rem auto 1rem 5rem;
 
-        @include respond(big-desktop) {
+        @include respond(tab-land) {
             grid-template-columns: 1fr 45rem 1fr;
-            grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
+            grid-template-rows: 4rem 10rem 16rem 14rem auto 1rem 5rem;
         }
     }
 
@@ -233,6 +269,13 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+
+        @include respond(tab-land) {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            align-self: flex-start;
+            height: 50rem;
+        }
 
         &:hover > .t2__description-container-3 {
             opacity: 1;
@@ -249,6 +292,11 @@
     }
 
     &__description-container-3 {
+        @include respond(big-desktop) {
+            grid-template-columns: 1fr 45rem 1fr;
+            grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
+        }
+
         grid-column: 1 / -1;
         grid-row: 1 / -1;
         opacity: 0;
@@ -262,9 +310,9 @@
         grid-template-columns: 1fr 40rem 1fr;
         grid-template-rows: 4rem 10rem 19rem auto 1rem 5rem;
 
-        @include respond(big-desktop) {
+        @include respond(tab-land) {
             grid-template-columns: 1fr 45rem 1fr;
-            grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
+            grid-template-rows: 4rem 10rem 19rem 1rem auto 1rem 5rem;
         }
     }
 }

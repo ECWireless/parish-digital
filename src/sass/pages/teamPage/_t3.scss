@@ -8,6 +8,10 @@
     grid-template-rows: 20rem 1fr;
     overflow: hidden;
 
+    @include respond(tab-land) {
+        grid-template-rows: 13rem 1fr;
+    }
+
     &__banner {
         grid-column: 1 / -1;
         grid-row: 2 / -1;

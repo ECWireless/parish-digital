@@ -1,4 +1,8 @@
 .teamPage {
+    @include respond(big-desktop) {
+        grid-template-rows: repeat(3, 75rem);
+    }
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 60rem);
@@ -9,8 +13,8 @@
 
     background: #F0F0F0;
 
-    @include respond(big-desktop) {
-        grid-template-rows: repeat(3, 75rem);
+    @include respond(tab-land) {
+        grid-template-rows: 60rem 165rem 50rem;
     }
 }
 

@@ -16,7 +16,7 @@
 
     @include respond(tab-land) {
         grid-template-columns: 1fr 35rem 35rem 1fr;
-        grid-template-rows: 10rem 15rem 12rem 1rem 12rem 1fr;
+        grid-template-rows: 8rem 10rem 12rem 4rem 12rem 1fr;
     }
 
     &__background {
@@ -57,9 +57,17 @@
         font-size: 5.5rem;
         z-index: 1;
         font-weight: $font-weight-bold;
+
+        @include respond(tab-land) {
+            font-size: 4.5rem;
+        }
     }
 
     &__line {
+        @include respond(big-desktop) {
+            transform: translate(11rem, -6rem);
+        }
+
         grid-column: 3 / 4;
         grid-row: 2 / 3;
 
@@ -68,8 +76,9 @@
         transform: translate(11rem, -3rem);
         z-index: 1;
 
-        @include respond(big-desktop) {
-            transform: translate(11rem, -6rem);
+        @include respond(tab-land) {
+            transform: translate(8rem, -2rem);
+            width: 11rem;
         }
     }
 
