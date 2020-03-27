@@ -7,8 +7,13 @@
     background-color: #6F6F6F;
     color: #fff;
     display: grid;
-    grid-template-columns: 1fr 140rem 1fr;
+    grid-template-columns: 1fr 120rem 1fr;
     grid-template-rows: 1fr 15rem 1fr;
+
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr 140rem 1fr;
+        grid-template-rows: 1fr 15rem 1fr;
+    }
 
     &__heading {
         grid-column: 2 / 3;

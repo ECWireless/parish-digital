@@ -3,12 +3,17 @@
     grid-column: 1 / 2;
     height: 100%;
 
-    display: grid;
-    grid-template-columns: 1fr 70rem 70rem 1fr;
-    grid-template-rows: 8rem 8rem 3rem 3rem 3rem 3rem 1fr;
-
     text-align: left;
     z-index: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 60rem 60rem 1fr;
+    grid-template-rows: 8rem 8rem 3rem 3rem 3rem 3rem 1fr;
+
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr 70rem 70rem 1fr;
+        grid-template-rows: 8rem 8rem 3rem 3rem 3rem 3rem 1fr;
+    }
 
     &__heading {
         grid-column: 2 / 3;
@@ -42,7 +47,12 @@
         justify-self: flex-start;
         align-self: center;
 
-        width: 693px;
-        height: 390px;
+        width: 590px;
+        height: 332px;
+
+        @include respond(big-desktop) {
+            width: 693px;
+            height: 390px;
+        }
     }
 }

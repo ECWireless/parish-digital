@@ -1,13 +1,17 @@
 .workPage {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75rem repeat(4, 50rem)75rem;
+    grid-template-rows: 60rem repeat(4, 40rem) 60rem;
 
     align-items: center;
     font-size: 2.4rem;
     text-align: center;
 
     background: #F0F0F0;
+
+    @include respond(big-desktop) {
+        grid-template-rows: 75rem repeat(4, 50rem) 75rem;
+    }
 }
 
 .w2-5__background {

@@ -69,7 +69,7 @@ export default class App extends Component {
 							scrollToTop={this.scrollToTop}
 						/>
 					</div>
-					{/* <Footer /> */}
+					<Footer />
 				</div>
 			</BrowserRouter>
 		)

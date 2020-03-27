@@ -4,8 +4,12 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 40rem 40rem 30rem 30rem 1fr;
+    grid-template-columns: 1fr 35rem 35rem 25rem 25rem 1fr;
     grid-template-rows: repeat(3, 1fr);
+
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr 40rem 40rem 30rem 30rem 1fr;
+    }
 
     &__background {
         grid-column: 1 / -1;
@@ -30,7 +34,7 @@
         justify-self: flex-start;
 
         color: #fff;
-        font-size: 3.5rem;
+        font-size: 3.6rem;
         margin-bottom: 8rem;
         font-weight: $font-weight-regular;
     }
@@ -41,9 +45,13 @@
         align-self: center;
         justify-self: flex-start;
 
-        width: 50rem;
+        width: 40rem;
         height: 5px;
         background: $color-yellow;
+
+        @include respond(big-desktop) {
+            width: 50rem;
+        }
     }
 
     &__paragraph {
@@ -85,8 +93,13 @@
         align-self: center;
         justify-self: flex-end;
 
-        width: 356px;
-        height: 200px;
+        width: 320px;
+        height: 180px;
+
+        @include respond(big-desktop) {
+            width: 356px;
+            height: 200px;
+        }
 
         &--1 {
             grid-row: 1 / 2;
