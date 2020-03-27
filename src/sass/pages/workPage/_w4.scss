@@ -1,4 +1,9 @@
 .w4 {
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr 70rem 70rem 1fr;
+        grid-template-rows: 8rem 8rem 3rem 3rem 3rem 3rem 1fr;
+    }
+
     grid-row: 4 / 5;
     grid-column: 1 / 2;
     height: 100%;
@@ -10,8 +15,8 @@
     grid-template-columns: 1fr 60rem 60rem 1fr;
     grid-template-rows: 8rem 8rem 3rem 3rem 3rem 3rem 1fr;
 
-    @include respond(big-desktop) {
-        grid-template-columns: 1fr 70rem 70rem 1fr;
+    @include respond(tab-land) {
+        grid-template-columns: 1fr 35rem 35rem 1fr;
         grid-template-rows: 8rem 8rem 3rem 3rem 3rem 3rem 1fr;
     }
 
@@ -32,6 +37,10 @@
         width: 100rem;
         height: 5px;
         background: $color-yellow;
+
+        @include respond(tab-land) {
+            width: 50rem;
+        }  
     }
 
     &__paragraph-1 {
@@ -39,9 +48,19 @@
         grid-row: 4 / 5;
         font-size: 1.8rem;
         font-weight: $font-weight-light;
+
+        @include respond(tab-land) {
+            padding-right: 2rem;
+            font-size: 1.6rem;
+        }
     }
 
     &__video {
+        @include respond(big-desktop) {
+            width: 693px;
+            height: 390px;
+        }
+
         grid-column: 3 / 4;
         grid-row: 1 / -1;
         justify-self: flex-start;
@@ -50,9 +69,9 @@
         width: 590px;
         height: 332px;
 
-        @include respond(big-desktop) {
-            width: 693px;
-            height: 390px;
+        @include respond(tab-land) {
+            width: 350px;
+            height: 197px;
         }
     }
 }

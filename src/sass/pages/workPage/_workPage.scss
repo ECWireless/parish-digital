@@ -1,7 +1,11 @@
 .workPage {
+    @include respond(big-desktop) {
+        grid-template-rows: 75rem repeat(4, 50rem) 75rem;
+    }
+
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60rem repeat(4, 40rem) 60rem;
+    grid-template-rows: 60rem repeat(4, 30rem) 60rem;
 
     align-items: center;
     font-size: 2.4rem;
@@ -9,8 +13,8 @@
 
     background: #F0F0F0;
 
-    @include respond(big-desktop) {
-        grid-template-rows: 75rem repeat(4, 50rem) 75rem;
+    @include respond(tab-land) {
+        grid-template-rows: 60rem repeat(4, 30rem) 50rem;
     }
 }
 
