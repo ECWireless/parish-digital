@@ -7,6 +7,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
 
+    @include respond(tab-land) {
+        grid-template-rows: 20rem 1fr;
+    }
+
     &__photo {
         grid-row: 1 / -1;
         grid-column: 1 / -1;

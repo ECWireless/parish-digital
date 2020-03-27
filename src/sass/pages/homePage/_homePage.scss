@@ -1,4 +1,9 @@
 .homePage {
+    @include respond(big-desktop) {
+        font-size: 2.4rem;
+        grid-template-rows: 75rem 37.5rem 225rem 75rem;
+    }
+
     text-align: center;
 
     display: grid;
@@ -9,10 +14,9 @@
     font-size: 2rem;
 
     background: #F0F0F0;
-
-    @include respond(big-desktop) {
-        font-size: 2.4rem;
-        grid-template-rows: 75rem 37.5rem 225rem 75rem;
+    
+    @include respond(tab-land) {
+        grid-template-rows: 60rem 30rem 180rem 50rem;
     }
 
     &__dotted-line {
@@ -27,6 +31,11 @@
             border-left: dotted 5px #DDDDDD;
             z-index: 0;
             transform: translate(-25rem, -23rem);
+
+            @include respond(tab-land) {
+                height: 15rem;
+                transform: translate(-15rem, -25rem);
+            }
         }
 
         &--2 {
@@ -35,68 +44,85 @@
             border-bottom: dotted 5px #DDDDDD;
             z-index: 0;
             transform: translate(-15.2rem, -7.4rem);
+
+            @include respond(tab-land) {
+                width: 17rem;
+                transform: translate(-6.8rem, -16.8rem);
+            }
         }
 
         &--3 {
+            @include respond(big-desktop) {
+                transform: translate(40rem, 42rem);
+                height: 17rem;
+            }
+
             height: 12rem;
             width: 5px;
             border-left: dotted 5px #DDDDDD;
             z-index: 0;
             transform: translate(30rem, 32rem);
-
-            @include respond(big-desktop) {
-                transform: translate(40rem, 42rem);
-                height: 17rem;
-            }
         }
 
         &--4 {
+            @include respond(big-desktop) {
+                transform: translate(15.3rem, 51.3rem);
+                width: 50rem;
+            }
+
             height: 5px;
             width: 36rem;
             border-bottom: dotted 5px #DDDDDD;
             z-index: 0;
             transform: translate(12.3rem, 38.6rem);
-
-            @include respond(big-desktop) {
-                transform: translate(15.3rem, 51.3rem);
-                width: 50rem;
-            }
         }
 
         &--5 {
+            @include respond(big-desktop) {
+                height: 22rem;
+                transform: translate(-23rem, 60rem);
+            }
+
             height: 10rem;
             width: 5px;
             border-left: dotted 5px #DDDDDD;
             z-index: 0;
             transform: translate(-30rem, 45rem);
 
-            @include respond(big-desktop) {
-                height: 22rem;
-                transform: translate(-23rem, 60rem);
+            @include respond(tab-land) {
+                transform: translate(-25rem, 45rem);
             }
         }
 
         &--6 {
+            @include respond(big-desktop) {
+                transform: translate(-23rem, 71.7rem);
+            }
+
             height: 5px;
             width: 10rem;
             border-bottom: dotted 5px #DDDDDD;
             z-index: 0;
             transform: translate(-23rem, 60rem);
 
-            @include respond(big-desktop) {
-                transform: translate(-23rem, 71.7rem);
+            @include respond(tab-land) {
+                transform: translate(0rem, 55rem);
             }
         }
 
         &--7 {
+            @include respond(big-desktop) {
+                transform: translate(23rem, 80rem);
+            }
+
             height: 5px;
             width: 10rem;
             border-bottom: dotted 5px #DDDDDD;
             z-index: 0;
             transform: translate(20rem, 70rem);
 
-            @include respond(big-desktop) {
-                transform: translate(23rem, 80rem);
+            @include respond(tab-land) {
+                display: none;
             }
         }
     }

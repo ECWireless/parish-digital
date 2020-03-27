@@ -1,4 +1,9 @@
 .footer {
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr 140rem 1fr;
+        grid-template-rows: 1fr 15rem 1fr;
+    }
+
     grid-column: 2 / -1;
     grid-row: 3 / 4;
 
@@ -10,9 +15,8 @@
     grid-template-columns: 1fr 120rem 1fr;
     grid-template-rows: 1fr 15rem 1fr;
 
-    @include respond(big-desktop) {
-        grid-template-columns: 1fr 140rem 1fr;
-        grid-template-rows: 1fr 15rem 1fr;
+    @include respond(tab-land) {
+        grid-template-columns: 1fr 70rem 1fr;
     }
 
     &__heading {

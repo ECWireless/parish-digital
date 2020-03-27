@@ -1,4 +1,9 @@
 .h3 {
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr 70rem 70rem 1fr;
+        grid-template-rows: repeat(3, 75rem);
+    }
+
     grid-row: 3 / 4;
     grid-column: 1 / 2;
     height: 100%;
@@ -8,9 +13,8 @@
     grid-template-rows: repeat(3, 60rem);
     z-index: 1;
 
-    @include respond(big-desktop) {
-        grid-template-columns: 1fr 70rem 70rem 1fr;
-        grid-template-rows: repeat(3, 75rem);
+    @include respond(tab-land) {
+        grid-template-columns: 1fr 35rem 35rem 1fr;
     }
 
     // Background Accents
@@ -54,7 +58,6 @@
         opacity: .05;
     }
 
-
     // Section 1
     &__section-1 {
         grid-row: 1 / 2;
@@ -66,6 +69,11 @@
     }
 
     &__photo-background {
+        @include respond(big-desktop) {
+            height: 66rem;
+            width: 50rem;
+        }
+
         grid-row: 1 / -1;
         grid-column: 1 / 3;
         align-self: flex-end;
@@ -79,13 +87,18 @@
         opacity: .5;
         z-index: 1;
 
-        @include respond(big-desktop) {
-            height: 66rem;
-            width: 50rem;
+        @include respond(tab-land) {
+            height: 54rem;
+            width: 35rem;
         }
     }
 
     &__photo {
+        @include respond(big-desktop) {
+            height: 60rem;
+            width: 70rem;
+        }
+
         grid-row: 1 / -1;
         grid-column: 1 / 3;
         align-self: flex-end;
@@ -98,13 +111,18 @@
         width: 65rem;
         z-index: 2;
 
-        @include respond(big-desktop) {
-            height: 60rem;
-            width: 70rem;
+        @include respond(tab-land) {
+            height: 45rem;
+            width: 55rem;
+            transform: translate(-5rem, -5rem);
         }
     }
 
     &__heading1 {
+        @include respond(big-desktop) {
+            font-size: 3.6rem;
+        }
+    
         grid-row: 1 / -1;
         grid-column: 1 / 3;
         align-self: flex-end;
@@ -116,13 +134,19 @@
         margin-right: 5rem;
         z-index: 3;
 
-        @include respond(big-desktop) {
-            font-size: 3.6rem;
+        @include respond(tab-land) {
+            margin-bottom: 2.5rem;
+            margin-right: 5rem;
+            grid-column: 1 / 4;
         }
-    
     }
 
     &__heading1-bar {
+        @include respond(big-desktop) {
+            height: 10rem;
+            width: 50rem;
+        }
+
         grid-row: 1 / -1;
         grid-column: 1 / 3;
         align-self: flex-end;
@@ -133,9 +157,8 @@
         width: 45rem;
         z-index: 2;
 
-        @include respond(big-desktop) {
-            height: 10rem;
-            width: 50rem;
+        @include respond(tab-land) {
+            width: 35rem;
         }
     }
 
@@ -152,6 +175,10 @@
         margin-left: 9.5rem;
         height: 5px;
         width: 5rem;
+
+        @include respond(tab-land) {
+            grid-column: 1 / 4;
+        }
     }
 
     &__sub-heading {
@@ -172,16 +199,28 @@
         &--1 {
             grid-row: 1 / 2;
             grid-column: 3 / 4;
+
+            @include respond(tab-land) {
+                grid-column: 4 / -1;
+            }
         }
 
         &--2 {
             grid-row: 2 / 3;
             grid-column: 4 / 5;
+
+            @include respond(tab-land) {
+                grid-column: 4 / -1;
+            }
         }
 
         &--3 {
             grid-row: 3 / 4;
             grid-column: 5 / 6;
+
+            @include respond(tab-land) {
+                grid-column: 4 / -1;
+            }
         }
 
         &--4 {
@@ -190,6 +229,10 @@
             justify-self: flex-start;
             align-self: flex-start;
             margin-left: 10rem;
+
+            @include respond(tab-land) {
+                margin-left: 0;
+            }
         }
     }
 
@@ -207,28 +250,40 @@
         }
 
         &--1 {
-            grid-row: 1 / 2;
-            grid-column: 2 / 4;
-
             @include respond(big-desktop) {
                 grid-row: 1 / 2;
                 grid-column: 3 / 4;
             }
+
+            grid-row: 1 / 2;
+            grid-column: 2 / 4;
+
+            @include respond(tab-land) {
+                grid-column: 4 / -1;
+            }
         }
 
         &--2 {
-            grid-row: 2 / 3;
-            grid-column: 3 / 5;
-
             @include respond(big-desktop) {
                 grid-row: 2 / 3;
                 grid-column: 4 / 5;
+            }
+
+            grid-row: 2 / 3;
+            grid-column: 3 / 5;
+            
+            @include respond(tab-land) {
+                grid-column: 4 / -1;
             }
         }
 
         &--3 {
             grid-row: 3 / 4;
             grid-column: 4 / 6;
+
+            @include respond(tab-land) {
+                grid-column: 4 / -1;
+            }
         }
     }
 
@@ -245,32 +300,47 @@
         }
 
         &--1 {
+            @include respond(big-desktop) {
+                width: 64%;
+            }
+
             grid-row: 1 / 2;
             grid-column: 2 / 4;
             width: 58%;
 
-            @include respond(big-desktop) {
-                width: 64%;
+            @include respond(tab-land) {
+                grid-column: 2 / -1;
+                width: 65%;
             }
         }
 
         &--2 {
+            @include respond(big-desktop) {
+                width: 76%;
+            }
+
             grid-row: 2 / 3;
             grid-column: 2 / 5;
             width: 72%;
 
-            @include respond(big-desktop) {
-                width: 76%;
+            @include respond(tab-land) {
+                grid-column: 2 / -1;
+                width: 65%;
             }
         }
 
         &--3 {
+            @include respond(big-desktop) {
+                width: 80.4%;
+            }
+
             grid-row: 3 / 4;
             grid-column: 2 / 6;
             width: 78%;
 
-            @include respond(big-desktop) {
-                width: 80.4%;
+            @include respond(tab-land) {
+                grid-column: 2 / -1;
+                width: 65%;
             }
         }
     }
@@ -282,16 +352,28 @@
         &--1 {
             grid-row: 1 / 2;
             grid-column: 3 / 4;
+
+            @include respond(tab-land) {
+                grid-column: 4 / -1;
+            }
         }
 
         &--2 {
             grid-row: 2 / 3;
             grid-column: 4 / 5;
+
+            @include respond(tab-land) {
+                grid-column: 4 / -1;
+            }
         }
 
         &--3 {
             grid-row: 3 / 4;
             grid-column: 5 / 6;
+
+            @include respond(tab-land) {
+                grid-column: 4 / -1;
+            }
         }
     }
 
@@ -367,9 +449,18 @@
 
         font-size: 1.4rem;
         font-weight: $font-weight-light;
+
+        @include respond(tab-land) {
+            font-size: 1.2rem;
+        }
     }
 
     &__video {
+        @include respond(big-desktop) {
+            width: 750px;
+            height: 422px;
+        }
+
         grid-column: 3 / 6;
         grid-row: 2 / -1;
         justify-self: center;
@@ -377,9 +468,9 @@
         width: 650px;
         height: 366px;
 
-        @include respond(big-desktop) {
-            width: 750px;
-            height: 422px;
+        @include respond(tab-land) {
+            width: 500px;
+            height: 281px;
         }
     }
 
@@ -394,9 +485,18 @@
         background: $color-yellow;
         margin-left: 10rem;
         margin-top: 7rem;
+
+        @include respond(tab-land) {
+            width: 60rem;
+            margin-left: 0;
+        }
     }
 
     &__list {
+        @include respond(big-desktop) {
+            font-size: 1.4rem;
+        }
+
         grid-column: 1 / 3;
         grid-row: 2 / -1;
         justify-self: center;
@@ -409,8 +509,8 @@
         margin-top: 10rem;
         margin-left: 10rem;
 
-        @include respond(big-desktop) {
-            font-size: 1.4rem;
+        @include respond(tab-land) {
+            margin-left: 0;
         }
     }
 
@@ -477,18 +577,37 @@
 
         &--1 {
             grid-column: 1 / 2;
+
+            @include respond(tab-land) {
+                grid-column: 1 / 3;
+                margin-right: 12rem;
+            }
         }
 
         &--2 {
             grid-column: 2 / 3;
+
+            @include respond(tab-land) {
+                grid-column: 2 / 4;
+                margin-left: 12rem;
+            }
         }
 
         &--3 {
             grid-column: 3 / 4;
+
+            @include respond(tab-land) {
+                display: none;
+            }
         }
     }
 
     &__box {
+        @include respond(big-desktop) {
+            width: 86%;
+            height: 69%;
+        }
+
         grid-column: 1 / -1;
         grid-row: 1 / -1;
         align-self: flex-start;
@@ -500,9 +619,9 @@
         width: 86%;
         height: 74%;
 
-        @include respond(big-desktop) {
-            width: 86%;
-            height: 69%;
+        @include respond(tab-land) {
+            width: 69.5%;
+            height: 69.5%;
         }
     }
 
@@ -518,6 +637,11 @@
     }
 
     &__quote {
+        @include respond(big-desktop) {
+            margin-top: 4rem;
+            font-size: 1.6rem;
+        }
+
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         align-self: flex-start;
@@ -528,13 +652,17 @@
         width: 70%;
         font-weight: $font-weight-regular;
 
-        @include respond(big-desktop) {
+        @include respond(tab-land) {
             margin-top: 4rem;
-            font-size: 1.6rem;
+            padding: 0 2rem;
         }
     }
 
     &__name {
+        @include respond(big-desktop) {
+            margin-bottom: 3rem;
+        }
+
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         align-self: flex-end;
@@ -546,12 +674,16 @@
         margin-bottom: 1.5rem;
         text-transform: uppercase;
 
-        @include respond(big-desktop) {
-            margin-bottom: 3rem;
+        @include respond(tab-land) {
+            margin-bottom: 2rem;
         }
     }
 
     &__title {
+        @include respond(big-desktop) {
+            margin-bottom: 0;
+        }
+
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         align-self: flex-end;
@@ -561,12 +693,16 @@
         font-weight: $font-weight-light;
         margin-bottom: -1rem;
 
-        @include respond(big-desktop) {
-            margin-bottom: 0;
+        @include respond(tab-land) {
+            margin-bottom: -0.5;
         }
     }
 
     &__company {
+        @include respond(big-desktop) {
+            margin-bottom: -2rem;
+        }
+
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         align-self: flex-end;
@@ -576,8 +712,8 @@
         font-weight: $font-weight-light;
         margin-bottom: -3rem;
 
-        @include respond(big-desktop) {
-            margin-bottom: -2rem;
+        @include respond(tab-land) {
+            margin-bottom: -1.5;
         }
     }
 
