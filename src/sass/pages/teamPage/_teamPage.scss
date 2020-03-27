@@ -1,13 +1,17 @@
 .teamPage {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75rem 75rem 75rem;
+    grid-template-rows: repeat(3, 60rem);
 
     align-items: center;
     font-size: 2.4rem;
     text-align: center;
 
     background: #F0F0F0;
+
+    @include respond(big-desktop) {
+        grid-template-rows: repeat(3, 75rem);
+    }
 }
 
 .t2__background {

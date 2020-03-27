@@ -4,9 +4,13 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: 1fr repeat(3, 46.666rem) 1fr;
+    grid-template-columns: 1fr repeat(3, 40rem) 1fr;
     grid-template-rows: 1fr 10rem;
     z-index: 1;
+
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr repeat(3, 46.666rem) 1fr;
+    }
 
 
     // PHOTO 1
@@ -64,8 +68,13 @@
         text-align: left;
 
         display: grid;
-        grid-template-columns: 1fr 45rem 1fr;
-        grid-template-rows: 5rem 13rem 15rem 20rem auto 1rem 5rem;
+        grid-template-columns: 1fr 40rem 1fr;
+        grid-template-rows: 4rem 10rem 12rem 17rem auto 1rem 5rem;
+
+        @include respond(big-desktop) {
+            grid-template-columns: 1fr 45rem 1fr;
+            grid-template-rows: 5rem 13rem 15rem 20rem auto 1rem 5rem;
+        }
     }
 
     &__line-top {
@@ -76,26 +85,43 @@
         border-top: dotted 5px $color-yellow;
 
         &--1 {
-            width: 29rem;
+            width: 26rem;
+
+            @include respond(big-desktop) {
+                width: 29rem;
+            }
         }
 
         &--2 {
-            width: 42rem;
+            width: 35rem;
+
+            @include respond(big-desktop) {
+                width: 42rem;
+            }
         }
 
         &--3 {
-            width: 25rem;
+            width: 23rem;
+
+            @include respond(big-desktop) {
+                width: 25rem;
+            }
         }
     }
 
     &__name {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        align-self: flex-start;
 
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         color: #fff;
         text-align: center;
         font-weight: $font-weight-regular;
+
+        @include respond(big-desktop) {
+            font-size: 5.5rem;
+        }
     }
 
     &__title {
@@ -103,10 +129,14 @@
         grid-row: 2 / 3;
         align-self: flex-end;
 
-        font-size: 3rem;
+        font-size: 2.4rem;
         color: $color-yellow;
         text-align: center;
         font-weight: $font-weight-regular;
+
+        @include respond(big-desktop) {
+            font-size: 3rem;
+        }
     }
 
     &__paragraph-1 {
@@ -115,10 +145,15 @@
         align-self: flex-end;
         justify-self: center;
 
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color: #fff;
-        width: 40rem;
+        width: 36rem;
         font-weight: $font-weight-regular;
+
+        @include respond(big-desktop) {
+            font-size: 1.6rem;
+            width: 40rem;
+        }
     }
 
     &__paragraph-2 {
@@ -127,10 +162,15 @@
         align-self: flex-end;
         justify-self: center;
 
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color: #fff;
-        width: 40rem;
+        width: 36rem;
         font-weight: $font-weight-regular;
+
+        @include respond(big-desktop) {
+            font-size: 1.6rem;
+            width: 40rem;
+        }
     }
 
     &__line-bottom {
@@ -177,8 +217,13 @@
         text-align: left;
 
         display: grid;
-        grid-template-columns: 1fr 45rem 1fr;
-        grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
+        grid-template-columns: 1fr 40rem 1fr;
+        grid-template-rows: 4rem 10rem 19rem 15rem auto 1rem 5rem;
+
+        @include respond(big-desktop) {
+            grid-template-columns: 1fr 45rem 1fr;
+            grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
+        }
     }
 
     // PHOTO 3
@@ -214,7 +259,12 @@
         text-align: left;
 
         display: grid;
-        grid-template-columns: 1fr 45rem 1fr;
-        grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
+        grid-template-columns: 1fr 40rem 1fr;
+        grid-template-rows: 4rem 10rem 19rem auto 1rem 5rem;
+
+        @include respond(big-desktop) {
+            grid-template-columns: 1fr 45rem 1fr;
+            grid-template-rows: 5rem 13rem 24rem 17rem auto 1rem 5rem;
+        }
     }
 }
