@@ -1,4 +1,9 @@
 .g3 {
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr 70rem 70rem 1fr;
+        grid-template-rows: 10rem 8rem 3rem 3rem 3rem 3rem 3rem 3rem auto 4rem;
+    }
+
     grid-row: 3 / 4;
     grid-column: 1 / 2;
     height: 100%;
@@ -9,9 +14,9 @@
     grid-template-columns: 1fr 60rem 60rem 1fr;
     grid-template-rows: 5rem 8rem 3rem 3rem 3rem 3rem 3rem auto 4rem;
 
-    @include respond(big-desktop) {
-        grid-template-columns: 1fr 70rem 70rem 1fr;
-        grid-template-rows: 10rem 8rem 3rem 3rem 3rem 3rem 3rem 3rem auto 4rem;
+    @include respond(tab-land) {
+        grid-template-columns: 1fr 35rem 35rem 1fr;
+        grid-template-rows: 4rem 8rem 3rem 3rem 7rem 3rem 4rem auto 4rem;
     }
 
     &__heading {
@@ -21,9 +26,17 @@
         font-size: 3.5rem;
         color: $color-blue;
         font-weight: $font-weight-regular;
+
+        @include respond(tab-land) {
+            line-height: 3.5rem;
+        }
     }
 
     &__line {
+        @include respond(big-desktop) {
+            width: 70rem;
+        }
+
         grid-column: 2 / 3;
         grid-row: 3 / 4;
         align-self: flex-start;
@@ -32,8 +45,8 @@
         height: 5px;
         background: $color-yellow;
 
-        @include respond(big-desktop) {
-            width: 70rem;
+        @include respond(tab-land) {
+            width: 36rem;
         }
     }
 
@@ -42,6 +55,10 @@
         grid-row: 4 / 5;
         font-size: 1.8rem;
         font-weight: $font-weight-light;
+
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
     }
 
     &__paragraph-2 {
@@ -49,6 +66,10 @@
         grid-row: 5 / 6;
         font-size: 1.8rem;
         font-weight: $font-weight-light;
+
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
     }
 
     &__paragraph-3 {
@@ -56,6 +77,10 @@
         grid-row: 6 / 7;
         font-size: 1.8rem;
         font-weight: $font-weight-light;
+
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
     }
 
     &__paragraph-4 {
@@ -63,6 +88,10 @@
         grid-row: 7 / 8;
         font-size: 1.8rem;
         font-weight: $font-weight-light;
+
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
     }
 
     &__paragraph-5 {
@@ -70,6 +99,10 @@
         grid-row: 8 / 9;
         font-size: 1.8rem;
         font-weight: $font-weight-light;
+
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
     }
 
     &__photo-container {

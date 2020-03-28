@@ -1,4 +1,9 @@
 .g4 {
+    @include respond(big-desktop) {
+        grid-template-columns: 1fr 70rem 70rem 1fr;
+        grid-template-rows: 10rem 8rem 3rem 3rem 3rem 3rem 3rem 3rem auto 4rem;
+    }
+
     grid-row: 4 / 5;
     grid-column: 1 / 2;
     height: 100%;
@@ -9,9 +14,9 @@
     grid-template-columns: 1fr 60rem 60rem 1fr;
     grid-template-rows: 5rem 8rem 3rem 3rem auto 4rem;
 
-    @include respond(big-desktop) {
-        grid-template-columns: 1fr 70rem 70rem 1fr;
-        grid-template-rows: 10rem 8rem 3rem 3rem 3rem 3rem 3rem 3rem auto 4rem;
+    @include respond(tab-land) {
+        grid-template-columns: 1fr 35rem 35rem 1fr;
+        grid-template-rows: 4rem 8rem 3rem 7rem auto 4rem;
     }
 
     &__heading {
@@ -24,6 +29,10 @@
     }
 
     &__line {
+        @include respond(big-desktop) {
+            width: 70rem;
+        }
+
         grid-column: 2 / 3;
         grid-row: 3 / 4;
         align-self: flex-start;
@@ -32,8 +41,8 @@
         height: 5px;
         background: $color-yellow;
 
-        @include respond(big-desktop) {
-            width: 70rem;
+        @include respond(tab-land) {
+            width: 36rem;
         }
     }
 
@@ -42,6 +51,10 @@
         grid-row: 4 / 5;
         font-size: 1.8rem;
         font-weight: $font-weight-light;
+
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
     }
 
     &__paragraph-2 {
@@ -49,6 +62,10 @@
         grid-row: 5 / 6;
         font-size: 1.8rem;
         font-weight: $font-weight-light;
+        
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
     }
 
     &__photo-container {
