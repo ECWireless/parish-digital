@@ -17,7 +17,8 @@
     }
 
     @include respond(tab-port) {
-        display: none;
+        grid-template-columns: 1fr 30rem 30rem 1fr;
+        grid-template-rows: 1fr 25rem 1rem 7rem 7rem 20rem;
     }
 
     // WEB HERO
@@ -30,7 +31,11 @@
         z-index: 0;
 
         @include respond(tab-port) {
-            display: none;
+            background-image: url('../../../assets/home-page/h1__photo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
         }
     }
     

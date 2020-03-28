@@ -19,6 +19,10 @@
         grid-template-rows: 60rem 30rem 180rem 50rem;
     }
 
+    @include respond(tab-port) {
+        grid-template-rows: 60rem 30rem 200rem 50rem;
+    }
+
     &__dotted-line {
         grid-column: 1 / -1;
         grid-row: 3 / 4;

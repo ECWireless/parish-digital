@@ -19,6 +19,10 @@
         grid-template-columns: 1fr 70rem 1fr;
     }
 
+    @include respond(tab-port) {
+        grid-template-columns: 1fr 50rem 1fr;
+    }
+
     &__heading {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
