@@ -12,6 +12,10 @@
     text-align: center;
 
     background: #F0F0F0;
+
+    @include respond(tab-port) {
+        grid-template-rows: 50rem 65rem 72rem 63rem 71rem;
+    }
 }
 
 .g2-4__background {

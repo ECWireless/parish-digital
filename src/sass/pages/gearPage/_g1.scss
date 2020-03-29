@@ -19,6 +19,11 @@
         grid-template-rows: 8rem 10rem 5rem 6rem 12rem 1fr;
     }
 
+    @include respond(tab-port) {
+        grid-template-columns: 1fr 26rem 26rem 1fr;
+        grid-template-rows: 8rem 10rem 7rem 7rem 12rem 1fr;
+    }
+
     &__background {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
@@ -49,6 +54,17 @@
             height: 20rem;
             width: 40rem;
         }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            align-self: center;
+            justify-self: flex-start;
+            height: 10rem;
+            width: 13rem;
+            margin-left: 2rem;
+            margin-top: -3rem;
+        }
     }
 
     &__heading {
@@ -62,6 +78,11 @@
 
         @include respond(tab-land) {
             font-size: 4.5rem;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+            margin-left: 16rem;
         }
     }
 
@@ -82,6 +103,11 @@
             width: 10rem;
             transform: translate(8rem, -2rem);
         }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+            transform: translate(24.5rem, -2rem);
+        }
     }
 
     &__paragraph-1 {
@@ -100,6 +126,11 @@
         @include respond(tab-land) {
             font-size: 1.6rem;
         }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+            margin-top: 2rem;
+        }
     }
 
     &__paragraph-2 {
@@ -116,6 +147,10 @@
 
         @include respond(tab-land) {
             font-size: 1.6rem;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
         }
     }
 
@@ -135,6 +170,11 @@
         z-index: 1;
 
         transition: all .3s ease;
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+            justify-self: center;
+        }
 
         &:hover {
             cursor: pointer;

@@ -20,6 +20,11 @@
         grid-template-rows: 5rem 8rem 3rem 7rem 7rem 3rem auto 4rem;
     }
 
+    @include respond(tab-port) {
+        grid-template-columns: 1fr 26rem 26rem 1fr;
+        grid-template-rows: 4rem 8rem 3rem 7rem 4rem 5rem 1fr;
+    }
+
     &__heading {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -30,6 +35,11 @@
 
         @include respond(tab-land) {
             line-height: 3.5rem;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+            line-height: inherit;
         }
     }
 
@@ -60,6 +70,10 @@
         @include respond(tab-land) {
             font-size: 1.6rem;
         }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+        }
     }
 
     &__paragraph-2 {
@@ -71,6 +85,10 @@
         @include respond(tab-land) {
             font-size: 1.6rem;
         }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+        }
     }
 
     &__paragraph-3 {
@@ -81,6 +99,10 @@
 
         @include respond(tab-land) {
             font-size: 1.6rem;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
         }
     }
 
@@ -99,6 +121,12 @@
 
         @include respond(big-desktop) {
             height: 45rem;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+            grid-row: 7 / -1;
+            align-self: flex-start;
         }
     }
 
