@@ -27,7 +27,6 @@ export default function H2() {
                 <h3 className="h2__sub-heading">We're Helpful</h3>
                 <p className="h2__paragraph">We listen. When you have an issue, we've got you covered</p>
             </div>
-            
         </div>
     )
 }

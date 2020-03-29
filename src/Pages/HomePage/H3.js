@@ -76,6 +76,26 @@ export default function H3(props) {
                     <li>Consultation</li>
                     <li>Server Storage and File Backup</li>
                 </ul>
+
+                <ul className="h3__list-alt-1">
+                    <li>On-location video production</li>
+                    <li>In-studio video production</li>
+                    <li>Travel</li>
+                    <li>Drone Videography</li>
+                    <li>Video Editing</li>
+                    <li>2D motion graphics</li>
+                    <li>360° VR video production</li>
+                    <li>Photography</li>
+                </ul>
+
+                <ul className="h3__list-alt-2">
+                    <li>Aerial photography</li>
+                    <li>High-speed photography</li>
+                    <li>Photo Editing</li>
+                    <li>Script Editing</li>
+                    <li>Consultation</li>
+                    <li>Server Storage and File Backup</li>
+                </ul>
             </div>
 
             <div className="h3__section-3">

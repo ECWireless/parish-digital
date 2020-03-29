@@ -20,7 +20,7 @@
     }
 
     @include respond(tab-port) {
-        grid-template-rows: 60rem 30rem 200rem 50rem;
+        grid-template-rows: 60rem 95rem auto 50rem;
     }
 
     &__dotted-line {
@@ -40,6 +40,16 @@
                 height: 15rem;
                 transform: translate(-15rem, -25rem);
             }
+
+            @include respond(tab-port) {
+                grid-row: 3 / 4;
+                align-self: flex-start;
+                transform: translate(20rem, 12rem);
+                border-left: none;
+                border-bottom: dotted 5px #DDDDDD;
+                height: 5px;
+                width: 10rem;
+            }
         }
 
         &--2 {
@@ -52,6 +62,17 @@
             @include respond(tab-land) {
                 width: 17rem;
                 transform: translate(-6.8rem, -16.8rem);
+            }
+
+            @include respond(tab-port) {
+                grid-row: 3 / 4;
+                align-self: flex-start;
+                transform: translate(26rem, 12rem);
+                border-left: none;
+                border-bottom: none;
+                border-right: dotted 5px #DDDDDD;
+                height: 80rem;
+                width: 5px;
             }
         }
 
@@ -66,6 +87,16 @@
             border-left: dotted 5px #DDDDDD;
             z-index: 0;
             transform: translate(30rem, 32rem);
+
+            @include respond(tab-port) {
+                grid-row: 3 / 4;
+                align-self: flex-start;
+                transform: translate(19rem, 91.5rem);
+                border-left: none;
+                border-bottom: dotted 5px #DDDDDD;
+                height: 5px;
+                width: 12rem;
+            }
         }
 
         &--4 {
@@ -79,6 +110,16 @@
             border-bottom: dotted 5px #DDDDDD;
             z-index: 0;
             transform: translate(12.3rem, 38.6rem);
+
+            @include respond(tab-port) {
+                grid-row: 3 / 4;
+                align-self: flex-start;
+                transform: translate(-20.3rem, 91.5rem);
+                border-left: none;
+                border-bottom: dotted 5px #DDDDDD;
+                height: 5px;
+                width: 14rem;
+            }
         }
 
         &--5 {
@@ -96,6 +137,17 @@
             @include respond(tab-land) {
                 transform: translate(-25rem, 45rem);
             }
+
+            @include respond(tab-port) {
+                grid-row: 3 / 4;
+                align-self: flex-start;
+                transform: translate(-28rem, 91.5rem);
+                border-left: none;
+                border-bottom: none;
+                border-right: dotted 5px #DDDDDD;
+                height: 90rem;
+                width: 5px;
+            }
         }
 
         &--6 {
@@ -112,6 +164,16 @@
             @include respond(tab-land) {
                 transform: translate(0rem, 55rem);
             }
+
+            @include respond(tab-port) {
+                grid-row: 3 / 4;
+                align-self: flex-start;
+                transform: translate(-20.3rem, 181rem);
+                border-left: none;
+                border-bottom: dotted 5px #DDDDDD;
+                height: 5px;
+                width: 14rem;
+            }
         }
 
         &--7 {
@@ -127,6 +189,18 @@
 
             @include respond(tab-land) {
                 display: none;
+            }
+
+            @include respond(tab-port) {
+                display: inline;
+                grid-row: 3 / 4;
+                align-self: flex-start;
+                transform: translate(0rem, 185rem);
+                border-left: none;
+                border-bottom: none;
+                border-right: dotted 5px #DDDDDD;
+                height: 10rem;
+                width: 5px;
             }
         }
     }
