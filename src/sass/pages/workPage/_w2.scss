@@ -21,6 +21,11 @@
         grid-template-rows: 8rem 8rem 3rem 3rem 3rem 3rem 1fr;
     }
 
+    @include respond(tab-port) {
+        grid-template-columns: 1fr 26rem 26rem 1fr;
+        grid-template-rows: 8rem 7rem 3rem 3rem 4rem 1fr;
+    }
+
     &__heading {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -54,6 +59,10 @@
             padding-right: 2rem;
             font-size: 1.6rem;
         }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+        }
     }
 
     &__video {
@@ -65,7 +74,7 @@
         grid-column: 3 / 4;
         grid-row: 1 / -1;
         justify-self: flex-start;
-        align-self: center;
+        align-self: flex-start;
 
         width: 590px;
         height: 332px;
@@ -73,6 +82,15 @@
         @include respond(tab-land) {
             width: 350px;
             height: 197px;
+        }
+
+        @include respond(tab-port) {
+            grid-column: 2 / 4;
+            grid-row: 6 / 7;
+            justify-self: center;
+            align-self: flex-start;
+            width: 500px;
+            height: 281px;
         }
     }
 }

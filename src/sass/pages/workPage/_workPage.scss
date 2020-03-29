@@ -16,6 +16,10 @@
     @include respond(tab-land) {
         grid-template-rows: 60rem repeat(4, 30rem) 50rem;
     }
+
+    @include respond(tab-port) {
+        grid-template-rows: 50rem repeat(3, 55rem) 60rem 50rem;
+    }
 }
 
 .w2-5__background {

@@ -16,6 +16,10 @@
     @include respond(tab-land) {
         grid-template-rows: 60rem 165rem 50rem;
     }
+
+    @include respond(tab-port) {
+        grid-template-rows: 50rem 165rem 50rem;
+    }
 }
 
 .t2__background {

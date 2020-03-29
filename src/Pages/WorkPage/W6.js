@@ -6,6 +6,7 @@ export default function W6() {
         <div className="w6">
             <div className="w6__background" />
             <div className="w6__photo" />
+            <div className="w6__banner" />
             <h2 className="w6__heading">More of our work</h2>
             <div className="w6__line" />
             <p className="w6__paragraph">See more of our projects on Vimeo</p>
