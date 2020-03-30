@@ -23,6 +23,10 @@
         grid-template-rows: 60rem 95rem auto 50rem;
     }
 
+    @include respond(phone) {
+        grid-template-rows: 60rem 135rem auto 50rem;
+    }
+
     &__dotted-line {
         grid-column: 1 / -1;
         grid-row: 3 / 4;
@@ -50,6 +54,10 @@
                 height: 5px;
                 width: 10rem;
             }
+
+            @include respond(phone) {
+                display: none;
+            }
         }
 
         &--2 {
@@ -74,6 +82,10 @@
                 height: 80rem;
                 width: 5px;
             }
+
+            @include respond(phone) {
+                transform: translate(19.5rem, 12rem);
+            }
         }
 
         &--3 {
@@ -97,6 +109,11 @@
                 height: 5px;
                 width: 12rem;
             }
+
+            @include respond(phone) {
+                transform: translate(16rem, 91.5rem);
+                width: 6rem;
+            }
         }
 
         &--4 {
@@ -119,6 +136,11 @@
                 border-bottom: dotted 5px #DDDDDD;
                 height: 5px;
                 width: 14rem;
+            }
+
+            @include respond(phone) {
+                transform: translate(-16.5rem, 91.5rem);
+                width: 8rem;
             }
         }
 
@@ -148,6 +170,11 @@
                 height: 90rem;
                 width: 5px;
             }
+
+            @include respond(phone) {
+                transform: translate(-21.3rem, 91.5rem);
+                height: 83rem;
+            }
         }
 
         &--6 {
@@ -173,6 +200,11 @@
                 border-bottom: dotted 5px #DDDDDD;
                 height: 5px;
                 width: 14rem;
+            }
+
+            @include respond(phone) {
+                transform: translate(-18.5rem, 175rem);
+                width: 6rem;
             }
         }
 
@@ -201,6 +233,10 @@
                 border-right: dotted 5px #DDDDDD;
                 height: 10rem;
                 width: 5px;
+            }
+
+            @include respond(phone) {
+                transform: translate(0rem, 177rem);
             }
         }
     }

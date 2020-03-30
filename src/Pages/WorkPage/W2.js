@@ -9,8 +9,8 @@ export default function W2(props) {
 
             <iframe
                 src="https://player.vimeo.com/video/333626083"
-                frameborder="0"
-                allow="autoplay; fullscreen" allowfullscreen
+                frameBorder="0"
+                allow="autoplay; fullscreen" allowFullScreen
                 className="w2__video" title="Featured Video"></iframe>
         </div>
     )

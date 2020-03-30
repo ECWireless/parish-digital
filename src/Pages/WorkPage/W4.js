@@ -9,8 +9,8 @@ export default function W4() {
 
             <iframe
                 src="https://player.vimeo.com/video/128684206"
-                frameborder="0"
-                allow="autoplay; fullscreen" allowfullscreen
+                frameBorder="0"
+                allow="autoplay; fullscreen" allowFullScreen
                 className="w4__video" title="Featured Video"></iframe>
         </div>
     )

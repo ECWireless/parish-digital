@@ -9,8 +9,8 @@ export default function W5() {
 
             <iframe
                 src="https://player.vimeo.com/video/365644402"
-                frameborder="0"
-                allow="autoplay; fullscreen" allowfullscreen
+                frameBorder="0"
+                allow="autoplay; fullscreen" allowFullScreen
                 className="w5__video" title="Featured Video">
             </iframe>
         </div>

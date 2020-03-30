@@ -31,12 +31,12 @@ body {
 
     @include respond(phone) {
         grid-template-columns: 1fr;
-        grid-template-rows: 8rem auto 60rem 7rem;
+        grid-template-rows: 7rem auto 15rem 7rem;
     }
 
     @include respond(small-phone) {
         grid-template-columns: 1fr;
-        grid-template-rows: 8rem auto 55rem 7rem;
+        grid-template-rows: 7rem auto 15rem 7rem;
     }
 }
 
@@ -56,12 +56,12 @@ body {
 
     @include respond(phone) {
         grid-template-columns: 1fr;
-        grid-template-rows: 8rem auto 60rem 7rem;
+        grid-template-rows: 7rem auto 15rem 7rem;
     }
 
     @include respond(small-phone) {
         grid-template-columns: 1fr;
-        grid-template-rows: 8rem auto 55rem 7rem;
+        grid-template-rows: 7rem auto 15rem 7rem;
     }
 }
 
