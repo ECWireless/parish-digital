@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import './App.scss';
+import "scroll-behavior-polyfill";
 
 // Navigation
 import Header from './Navigation/Header';
