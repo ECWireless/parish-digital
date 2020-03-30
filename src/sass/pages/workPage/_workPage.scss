@@ -24,6 +24,10 @@
     @include respond(phone) {
         grid-template-rows: 45rem repeat(3, 45rem) 60rem 50rem;
     }
+
+    @include respond(small-phone) {
+        grid-template-rows: 45rem repeat(3, 40rem) 50rem 50rem;
+    }
 }
 
 .w2-5__background {

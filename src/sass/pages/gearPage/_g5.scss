@@ -30,6 +30,10 @@
         grid-template-rows: 4rem 8rem 3rem 6rem 6rem 5rem 1fr;
     }
 
+    @include respond(small-phone) {
+        grid-template-columns: 1fr 16rem 16rem 1fr;
+    }
+
     &__heading {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -50,6 +54,10 @@
         @include respond(phone) {
             line-height: 3.5rem;
         }
+
+        @include respond(small-phone) {
+            font-size: 2.8rem;
+        }
     }
 
     &__line {
@@ -67,6 +75,10 @@
 
         @include respond(tab-land) {
             width: 36rem;
+        }
+
+        @include respond(tab-land) {
+            width: 32rem;
         }
     }
 

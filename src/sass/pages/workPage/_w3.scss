@@ -29,6 +29,11 @@
         grid-template-columns: 1fr 20rem 20rem 1fr;
     }
 
+    @include respond(small-phone) {
+        grid-template-columns: 1fr 16rem 16rem 1fr;
+        grid-template-rows: 8rem 6rem 2rem 3rem 4rem 1fr;
+    }
+
     &__heading {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -39,6 +44,10 @@
 
         @include respond(phone) {
             grid-column: 2 / 4;
+        }
+
+        @include respond(small-phone) {
+            font-size: 2.8rem;
         }
     }
 
@@ -57,7 +66,11 @@
 
         @include respond(phone) {
             width: 38rem;
-        } 
+        }
+
+        @include respond(small-phone) {
+            width: 32rem;
+        }
     }
 
     &__paragraph-1 {
@@ -73,6 +86,10 @@
 
         @include respond(tab-port) {
             grid-column: 2 / 4;
+        }
+
+        @include respond(small-phone) {
+            font-size: 1.4rem;
         }
     }
 
@@ -107,6 +124,11 @@
         @include respond(phone) {
             width: 350px;
             height: 197px;
+        }
+
+        @include respond(small-phone) {
+            width: 320px;
+            height: 180px;
         }
     }
 }

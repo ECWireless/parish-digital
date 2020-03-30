@@ -24,6 +24,10 @@
         grid-template-columns: 1fr 26rem 14rem 1fr;
     }
 
+    @include respond(small-phone) {
+        grid-template-columns: 1fr 23rem 5rem 1fr;
+    }
+
     &__background {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
@@ -62,6 +66,10 @@
             background: #000;
             z-index: 1;
         }
+
+        @include respond(small-phone) {
+            opacity: .8;
+        }
     }
 
     &__heading {
@@ -88,6 +96,10 @@
             text-align: right;
             font-size: 3.2rem;
             z-index: 1;
+        }
+
+        @include respond(small-phone) {
+            font-size: 2.8rem;
         }
     }
 
@@ -141,6 +153,10 @@
             justify-self: flex-start;
             text-align: left;
             z-index: 1;
+        }
+
+        @include respond(tab-port) {
+            font-size: 1.2rem;
         }
     }
 
