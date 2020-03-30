@@ -17,6 +17,10 @@
         grid-template-rows: repeat(3, 1fr);
     }
 
+    @include respond(phone) {
+        grid-template-columns: 1fr 20rem 20rem 1fr;
+    }
+
     // PHOTO 1
     &__photo-container-1 {
         grid-column: 2 / 3;
@@ -90,6 +94,10 @@
         @include respond(tab-land) {
             grid-template-columns: 1fr 45rem 1fr;
             grid-template-rows: 4rem 10rem 12rem 14rem auto 1rem 5rem;
+        }
+
+        @include respond(phone) {
+            grid-template-columns: 1fr 40rem 1fr;
         }
     }
 
@@ -260,6 +268,11 @@
             grid-template-columns: 1fr 45rem 1fr;
             grid-template-rows: 4rem 10rem 16rem 14rem auto 1rem 5rem;
         }
+
+        @include respond(phone) {
+            grid-template-columns: 1fr 40rem 1fr;
+            grid-template-rows: 4rem 10rem 20rem 14rem auto 1rem 5rem;
+        }
     }
 
     // PHOTO 3
@@ -313,6 +326,10 @@
         @include respond(tab-land) {
             grid-template-columns: 1fr 45rem 1fr;
             grid-template-rows: 4rem 10rem 19rem 1rem auto 1rem 5rem;
+        }
+
+        @include respond(phone) {
+            grid-template-columns: 1fr 40rem 1fr;
         }
     }
 }

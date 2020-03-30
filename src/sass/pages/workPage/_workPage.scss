@@ -20,6 +20,10 @@
     @include respond(tab-port) {
         grid-template-rows: 50rem repeat(3, 55rem) 60rem 50rem;
     }
+
+    @include respond(phone) {
+        grid-template-rows: 45rem repeat(3, 45rem) 60rem 50rem;
+    }
 }
 
 .w2-5__background {

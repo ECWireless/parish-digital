@@ -17,6 +17,10 @@
         grid-template-rows: 10rem repeat(2, 1fr);
     }
 
+    @include respond(phone) {
+        grid-template-columns: 1fr 36rem 4rem 1fr;
+    }
+
     &__photo {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
@@ -68,6 +72,11 @@
             text-align: right;
             font-size: 3.2rem;
             margin-top: 1rem;
+        }
+
+        @include respond(phone) {
+            font-size: 2.8rem;
+            margin-top: 1.5rem;
         }
     }
 
