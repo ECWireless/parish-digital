@@ -17,6 +17,10 @@
         grid-template-rows: 15rem repeat(4, 30rem);
     }
 
+    @include respond(small-phone) {
+        grid-template-columns: 1fr 16rem 16rem 1fr;
+    }
+
     &__background {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
@@ -51,6 +55,12 @@
         @include respond(phone) {
             font-size: 1.8rem;
             font-weight: $font-weight-bold;
+        }
+
+        @include respond(small-phone) {
+            width: 25rem;
+            margin: 0 auto;
+            font-size: 2rem;
         }
     }
 

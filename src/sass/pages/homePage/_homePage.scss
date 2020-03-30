@@ -27,6 +27,10 @@
         grid-template-rows: 60rem 135rem auto 50rem;
     }
 
+    @include respond(small-phone) {
+        grid-template-rows: 45rem 135rem auto 50rem;
+    }
+
     &__dotted-line {
         grid-column: 1 / -1;
         grid-row: 3 / 4;
@@ -86,6 +90,10 @@
             @include respond(phone) {
                 transform: translate(19.5rem, 12rem);
             }
+
+            @include respond(small-phone) {
+                transform: translate(15rem, 12rem);
+            }
         }
 
         &--3 {
@@ -114,6 +122,11 @@
                 transform: translate(16rem, 91.5rem);
                 width: 6rem;
             }
+
+            @include respond(small-phone) {
+                transform: translate(13rem, 91.5rem);
+                width: 3rem;
+            }
         }
 
         &--4 {
@@ -141,6 +154,11 @@
             @include respond(phone) {
                 transform: translate(-16.5rem, 91.5rem);
                 width: 8rem;
+            }
+
+            @include respond(small-phone) {
+                transform: translate(-15rem, 91.5rem);
+                width: 4rem;
             }
         }
 
@@ -175,6 +193,11 @@
                 transform: translate(-21.3rem, 91.5rem);
                 height: 83rem;
             }
+
+            @include respond(small-phone) {
+                transform: translate(-17.5rem, 88rem);
+                height: 83rem;
+            }
         }
 
         &--6 {
@@ -205,6 +228,11 @@
             @include respond(phone) {
                 transform: translate(-18.5rem, 175rem);
                 width: 6rem;
+            }
+
+            @include respond(small-phone) {
+                transform: translate(-16.2rem, 171.5rem);
+                width: 3rem;
             }
         }
 
@@ -237,6 +265,10 @@
 
             @include respond(phone) {
                 transform: translate(0rem, 177rem);
+            }
+
+            @include respond(small-phone) {
+                transform: translate(0rem, 174rem);
             }
         }
     }

@@ -16,6 +16,10 @@
     @include respond(tab-port) {
         grid-template-rows: 50rem 65rem 72rem 63rem 71rem;
     }
+
+    @include respond(phone) {
+        grid-template-rows: 45rem 65rem 72rem 63rem 71rem;
+    }
 }
 
 .g2-4__background {

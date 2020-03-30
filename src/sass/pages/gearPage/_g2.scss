@@ -24,6 +24,10 @@
         grid-template-rows: 4rem 7rem 3rem 3rem 3rem 5rem 1fr;
     }
 
+    @include respond(phone) {
+        grid-template-columns: 1fr 20rem 20rem 1fr;
+    }
+
     &__heading {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -64,6 +68,10 @@
         @include respond(tab-port) {
             grid-column: 2 / 4;
         }
+
+        @include respond(phone) {
+            font-size: 1.4rem;
+        }
     }
 
     &__paragraph-2 {
@@ -79,6 +87,10 @@
         @include respond(tab-port) {
             grid-column: 2 / 4;
         }
+
+        @include respond(phone) {
+            font-size: 1.4rem;
+        }
     }
 
     &__paragraph-3 {
@@ -93,6 +105,10 @@
 
         @include respond(tab-port) {
             grid-column: 2 / 4;
+        }
+
+        @include respond(phone) {
+            font-size: 1.4rem;
         }
     }
 
@@ -121,6 +137,10 @@
     }
 
     &__pattern {
+        @include respond(big-desktop) {
+            height: 41rem;
+        }
+
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         background-position: top;
@@ -131,10 +151,6 @@
         height: 31rem;
         opacity: .5;
         z-index: 0;
-
-        @include respond(big-desktop) {
-            height: 41rem;
-        }
     }
 
     &__photo {

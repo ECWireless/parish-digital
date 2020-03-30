@@ -26,6 +26,11 @@
         grid-template-rows: 10rem 10rem 1rem 7rem 7rem 1fr;
     }
 
+    @include respond(small-phone) {
+        grid-template-columns: 1fr 16rem 16rem 1fr;
+        grid-template-rows: 2rem 10rem 1rem 7rem 7rem 1fr;
+    }
+
     // WEB HERO
     &__web-hero-container {
         grid-column: 1 / -1;
@@ -83,6 +88,11 @@
         @include respond(phone) {
             font-size: 3.6rem;
         }
+
+        @include respond(small-phone) {
+            font-size: 2.6rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &__line {
@@ -106,6 +116,10 @@
         @include respond(phone) {
             width: 40rem;
         }
+
+        @include respond(small-phone) {
+            width: 30rem;
+        }
     }
 
     &__sub-slogan {
@@ -126,6 +140,10 @@
         @include respond(phone) {
             font-size: 1.8rem;
             font-weight: $font-weight-regular;
+        }
+
+        @include respond(small-phone) {
+            font-size: 1.4rem;
         }
     }
 
@@ -163,6 +181,12 @@
                 width: 14rem;
             }
 
+            @include respond(small-phone) {
+                width: 10rem;
+                height: 4rem;
+                font-size: 1.4rem;
+            }
+
             &:hover {
                 cursor: pointer;
                 background: $color-yellow;
@@ -188,6 +212,12 @@
                 background: rgba(78, 96, 119, .8);
                 font-size: 1.8rem;
                 width: 14rem;
+            }
+
+            @include respond(small-phone) {
+                width: 10rem;
+                height: 4rem;
+                font-size: 1.4rem;
             }
 
             &:hover {

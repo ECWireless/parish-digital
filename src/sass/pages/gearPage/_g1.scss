@@ -24,6 +24,10 @@
         grid-template-rows: 8rem 10rem 7rem 7rem 12rem 1fr;
     }
 
+    @include respond(phone) {
+        grid-template-columns: 1fr 20rem 20rem 1fr;
+    }
+
     &__background {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
@@ -130,6 +134,10 @@
         @include respond(tab-port) {
             grid-column: 2 / 4;
             margin-top: 2rem;
+        }
+
+        @include respond(phone) {
+            width: 100%;
         }
     }
 
