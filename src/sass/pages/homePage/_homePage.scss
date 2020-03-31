@@ -120,13 +120,13 @@
             }
 
             @include respond(phone) {
-                transform: translate(16rem, 91.5rem);
+                transform: translate(16.5rem, 91.5rem);
                 border-bottom: dotted 2px #DDDDDD;
                 width: 6rem;
             }
 
             @include respond(small-phone) {
-                transform: translate(13rem, 91.5rem);
+                transform: translate(13.4rem, 91.5rem);
                 width: 3rem;
             }
         }
@@ -154,13 +154,13 @@
             }
 
             @include respond(phone) {
-                transform: translate(-16.5rem, 91.5rem);
+                transform: translate(-16.8rem, 91.5rem);
                 border-bottom: dotted 2px #DDDDDD;
                 width: 8rem;
             }
 
             @include respond(small-phone) {
-                transform: translate(-15rem, 91.5rem);
+                transform: translate(-15rem, 91.8rem);
                 width: 4rem;
             }
         }
@@ -193,13 +193,13 @@
             }
 
             @include respond(phone) {
-                transform: translate(-21.3rem, 91.5rem);
+                transform: translate(-21.3rem, 91.8rem);
                 border-right: dotted 2px #DDDDDD;
-                height: 83rem;
+                height: 83.3rem;
             }
 
             @include respond(small-phone) {
-                transform: translate(-17.5rem, 91.5rem);
+                transform: translate(-17.5rem, 92.1rem);
                 height: 80rem;
             }
         }
@@ -230,13 +230,13 @@
             }
 
             @include respond(phone) {
-                transform: translate(-18.5rem, 175rem);
+                transform: translate(-18.2rem, 175rem);
                 border-bottom: dotted 2px #DDDDDD;
                 width: 6rem;
             }
 
             @include respond(small-phone) {
-                transform: translate(-16.2rem, 171.5rem);
+                transform: translate(-15.5rem, 171.6rem);
                 width: 3rem;
             }
         }
