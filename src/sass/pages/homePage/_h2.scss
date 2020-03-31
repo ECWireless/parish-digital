@@ -70,6 +70,11 @@
         border-top: dotted 5px $color-yellow;
         border-left: dotted 5px $color-yellow;
 
+        @include respond(phone) {
+            border-top: dotted 2px $color-yellow;
+            border-left: dotted 2px $color-yellow;
+        }
+
         &--1 {
             grid-column: 1 / 2;
             margin-top: 8rem;

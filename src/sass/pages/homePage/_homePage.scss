@@ -89,6 +89,7 @@
 
             @include respond(phone) {
                 transform: translate(19.5rem, 12rem);
+                border-right: dotted 2px #DDDDDD;
             }
 
             @include respond(small-phone) {
@@ -120,6 +121,7 @@
 
             @include respond(phone) {
                 transform: translate(16rem, 91.5rem);
+                border-bottom: dotted 2px #DDDDDD;
                 width: 6rem;
             }
 
@@ -153,6 +155,7 @@
 
             @include respond(phone) {
                 transform: translate(-16.5rem, 91.5rem);
+                border-bottom: dotted 2px #DDDDDD;
                 width: 8rem;
             }
 
@@ -191,6 +194,7 @@
 
             @include respond(phone) {
                 transform: translate(-21.3rem, 91.5rem);
+                border-right: dotted 2px #DDDDDD;
                 height: 83rem;
             }
 
@@ -227,6 +231,7 @@
 
             @include respond(phone) {
                 transform: translate(-18.5rem, 175rem);
+                border-bottom: dotted 2px #DDDDDD;
                 width: 6rem;
             }
 
@@ -265,6 +270,7 @@
 
             @include respond(phone) {
                 transform: translate(0rem, 177rem);
+                border-right: dotted 2px #DDDDDD;
             }
 
             @include respond(small-phone) {
