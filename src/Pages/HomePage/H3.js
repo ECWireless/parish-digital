@@ -112,7 +112,7 @@ export default function H3(props) {
                     </p>
                     <p className="h3__name">ERIC DZUBA</p>
                     <p className="h3__title">Director, Marketing & Innovation</p>
-                    <p className="h3__company">Carmeuse Lime & Stone</p>
+                    <p className="h3__company">Carmeuse Americas</p>
                 </div>
 
                 <div className="h3__testimonial-container h3__testimonial-container--2">
@@ -125,7 +125,7 @@ export default function H3(props) {
                     </p>
                     <p className="h3__name">Brandon Fandel</p>
                     <p className="h3__title">Digital Marketing Analyst</p>
-                    <p className="h3__company">Kennemetal, Inc.</p>
+                    <p className="h3__company">Kennametal, Inc.</p>
                 </div>
 
                 <div className="h3__testimonial-container h3__testimonial-container--3">

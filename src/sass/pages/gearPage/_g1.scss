@@ -16,7 +16,7 @@
 
     @include respond(tab-land) {
         grid-template-columns: 1fr 35rem 35rem 1fr;
-        grid-template-rows: 8rem 10rem 5rem 6rem 12rem 1fr;
+        grid-template-rows: 8rem 10rem 5rem 11rem 12rem 1fr;
     }
 
     @include respond(tab-port) {
@@ -30,7 +30,7 @@
 
     @include respond(small-phone) {
         grid-template-columns: 1fr 16rem 16rem 1fr;
-        grid-template-rows: 8rem 8rem 9rem 5rem 12rem 1fr;
+        grid-template-rows: 8rem 8rem 9rem 8rem 9rem 1fr;
     }
 
     &__background {

@@ -19,10 +19,17 @@ export default class Work extends Component {
     }
 
     scrollDown = () => {
-        window.scroll({
-            top: this.state.workRef.current.offsetTop - 100,
-            behavior: 'smooth',
-        })
+        if (window.matchMedia('(max-width: 600px)').matches) {
+			window.scroll({
+                top: this.state.workRef.current.offsetTop - 20,
+                behavior: 'smooth',
+            })
+		} else {
+            window.scroll({
+                top: this.state.workRef.current.offsetTop - 100,
+                behavior: 'smooth',
+            })
+        }
     }
     
     render() {

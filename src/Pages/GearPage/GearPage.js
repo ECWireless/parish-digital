@@ -18,10 +18,17 @@ export default class GearPage extends Component {
     }
 
     scrollDown = () => {
-        window.scroll({
-            top: this.state.gearRef.current.offsetTop - 100,
-            behavior: 'smooth',
-        })
+        if (window.matchMedia('(max-width: 600px)').matches) {
+			window.scroll({
+                top: this.state.gearRef.current.offsetTop - 50,
+                behavior: 'smooth',
+            })
+		} else {
+            window.scroll({
+                top: this.state.gearRef.current.offsetTop - 100,
+                behavior: 'smooth',
+            })
+        }
     }
     
     render() {
