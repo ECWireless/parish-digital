@@ -29,6 +29,10 @@
         background-image: url('../../../assets/home-page/h2/h2_gradient.jpg');
         background-size: cover;
         background-position: bottom;
+
+        @include respond(phone) {
+            background-image: url('../../../assets/home-page/h2/h2_gradient-sm.jpg');
+        }
     }
 
     &__heading {

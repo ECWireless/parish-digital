@@ -43,6 +43,10 @@
         background-size: cover;
         background-position: center;
         opacity: .1;
+
+        @include respond(phone) {
+            background-image: url('../../../assets/home-page/h3/corner-fade-sm.png');
+        }
     }
 
     &__background-2 {
@@ -57,6 +61,10 @@
         background-position: center;
         opacity: .06;
         z-index: 0;
+
+        @include respond(phone) {
+            background-image: url('../../../assets/home-page/h3/corner-fade-sm.png');
+        }
     }
 
     &__background-3 {
@@ -71,6 +79,10 @@
         transform: rotate(180deg);
         z-index: 0;
         opacity: .05;
+
+        @include respond(phone) {
+            background-image: url('../../../assets/work-page/w2-5/w1__background-sm.png');
+        }
     }
 
     // Section 1
@@ -163,6 +175,7 @@
             align-self: center;
             justify-self: flex-start;
 
+            background-image: url('../../../assets/home-page/h3/h3__camera-sm.png');
             height: 15rem;
             width: 20rem;
             transform: translate(0, 0);

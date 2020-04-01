@@ -21,11 +21,12 @@
 
     @include respond(tab-port) {
         grid-template-columns: 1fr 26rem 26rem 1fr;
-        grid-template-rows: 4rem 8rem 3rem 6rem 5rem 1fr;
+        grid-template-rows: 4rem 8rem 3rem 3rem 5rem 1fr;
     }
 
     @include respond(phone) {
         grid-template-columns: 1fr 20rem 20rem 1fr;
+        grid-template-rows: 4rem 8rem 3rem 6rem 5rem 1fr;
     }
 
     @include respond(small-phone) {

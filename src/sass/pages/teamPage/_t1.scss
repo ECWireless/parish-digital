@@ -45,6 +45,10 @@
         background-position: bottom;
         opacity: .9;
         z-index: 0;
+
+        @include respond(phone) {
+            background-image: url('../../../assets/work-page/w1/w1__background-sm.png');
+        }
     }
 
     &__photo {
@@ -71,6 +75,7 @@
             width: 13rem;
             margin-left: 2rem;
             margin-top: -5rem;
+            background-image: url('../../../assets/team-page/t1__photo-sm.png');
         }
     }
 

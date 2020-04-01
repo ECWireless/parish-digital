@@ -14,11 +14,11 @@
     background: #F0F0F0;
 
     @include respond(tab-port) {
-        grid-template-rows: 50rem 65rem 72rem 63rem 71rem;
+        grid-template-rows: 50rem 65rem 72rem 63rem 75rem;
     }
 
     @include respond(phone) {
-        grid-template-rows: 50rem 65rem 72rem 63rem 71rem;
+        grid-template-rows: 50rem 65rem 72rem 65rem 71rem;
     }
 
     @include respond(small-phone) {
@@ -36,6 +36,10 @@
     background-size: cover;
     background-position: center;
     transform: rotate(180deg);
+
+    @include respond(phone) {
+        background-image: url('../../../assets/gear-page/fade-thin-sm.jpg');
+    }
 }
 
 .g2-4__background-overlay {
@@ -49,6 +53,10 @@
     transform: rotate(180deg);
     z-index: 0;
     opacity: .7;
+
+    @include respond(phone) {
+        background-image: url('../../../assets/work-page/w2-5/w1__background-sm.png');
+    }
 }
 
 // W1: Our Work

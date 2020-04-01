@@ -50,6 +50,10 @@
         @include respond(tab-port) {
             grid-column: 1 / -1;
         }
+
+        @include respond(phone) {
+            background-image: url('../../../assets/work-page/w6/mike-sm.png');
+        }
     }
 
     &__banner {

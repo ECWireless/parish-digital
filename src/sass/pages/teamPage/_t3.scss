@@ -32,6 +32,10 @@
         background-image: url('../../../assets/team-page/t3_photo.jpg');
         background-size: cover;
         background-position: center;
+
+        @include respond(phone) {
+            background-image: url('../../../assets/team-page/t3_photo-sm.jpg');
+        }
     }
 
     &__banner {

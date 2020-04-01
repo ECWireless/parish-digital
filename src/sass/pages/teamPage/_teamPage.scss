@@ -37,6 +37,10 @@
     transform: rotate(180deg);
     z-index: 0;
     opacity: .1;
+
+    @include respond(phone) {
+        background-image: url('../../../assets/team-page/fade-thin-sm.jpg');
+    }
 }
 
 // T1: Meet the team

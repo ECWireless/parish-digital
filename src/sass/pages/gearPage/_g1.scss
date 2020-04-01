@@ -16,7 +16,7 @@
 
     @include respond(tab-land) {
         grid-template-columns: 1fr 35rem 35rem 1fr;
-        grid-template-rows: 8rem 10rem 5rem 11rem 12rem 1fr;
+        grid-template-rows: 8rem 10rem 7rem 9rem 12rem 1fr;
     }
 
     @include respond(tab-port) {
@@ -44,6 +44,10 @@
         background-position: bottom;
         opacity: .9;
         z-index: 0;
+
+        @include respond(phone) {
+            background-image: url('../../../assets/gear-page/g1__background-sm.png');
+        }
     }
 
     &__photo {
@@ -65,6 +69,7 @@
         }
 
         @include respond(tab-port) {
+            background-image: url('../../../assets/gear-page/g1__photo.png');
             grid-column: 2 / 3;
             grid-row: 2 / 3;
             align-self: center;
@@ -143,6 +148,7 @@
 
         @include respond(tab-land) {
             font-size: 1.6rem;
+            width: 100%;
         }
 
         @include respond(tab-port) {

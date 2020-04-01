@@ -45,6 +45,10 @@
         background-position: bottom;
         opacity: .9;
         z-index: 0;
+
+        @include respond(phone) {
+            background-image: url('../../../assets/work-page/w1/w1__background-sm.png');
+        }
     }
 
     &__photo {
@@ -53,7 +57,7 @@
         align-self: center;
         height: 60rem;
 
-        background-image: url('../../../assets/work-page/w1/w1__photo-sm.png');
+        background-image: url('../../../assets/work-page/w1/w1__photo.png');
         background-size: cover;
         background-position: center;
         z-index: 1;
@@ -63,6 +67,7 @@
         }
     
         @include respond(tab-port) {
+            background-image: url('../../../assets/work-page/w1/w1__photo-sm.png');
             grid-column: 2 / 3;
             grid-row: 2 / 3;
             align-self: center;
