@@ -7,7 +7,7 @@ const HomePage = React.lazy(() => import('../Pages/HomePage/HomePage'));
 const WorkPage = React.lazy(() => import('../Pages/WorkPage/WorkPage'));
 const TeamPage = React.lazy(() => import('../Pages/TeamPage/TeamPage'));
 const GearPage = React.lazy(() => import('../Pages/GearPage/GearPage'));
-// const EmployeePage = React.lazy(() => import('../Pages/EmployeePage'));
+const EmployeePage = React.lazy(() => import('../Pages/EmployeePage'));
 
 export default function Router(props) {
     return (
@@ -33,11 +33,11 @@ export default function Router(props) {
                         <GearPage scrollToTop={props.scrollToTop} />
                     </React.Suspense>}
                 />
-                {/* <Route path="/employee" exact
+                <Route path="/employee" exact
                     render={() => <React.Suspense fallback={<Loading />}>
                         <EmployeePage scrollToTop={props.scrollToTop} />
                     </React.Suspense>}
-                /> */}
+                />
                 <Redirect to="/" exact />
             </Switch>
         </React.Fragment>
