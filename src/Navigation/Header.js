@@ -27,10 +27,10 @@ export default function Header(props) {
                 <p className="header__company">Parish Digital</p>
             </NavLink>
             <a href="mailto: keith@parishdigital.com" className="header__email">
-                <Email className="header__email-icon"/>
+                <Email title="email" className="header__email-icon"/>
             </a>
             <a href="tel:4129513331" className="header__phone">
-                <Phone className="header__phone-icon"/>
+                <Phone title="call" className="header__phone-icon"/>
             </a>
         </div>
     )

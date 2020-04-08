@@ -53,6 +53,18 @@ export default function LargeSidebar(props) {
                 <GearIcon className="largeSidebar__gear-icon" />
                 <p className={props.toggleSidebar ? "largeSidebar__gear-text": ''}>Gear</p>
             </NavLink>
+
+            <NavLink
+                to="/employee"
+                className="largeSidebar__employee"
+                onClick={props.onPageSelection}
+            >
+                {
+                    !props.loggedIn
+                    ? <button className="largeSidebar__button">Login</button>
+                    : <button className="largeSidebar__button">Profile</button>
+                }
+            </NavLink>
         </div>
     )
 }

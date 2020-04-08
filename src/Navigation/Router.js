@@ -35,7 +35,14 @@ export default function Router(props) {
                 />
                 <Route path="/employee" exact
                     render={() => <React.Suspense fallback={<Loading />}>
-                        <EmployeePage scrollToTop={props.scrollToTop} />
+                        <EmployeePage
+							login={props.login}
+							logout={props.logout}
+                            loggedIn={props.loggedIn}
+                            password={props.password}
+                            
+                            scrollToTop={props.scrollToTop}
+                        />
                     </React.Suspense>}
                 />
                 <Redirect to="/" exact />

@@ -11,10 +11,89 @@ import SmallSidebar from './Navigation/SmallSidebar';
 import LargeSidebar from './Navigation/LargeSidebar';
 import Router from './Navigation/Router';
 
+const serverUrl = "https://parish-digital-backend.herokuapp.com/graphql"
+
 export default class App extends Component {
 	state = {
 		toggleSidebar: false,
+        loggedIn: false,
+        token: null,
+        userId: null,
+		username: 'Keith',
+		location: '',
 	}
+
+    constructor(props) {
+        super(props);
+        this.passwordEl = React.createRef();
+    }
+
+	componentDidMount() {
+		if (localStorage.getItem('myToken')) {
+			this.setState({
+                token: localStorage.getItem('myToken'),
+                loggedIn: true,
+            })
+		}
+	}
+
+	login = (event) => {
+        event.preventDefault();
+        const password = this.passwordEl.current.value;
+
+        let requestBody = {
+            query: `
+                query {
+                    login(username: "Keith", password: "${password}") {
+                        userId
+                        token
+                        tokenExpiration
+                    }
+                }
+            `
+        }
+
+        fetch(serverUrl, {
+            method: 'POST',
+            body: JSON.stringify(requestBody),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(res => {
+            return res.json();
+        })
+        .then(resData => {
+            if (resData.errors) {
+                this.setState({
+                    ...this.state.errorMessage,
+                    errorMessage: resData.errors[0].message
+                })
+            } else if (resData.data.login) {
+                localStorage.setItem('myToken', resData.data.login.token);
+                localStorage.setItem('userId', resData.data.login.userId);
+				this.setState({
+                    loggedIn: true,
+                    token: resData.data.login.token,
+                    userId: resData.data.login.userId,
+                })
+			}
+        })
+        .catch(err => {
+            console.log(err);
+        })
+	}
+	
+	logout = () => {
+        localStorage.removeItem('myToken');
+        localStorage.removeItem('userId');
+        this.setState({
+            token: null,
+            errorMessage: null,
+            username: null,
+            loggedIn: false,
+        });
+    }
 
 	scrollToTop = () => {
 		window.scroll({
@@ -35,13 +114,14 @@ export default class App extends Component {
 
 	onPageSelection = () => {
 		if (window.matchMedia('(max-width: 900px)').matches) {
-			this.onToggleSidebar()
+			this.onToggleSidebar();
 		} else {
 			return;
 		}
 	}
 
 	render() {
+		console.log(this.state.location)
 		return (
 			<BrowserRouter>
 				<div className={!this.state.toggleSidebar 
@@ -54,6 +134,9 @@ export default class App extends Component {
 					/>
 					<SmallSidebar />
 					<LargeSidebar
+						loggedIn={this.state.loggedIn}
+						location={this.state.location}
+
 						toggleSidebar={this.state.toggleSidebar}
 						onToggleSidebar={this.onToggleSidebar}
 						onPageSelection={this.onPageSelection}
@@ -65,6 +148,11 @@ export default class App extends Component {
 					/>
 					<div className="main">
 						<Router
+							login={this.login}
+							logout={this.logout}
+							loggedIn={this.state.loggedIn}
+							password={this.passwordEl}
+
 							className="router-class"
 							windowScroll={this.windowScroll}
 							scrollToTop={this.scrollToTop}

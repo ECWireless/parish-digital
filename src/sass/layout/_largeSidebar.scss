@@ -11,7 +11,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8rem repeat(5, 6rem) auto;
+    grid-template-rows: 8rem repeat(4, 6rem) 4rem 6rem;
     align-items: center;
     justify-items: center;
     transform: translateX(-20rem);
@@ -256,6 +256,51 @@
         align-self: center;
 
         animation: textFadeIn .5s;
+    }
+
+    &__employee {
+        grid-row: 7 / 8;
+        grid-column: 1 / -1;
+
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    &__button {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        align-self: center;
+        justify-self: center;
+
+        height: 5rem;
+        width: 14rem;
+        background: $color-blue;
+        border: none;
+        color: #fff;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 600;
+        z-index: 1;
+
+        transition: all .3s ease;
+
+        @include respond(small-phone) {
+            height: 5rem;
+            width: 16rem;
+            font-size: 1.6rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: $color-yellow;
+            color: #000;
+        }
     }
 }
 
