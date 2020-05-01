@@ -748,6 +748,7 @@
         align-self: center;
         width: 650px;
         height: 366px;
+        z-index: 2;
 
         @include respond(tab-land) {
             width: 500px;
@@ -1064,6 +1065,7 @@
         justify-self: center;
 
         font-size: 60rem;
+        z-index: 1;
         opacity: .05;
         transform: translateY(-25rem);
 
