@@ -1090,6 +1090,7 @@
         margin-top: 2rem;
         width: 70%;
         font-weight: $font-weight-regular;
+        z-index: 2;
 
         @include respond(tab-land) {
             margin-top: 4rem;
@@ -1127,6 +1128,7 @@
         font-weight: $font-weight-light;
         margin-bottom: 1.5rem;
         text-transform: uppercase;
+        z-index: 2;
 
         @include respond(tab-land) {
             margin-bottom: 2rem;
@@ -1157,6 +1159,7 @@
         font-size: 1.4rem;
         font-weight: $font-weight-light;
         margin-bottom: -1rem;
+        z-index: 2;
 
         @include respond(tab-land) {
             margin-bottom: -0.5;
@@ -1182,6 +1185,7 @@
         font-size: 1.4rem;
         font-weight: $font-weight-light;
         margin-bottom: -3rem;
+        z-index: 2;
 
         @include respond(tab-land) {
             margin-bottom: -1.5;
