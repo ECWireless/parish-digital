@@ -13,14 +13,14 @@ export default function W6() {
             <VimeoIcon className="w6__vimeo-icon" />
 
             <iframe
-                src="https://player.vimeo.com/video/333626083"
+                src="https://player.vimeo.com/video/323869006"
                 frameBorder="0"
                 allow="autoplay; fullscreen" allowFullScreen
                 className="w6__video w6__video--1" title="Featured Video">
             </iframe>
 
             <iframe
-                src="https://player.vimeo.com/video/320622734"
+                src="https://player.vimeo.com/video/279914683"
                 frameBorder="0"
                 allow="autoplay; fullscreen" allowFullScreen
                 className="w6__video w6__video--2" title="Featured Video">
