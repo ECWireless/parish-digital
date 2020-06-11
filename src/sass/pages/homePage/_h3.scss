@@ -1067,7 +1067,7 @@
         font-size: 60rem;
         z-index: 1;
         opacity: .05;
-        transform: translateY(-25rem);
+        margin-top: -25rem;
 
         @include respond(tab-port) {
             transform: translateY(-20rem);
@@ -1090,6 +1090,7 @@
         margin-top: 2rem;
         width: 70%;
         font-weight: $font-weight-regular;
+        line-height: 25px;
         z-index: 2;
 
         @include respond(tab-land) {
