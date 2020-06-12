@@ -36,6 +36,10 @@ export default function Router(props) {
                 <Route path="/employee" exact
                     render={() => <React.Suspense fallback={<Loading />}>
                         <EmployeePage
+							errorMessage={props.errorMessage}
+							closeError={props.closeError}
+                            onCloseError={props.onCloseError}
+                            
 							login={props.login}
 							logout={props.logout}
                             loggedIn={props.loggedIn}

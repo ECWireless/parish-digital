@@ -15,6 +15,8 @@ const serverUrl = "https://parish-digital-backend.herokuapp.com/graphql"
 
 export default class App extends Component {
 	state = {
+		errorMessage: false,
+        closeError: false,
 		toggleSidebar: false,
         loggedIn: false,
         token: null,
@@ -67,8 +69,9 @@ export default class App extends Component {
             if (resData.errors) {
                 this.setState({
                     ...this.state.errorMessage,
-                    errorMessage: resData.errors[0].message
-                })
+					errorMessage: true,
+					closeError: true,
+				})
             } else if (resData.data.login) {
                 localStorage.setItem('myToken', resData.data.login.token);
                 localStorage.setItem('userId', resData.data.login.userId);
@@ -83,6 +86,14 @@ export default class App extends Component {
             console.log(err);
         })
 	}
+
+	onCloseError = () => {
+        this.setState({
+            ...this.state,
+            errorMessage: false,
+            closeError: false,
+        })
+    }
 	
 	logout = () => {
         localStorage.removeItem('myToken');
@@ -148,6 +159,10 @@ export default class App extends Component {
 					/>
 					<div className="main">
 						<Router
+							errorMessage={this.state.errorMessage}
+							closeError={this.state.closeError}
+							onCloseError={this.onCloseError}
+							
 							login={this.login}
 							logout={this.logout}
 							loggedIn={this.state.loggedIn}

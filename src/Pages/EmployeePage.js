@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
+import { ReactComponent as Close } from '../assets/navigation/cross.svg';
+
 export default class EmployeePage extends Component {
+
     render() {
         return (
             <React.Fragment>
@@ -12,7 +15,22 @@ export default class EmployeePage extends Component {
                             <input required id="password" type="password" className="employeePage1__input" ref={this.props.password} />
                             <button type="submit" className="employeePage1__button">Login</button>
                         </form>
+
+                        {this.props.errorMessage && this.props.closeError && (
+                            <div className="employeePage1__error-container">
+                                <p className="employeePage1__error">Password is incorrect.</p>
+                                <button
+                                    className="employeePage1__close"
+                                    onClick={this.props.onCloseError}
+                                >
+                                    <Close
+                                        className="employeePage1__close-icon"
+                                    />
+                                </button>
+                            </div>
+                        )}
                     </div>
+
                     : <div className="employeePage2">
                         <button className="employeePage2__button" type="button" onClick={this.props.logout}>Logout</button>
                         <a 
