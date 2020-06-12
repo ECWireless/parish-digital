@@ -154,6 +154,12 @@
         display: flex;
         align-items: center;
         animation: fadeIn 1s ease;
+
+        @include respond(phone) {
+            grid-row: 2 / 3;
+            align-self: flex-start;
+            margin-top: 20rem;
+        }
     }
 
     &__error {
