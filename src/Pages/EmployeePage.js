@@ -36,22 +36,22 @@ export default class EmployeePage extends Component {
                         <a 
                             href="https://docs.google.com/forms/d/e/1FAIpQLSf-4W0DD4Y1uNHuEqMOZhl6octAEvygoybJx-6n2R_JMtfGwQ/viewform"
                             target="_blank" rel="noopener noreferrer"
-                            className="employeePage2__1"
+                            className="employeePage2__link employeePage2__link--1"
                         >Alex Submit Hours</a>
                         <a 
                             href="https://docs.google.com/spreadsheets/d/1DY9Y5gn7SGbA1TTNnrYObsj98x-yWAXqOl74no5krb8/edit#gid=291896954"
                             target="_blank" rel="noopener noreferrer"
-                            className="employeePage2__2"
+                            className="employeePage2__link employeePage2__link--2"
                         >Alex Timesheet</a>
                         <a 
                             href="https://docs.google.com/forms/d/e/1FAIpQLSeslM9O3bNvtccVutnlRPwc_ihRjLN0Ok3rzCtasdZpjpGhrA/viewform"
                             target="_blank" rel="noopener noreferrer"
-                            className="employeePage2__3"
+                            className="employeePage2__link employeePage2__link--3"
                         >Mike Submit Hours</a>
                         <a 
                             href="https://docs.google.com/spreadsheets/d/1YcPn1xzZhRT-Uxp_uCt6m0DvTQ7f_xc_it95LSIxfD4/edit#gid=291896954"
                             target="_blank" rel="noopener noreferrer"
-                            className="employeePage2__4"
+                            className="employeePage2__link employeePage2__link--4"
                         >Mike Timesheet</a>
                     </div> 
                 }
