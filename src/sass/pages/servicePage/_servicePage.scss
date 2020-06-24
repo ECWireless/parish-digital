@@ -1,0 +1,11 @@
+// Sections
+@import './section1';
+@import './section2';
+@import './section3';
+
+#service__flip-section {
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

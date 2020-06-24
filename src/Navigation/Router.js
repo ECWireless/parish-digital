@@ -7,6 +7,7 @@ const HomePage = React.lazy(() => import('../Pages/HomePage/HomePage'));
 const WorkPage = React.lazy(() => import('../Pages/WorkPage/WorkPage'));
 const TeamPage = React.lazy(() => import('../Pages/TeamPage/TeamPage'));
 const GearPage = React.lazy(() => import('../Pages/GearPage/GearPage'));
+const ServicePage = React.lazy(() => import('../Pages/ServicePage/ServicePage'));
 const EmployeePage = React.lazy(() => import('../Pages/EmployeePage'));
 
 export default function Router(props) {
@@ -31,6 +32,11 @@ export default function Router(props) {
                 <Route path="/gear" exact
                     render={() => <React.Suspense fallback={<Loading />}>
                         <GearPage scrollToTop={props.scrollToTop} />
+                    </React.Suspense>}
+                />
+                <Route path="/service" exact
+                    render={() => <React.Suspense fallback={<Loading />}>
+                        <ServicePage scrollToTop={props.scrollToTop} />
                     </React.Suspense>}
                 />
                 <Route path="/employee" exact

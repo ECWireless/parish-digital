@@ -3,19 +3,19 @@ import webVideo from '../../assets/home-page/hero-video-final.mp4';
 
 export default function H1(props) {
     return (
-        <div className="h1">
-            <div className="h1__web-hero-container">
-                <video src={webVideo} className="h1__web-hero-video" autoPlay loop muted playsInline />
+        <div className="hp1">
+            <div className="hp1__web-hero-container">
+                <video src={webVideo} className="hp1__web-hero-video" autoPlay loop muted playsInline />
             </div>
-            <div className="h1__overlay" />
+            <div className="hp1__overlay" />
 
-            <h1 className="h1__slogan">Your Partner in Video</h1>
-            <div className="h1__line" />
-            <h2 className="h1__sub-slogan">Our focus is video for business</h2>
-            <a href="mailto: keith@parishdigital.com" className="h1__button-1-link">
-                <button className="h1__button h1__button--1">Get a Quote</button>
+            <h1 className="hp1__slogan">Your Partner in Video</h1>
+            <div className="hp1__line" />
+            <h2 className="hp1__sub-slogan">Our focus is video for business</h2>
+            <a href="mailto: keith@parishdigital.com" className="hp1__button-1-link">
+                <button className="hp1__button hp1__button--1">Get a Quote</button>
             </a>
-                <button className="h1__button h1__button--2" onClick={props.onDemoReelScroll}>Demo Reel</button>
+                <button className="hp1__button hp1__button--2" onClick={props.onDemoReelScroll}>Demo Reel</button>
         </div>
     )
 }

@@ -6,6 +6,7 @@ import { ReactComponent as WorkIcon } from '../assets/navigation/film.svg';
 import { ReactComponent as HomeIcon } from '../assets/navigation/home.svg';
 import { ReactComponent as TeamIcon } from '../assets/navigation/users.svg';
 import { ReactComponent as GearIcon } from '../assets/navigation/video-camera.svg';
+import { ReactComponent as ServiceIcon } from '../assets/navigation/briefcase.svg';
 
 export default function SmallSidebar() {
     return (
@@ -37,6 +38,13 @@ export default function SmallSidebar() {
                 activeClassName="smallSidebar__gear-active"
             >
                 <GearIcon className="smallSidebar__gear-icon"/>
+            </NavLink>
+            <NavLink
+                to="./service"
+                className="smallSidebar__service"
+                activeClassName="smallSidebar__service-active"
+            >
+                <ServiceIcon className="smallSidebar__service-icon"/>
             </NavLink>
         </div>
     )

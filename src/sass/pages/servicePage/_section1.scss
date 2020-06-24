@@ -1,0 +1,59 @@
+// Section 1
+#service__margin-1 {
+    margin-top: 8rem;
+
+    @include respond(tab-land) {
+        margin-top: 6rem;
+    }
+
+    @include respond(tab-port) {
+        margin-top: 5rem;
+    }
+}
+
+#service__description-container {
+    padding: 0 4rem 0 0;
+
+    @include respond(tab-land) {
+        padding: 0 1rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 0;
+    }
+}
+
+#service__video-1 {
+    @include respond(big-desktop) {
+        width: 80rem;
+        height: 45rem;
+    }
+
+    width: 60rem;
+    height: 35rem;
+
+    @include respond(tab-land) {
+        width: 70rem;
+        height: 40rem;
+        margin-top: 6rem;
+    }
+
+    @include respond(tab-port) {
+        width: 50rem;
+        height: 29rem;
+    }
+
+    @include respond(phone) {
+        width: 100vw;
+        height: 58.3vw;
+    }
+}
+
+#service__button-1 {
+    margin-top: 4rem;
+
+    @include respond(phone) {
+        margin: 5rem auto 0;
+        font-size: 1.6rem;
+    }
+}

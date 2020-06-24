@@ -1,0 +1,35 @@
+.button-m {
+    width: 20rem;
+    height: 5rem;
+    background: $color-blue-light;
+    border: none;
+    border-radius: $border-radius;
+    box-shadow: $shadow-button;
+    outline: none;
+
+    color: #fff;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 2.4rem;
+
+    transition: all .3s ease;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        box-shadow: $shadow-navigation;
+    }
+
+    &:active {
+        cursor: pointer;
+        transform: scale(.98);
+        box-shadow: none;
+        background: $color-yellow;
+        color: $color-blue;
+    }
+
+    &:focus {
+        background: $color-yellow;
+        color: $color-blue;
+    }
+}

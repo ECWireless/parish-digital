@@ -1,23 +1,30 @@
 // Colors
 $color-blue: #4E6077;
-
+$color-blue-light: #7EA5D6;
+$color-blue-grey: #A7B0BC;
 $color-yellow: #FFDC1C;
-
 $color-green: #52AeA7;
-
+$color-grey-dark: #707070;
 $color-grey: #C4C4C4;
-
 $svg-grey: rgba(255, 255, 255, .1);
 $svg-grey-light: rgba(255, 255, 255, .3);
 
 // Shadows
+$shadow-button: 0px 1px 2px 0px rgba(0,0,0,0.7);
 $shadow-navigation: 0px 3px 10px -3px rgba(0,0,0,.7);
+$shadow-card: 0px 3px 6px rgba(0,0,0,.4);
 
 // Spacing
 $spacing-heading: .5rem;
 $spacing-subheading: .3rem;
 
+// Font Families
+$font-main: 'Source Sans Pro', sans-serif;
+
 // Font Weights
 $font-weight-light: 200;
 $font-weight-regular: 400;
 $font-weight-bold: 900;
+
+// Border Radius
+$border-radius: 10px;

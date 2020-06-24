@@ -84,7 +84,7 @@
 
         color: #fff;
         font-size: 3.6rem;
-        margin-bottom: 8rem;
+        margin-bottom: 7rem;
         font-weight: $font-weight-regular;
 
         @include respond(tab-land) {
@@ -154,9 +154,10 @@
 
         @include respond(tab-port) {
             font-size: 1.4rem;
-            justify-self: flex-start;
+            justify-self: flex-end;
             text-align: left;
             z-index: 1;
+            margin-right: 5rem;
         }
 
         @include respond(tab-port) {

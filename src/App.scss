@@ -2,6 +2,11 @@
 @import './sass/abstracts/variables';
 @import './sass/abstracts/mixins';
 
+// Components
+@import './sass/components/buttons';
+@import './sass/components/containers';
+@import './sass/components/typography';
+
 // Layout
 @import './sass/layout/base';
 @import './sass/layout/header';
@@ -18,4 +23,5 @@
 @import './sass/pages/workPage/workPage';
 @import './sass/pages/teamPage/teamPage';
 @import './sass/pages/gearPage/gearPage';
+@import './sass/pages/servicePage/servicePage';
 @import './sass/pages/employeePage';

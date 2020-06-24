@@ -7,6 +7,7 @@ import { ReactComponent as HomeIcon } from '../assets/navigation/home.svg';
 import { ReactComponent as WorkIcon } from '../assets/navigation/film.svg';
 import { ReactComponent as TeamIcon } from '../assets/navigation/users.svg';
 import { ReactComponent as GearIcon } from '../assets/navigation/video-camera.svg';
+import { ReactComponent as ServiceIcon } from '../assets/navigation/briefcase.svg';
 
 export default function LargeSidebar(props) {
     return (
@@ -52,6 +53,15 @@ export default function LargeSidebar(props) {
             >
                 <GearIcon className="largeSidebar__gear-icon" />
                 <p className={props.toggleSidebar ? "largeSidebar__gear-text": ''}>Gear</p>
+            </NavLink>
+            <NavLink
+                to="/service"
+                className="largeSidebar__service"
+                activeClassName="largeSidebar__service-active"
+                onClick={props.onPageSelection}
+            >
+                <ServiceIcon className="largeSidebar__service-icon" />
+                <p className={props.toggleSidebar ? "largeSidebar__service-text": ''}>Service</p>
             </NavLink>
 
             <NavLink

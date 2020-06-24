@@ -167,6 +167,7 @@
         color: #fff;
         text-align: center;
         font-weight: $font-weight-regular;
+        margin-top: 1rem;
 
         @include respond(small-phone) {
             font-size: 3.6rem;
@@ -205,6 +206,7 @@
         justify-self: center;
 
         font-size: 1.4rem;
+        line-height: 25px;
         color: #fff;
         width: 36rem;
         font-weight: $font-weight-regular;
@@ -230,6 +232,7 @@
         justify-self: center;
 
         font-size: 1.4rem;
+        line-height: 25px;
         color: #fff;
         width: 36rem;
         font-weight: $font-weight-regular;
@@ -311,14 +314,10 @@
             grid-template-columns: 1fr 40rem 1fr;
             grid-template-rows: 4rem 10rem 20rem 14rem auto 1rem 5rem;
         }
-        
-        @include respond(small-phone) {
-            grid-template-columns: 1fr 32rem 1fr;
-        }
 
         @include respond(small-phone) {
             grid-template-columns: 1fr 32rem 1fr;
-            grid-template-rows: 3rem 10rem 15rem 12rem auto 1rem 5rem;
+            grid-template-rows: 3rem 10rem 20rem 14rem auto 1rem 5rem;
         }
     }
 

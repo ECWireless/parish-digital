@@ -1,4 +1,4 @@
-.h3 {
+.hp3 {
     @include respond(big-desktop) {
         grid-template-columns: 1fr 70rem 70rem 1fr;
         grid-template-rows: repeat(3, 75rem);
@@ -1067,10 +1067,10 @@
         font-size: 60rem;
         z-index: 1;
         opacity: .05;
-        margin-top: -25rem;
+        margin-top: -15rem;
 
         @include respond(tab-port) {
-            transform: translateY(-20rem);
+            transform: translateY(4rem);
             font-size: 50rem;
         }
     }
