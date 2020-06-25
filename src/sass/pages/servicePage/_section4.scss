@@ -36,10 +36,7 @@
 }
 
 #service__4-button {
-    background: #fff;
-    color: $color-grey-dark;
     margin-top: 6rem;
-
 
     @include respond(phone) {
         margin-top: 4rem;
@@ -48,8 +45,6 @@
     }
 
     &:active {
-        background: $color-yellow;
-        color: $color-blue;
 
         @include respond(phone) {
             background: $color-blue;
@@ -58,8 +53,6 @@
     }
 
     &:focus {
-        background: $color-yellow;
-        color: $color-blue;
 
         @include respond(phone) {
             background: $color-blue;

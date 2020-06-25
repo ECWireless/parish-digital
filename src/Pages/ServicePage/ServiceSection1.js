@@ -19,7 +19,7 @@ const ServiceSection1 = (props) => {
                         environment, creating a compelling case for why potential customers should consider 
                         partnering with you.
                     </p>
-                    <button onClick={props.onModalToggle} className="button button-m" id="service__button-1">Get a Quote</button>
+                    <button onClick={props.onModalToggle} className="b b-m" id="service__button-1">Get a Quote</button>
                 </div>
                 <div className="flex-column col-2-2" style={{alignItems: 'center', justifyContent: 'flex-start'}}>
                     <iframe

@@ -14,6 +14,7 @@
 
     @include respond(phone) {
         font-size: 2.2rem;
+        font-weight: 700;
     }
 
     @include respond(small-phone) {
@@ -36,6 +37,24 @@
 
     @include respond(phone) {
         font-size: 1.5rem;
+    }
+}
+
+.p-s {
+    font-family: $font-main;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    @include respond(tab-land) {
+        font-size: 1.3rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 1.2rem;
+    }
+
+    @include respond(phone) {
+        font-size: 1rem;
     }
 }
 

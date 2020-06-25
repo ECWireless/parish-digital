@@ -11,11 +11,8 @@ const ServicePage = (props) => {
 
     return (
         <>
-            { props.modal && (
-                <>
-                    <ServiceModal />
-                </>
-            )}
+            <ServiceModal modal={props.modal} onModalToggle={props.onModalToggle} />
+
             <ServiceSection1 onModalToggle={props.onModalToggle} />
                 <div id="service__flip-section">
                     <ServiceSection2 />

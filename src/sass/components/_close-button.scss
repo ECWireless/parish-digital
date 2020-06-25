@@ -1,0 +1,27 @@
+.close-button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: transparent;
+
+    border: none;
+    outline: none;
+
+    transition: all .3s ease;
+
+    &:hover {
+        background-color: $svg-grey;
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: $svg-grey-light;
+    }
+
+    &__icon--white {
+        margin-top: .4rem;
+        width: 2rem;
+        height: 2rem;
+        fill: #fff;
+    }
+}

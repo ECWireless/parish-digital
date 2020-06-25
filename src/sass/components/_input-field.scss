@@ -1,0 +1,65 @@
+.input {
+    width: 100%;
+    margin: 0 auto;
+
+    height: 5rem;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    border: $color-green;
+    outline: none;
+
+    font-family: $font-main;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-blue;
+    letter-spacing: 1px;
+
+    transition: all .3s ease;
+
+    &::placeholder {
+        color: $color-grey;
+    }
+
+    &:hover {
+        border: 1px solid $color-yellow;
+    }
+
+    &:active,
+    &:focus {
+        border: 1px solid $color-yellow;
+        border-left: 5px solid $color-yellow;
+    }
+}
+
+.textarea {
+    width: 100%;
+    margin: 0 auto;
+
+    height: 10rem;
+    padding: 2rem;
+    border-radius: 5px;
+    border: $color-green;
+    outline: none;
+
+    font-family: $font-main;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-blue;
+    letter-spacing: 1px;
+
+    transition: all .3s ease;
+
+    &::placeholder {
+        color: $color-grey;
+    }
+
+    &:hover {
+        border: 1px solid $color-yellow;
+    }
+
+    &:active,
+    &:focus {
+        border: 1px solid $color-yellow;
+        border-left: 5px solid $color-yellow;
+    }
+}
