@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 // Sections
 import ServiceSection1 from './ServiceSection1'
@@ -7,20 +7,24 @@ import ServiceSection3 from './ServiceSection3'
 import ServiceSection4 from './ServiceSection4'
 import ServiceModal from './ServiceModal'
 
-const ServicePage = (props) => {
+export default class ServicePage extends Component {
 
-    return (
-        <>
-            <ServiceModal modal={props.modal} onModalToggle={props.onModalToggle} />
+    componentDidMount() {
+        this.props.scrollToTop()
+    }
 
-            <ServiceSection1 onModalToggle={props.onModalToggle} />
-                <div id="service__flip-section">
-                    <ServiceSection2 />
-                    <ServiceSection3 />
-                </div>
-            <ServiceSection4 onModalToggle={props.onModalToggle} />
-        </>
-    )
+    render() {
+        return (
+            <>
+                <ServiceModal modal={this.props.modal} onModalToggle={this.props.onModalToggle} />
+
+                <ServiceSection1 onModalToggle={this.props.onModalToggle} />
+                    <div id="service__flip-section">
+                        <ServiceSection2 />
+                        <ServiceSection3 />
+                    </div>
+                <ServiceSection4 onModalToggle={this.props.onModalToggle} />
+            </>
+        )
+    }
 }
-
-export default ServicePage

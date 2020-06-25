@@ -21,6 +21,7 @@ export default class ServiceModal extends Component {
                     <CloseButton close={this.props.onModalToggle} />
                 </div>
                 <img src={PDLogo} alt="PD Logo" id="service__modal-logo" />
+                <div id="service__modal-scroll">
                 <div className="flex-column container" id="service__modal-text-container">
                     <h2 className="h2 yellow" id="service__modal-heading">Thank you for your interest in a Customer Success Story!</h2>
                     <p className="p-m white" id="service__modal-paragraph-1">Please fill out of the following to download a pricing and process PDF document.
@@ -42,6 +43,7 @@ export default class ServiceModal extends Component {
                         <textarea required id="service__model-input-message" className="textarea" />
                         <button type="submit" className="b-white b-m" id="service__modal-button">Download PDF</button>
                     </form>
+                </div>
                 </div>
             </div>
         )
