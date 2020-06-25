@@ -2,6 +2,7 @@
 @import './section1';
 @import './section2';
 @import './section3';
+@import './section4';
 
 #service__flip-section {
     @include respond(phone) {

@@ -19,7 +19,7 @@ const ServiceSection1 = () => {
                         environment, creating a compelling case for why potential customers should consider 
                         partnering with you.
                     </p>
-                    <button className="button-m" id="service__button-1">Get a Quote</button>
+                    <button className="button button-m" id="service__button-1">Get a Quote</button>
                 </div>
                 <div className="flex-column col-2-2" style={{alignItems: 'center', justifyContent: 'flex-start'}}>
                     <iframe

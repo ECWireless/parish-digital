@@ -1,16 +1,92 @@
 // Section 3
+#service__3-container-1 {
+
+    @include respond(tab-land) {
+        margin-top: 6rem;
+        position: relative;
+        height: 59.5rem;
+    }
+
+    @include respond(tab-port) {
+        height: 39.5rem;
+    }
+
+    @include respond(phone) {
+        margin-top: 0;
+        height: 34.5rem;
+    }
+}
+
+#service__3-container-2 {
+    @include respond(tab-land) {
+        position: relative;
+        height: 59.5rem;
+    }
+
+    @include respond(tab-port) {
+        height: 39.5rem;
+    }
+
+    @include respond(phone) {
+        height: 34.5rem;
+    }
+}
+
+#service__3-gradient-1 {
+    display: none;
+
+    @include respond(tab-land) {
+        display: inline;
+        position: absolute;
+        bottom: 0;
+        height: 30rem;
+        width: 100%;
+        z-index: 2;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+    }
+
+    @include respond(phone) {
+        bottom: -.5rem;
+    }
+}
+
+#service__3-gradient-2 {
+    display: none;
+
+    @include respond(tab-land) {
+        display: inline;
+        position: absolute;
+        bottom: -.5rem;
+        height: 40rem;
+        width: 100%;
+        z-index: 2;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7));
+    }
+
+    @include respond(phone) {
+        height: 30rem;
+    }
+}
+
 #service__3-photo-1 {
     width: 100%;
     height: 50rem;
     background-size: cover;
     background-position: center;
-}
+    background-repeat: none;
+    z-index: 1;
 
-#service__3-text-1 {
-    align-self: center;
-    width: 65rem;
-    margin: 0 auto;
-    padding-left: 2rem;
+    @include respond(tab-land) {
+        height: 60rem;
+    }
+
+    @include respond(tab-port) {
+        height: 40rem;
+    }
+
+    @include respond(phone) {
+        height: 35rem;
+    }
 }
 
 #service__3-photo-2 {
@@ -18,6 +94,45 @@
     height: 50rem;
     background-size: cover;
     background-position: center;
+    z-index: 1;
+
+    @include respond(tab-land) {
+        height: 60rem;
+    }
+
+    @include respond(tab-port) {
+        height: 40rem;
+    }
+
+    @include respond(phone) {
+        height: 35rem;
+    }
+}
+
+#service__3-text-1 {
+    align-self: center;
+    width: 65rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    z-index: 2;
+
+    @include respond(tab-land) {
+        position: absolute;
+        bottom: 8rem;
+        width: 70rem;
+        color: #fff;
+        padding-left: 0;
+    }
+
+    @include respond(tab-port) {
+        width: 50rem;
+        bottom: 5rem;
+    }
+
+    @include respond(phone) {
+        width: 35rem;
+        bottom: 3rem;
+    }
 }
 
 #service__3-text-2 {
@@ -25,4 +140,45 @@
     width: 60rem;
     margin: 0 auto;
     padding-right: 2rem;
+    z-index: 2;
+
+    @include respond(tab-land) {
+        position: absolute;
+        bottom: 8rem;
+        width: 70rem;
+        color: #fff;
+        padding-right: 0;
+    }
+
+    @include respond(tab-port) {
+        width: 50rem;
+        bottom: 5rem;
+    }
+
+    @include respond(phone) {
+        width: 35rem;
+        bottom: 3rem;
+    }
+}
+
+#service__3-heading-1 {
+    color: $color-yellow;
+
+    @include respond(tab-land) {
+        color: #fff;
+    }
+}
+
+#service__3-heading-2 {
+    color: $color-yellow;
+
+    @include respond(tab-land) {
+        color: #fff;
+    }
+}
+
+#service__3-paragraph-3 {
+    @include respond(tab-port) {
+        display: none;
+    }
 }
