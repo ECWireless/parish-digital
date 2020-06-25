@@ -1,0 +1,12 @@
+#service__modal-container {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1000;
+
+    height: 75vh;
+    background: $color-blue;
+    border-radius: $border-radius;
+    box-shadow: $shadow-card;
+}

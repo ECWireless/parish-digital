@@ -11,10 +11,14 @@ import SmallSidebar from './Navigation/SmallSidebar';
 import LargeSidebar from './Navigation/LargeSidebar';
 import Router from './Navigation/Router';
 
+// components
+import Backdrop from './components/Backdrop'
+
 const serverUrl = "https://parish-digital-backend.herokuapp.com/graphql"
 
 export default class App extends Component {
 	state = {
+		modal: false,
 		errorMessage: false,
         closeError: false,
 		toggleSidebar: false,
@@ -28,7 +32,7 @@ export default class App extends Component {
     constructor(props) {
         super(props);
         this.passwordEl = React.createRef();
-    }
+	}
 
 	componentDidMount() {
 		if (localStorage.getItem('myToken')) {
@@ -38,6 +42,8 @@ export default class App extends Component {
             })
 		}
 	}
+
+	onModalToggle = () => { this.setState({ ...this.state, modal: !this.state.modal })}
 
 	login = (event) => {
         event.preventDefault();
@@ -157,6 +163,9 @@ export default class App extends Component {
 						className={this.state.toggleSidebar ? 'backdrop backdrop__fadeIn' : 'backdrop backdrop__fadeOut'}
 						onClick={this.onToggleSidebar}
 					/>
+					
+					<Backdrop sidebar={this.state.modal} setSidebar={this.onModalToggle} />
+
 					<div className="main">
 						<Router
 							errorMessage={this.state.errorMessage}
@@ -171,6 +180,9 @@ export default class App extends Component {
 							className="router-class"
 							windowScroll={this.windowScroll}
 							scrollToTop={this.scrollToTop}
+
+							onModalToggle={this.onModalToggle}
+							modal={this.state.modal}
 						/>
 					</div>
 					<Footer />

@@ -36,7 +36,7 @@ export default function Router(props) {
                 />
                 <Route path="/service" exact
                     render={() => <React.Suspense fallback={<Loading />}>
-                        <ServicePage scrollToTop={props.scrollToTop} />
+                        <ServicePage scrollToTop={props.scrollToTop} onModalToggle={props.onModalToggle} modal={props.modal} />
                     </React.Suspense>}
                 />
                 <Route path="/employee" exact
