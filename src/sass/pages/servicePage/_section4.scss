@@ -26,6 +26,7 @@
     margin-top: 2rem;
 
     @include respond(phone) {
+        width: 35rem;
         margin-top: 1rem;
     }
 

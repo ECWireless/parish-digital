@@ -133,6 +133,10 @@
         width: 35rem;
         bottom: 3rem;
     }
+
+    @include respond(small-phone) {
+        width: 28rem;
+    }
 }
 
 #service__3-text-2 {
@@ -158,6 +162,10 @@
     @include respond(phone) {
         width: 35rem;
         bottom: 3rem;
+    }
+
+    @include respond(small-phone) {
+        width: 28rem;
     }
 }
 
