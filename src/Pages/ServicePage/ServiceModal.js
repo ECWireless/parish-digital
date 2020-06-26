@@ -2,16 +2,57 @@ import React, { Component } from 'react'
 
 // Components
 import CloseButton from '../../components/CloseButton'
+import Snackbar from '../../components/Snackbar'
+import Spinner from '../../components/Spinner'
 
 // Images
 import PDLogo from '../../assets/navigation/PD-logo-small.png';
 
 
 export default class ServiceModal extends Component {
+    state = {
+        name: '',
+        email: '',
+        message: '',
+
+        loading: false,
+        submitted: false,
+        success: false,
+    }
+
+    setName = (e) => this.setState({ ...this.state, name: e.target.value})
+    setEmail = (e) => this.setState({ ...this.state, email: e.target.value})
+    setMessage = (e) => this.setState({ ...this.state, message: e.target.value})
 
     onSubmit = (e) => {
         e.preventDefault();
-        console.log('Submit')
+        this.setState({ loading: true })
+        fetch('https://parish-digital-backend.herokuapp.com/service',{
+            method: "POST",
+            body: JSON.stringify(this.state),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+        }).then(
+            (response) => (response.json())
+        ).then((response)=>{
+            if (response.status === 'success'){
+                this.resetForm();
+                this.setState({ submitted: true, success: true, loading: false, })
+            } else if(response.status === 'fail'){
+                this.setState({ submitted: true, success: false, loading: false })
+            }
+        })
+        .catch(() => this.setState({ submitted: true, success: false }))
+    }
+
+    onCloseSnackbar = () => {
+        this.setState({ submitted: false })
+    }
+
+    resetForm(){
+        this.setState({name: '', email: '', phone: '', message: ''})
     }
 
     render() {
@@ -32,16 +73,24 @@ export default class ServiceModal extends Component {
                         <label htmlFor="service__model-input-name" className="p-m uppercase white" style={{marginBottom: '1rem'}}>
                             Name
                         </label>
-                        <input required type="text" className="input" id="service__model-input-name" />
+                        <input required type="text" className="input" id="service__model-input-name"
+                            value={this.state.name} onChange={this.setName.bind(this)}
+                        />
                         <label htmlFor="service__model-input-email" className="p-m uppercase white" style={{marginBottom: '1rem'}}>
                             Email
                         </label>
-                        <input required type="email" className="input" id="service__model-input-email" />
+                        <input required type="email" className="input" id="service__model-input-email"
+                            value={this.state.email} onChange={this.setEmail.bind(this)}/>
                         <label htmlFor="service__model-input-message" className="p-m uppercase white" style={{marginBottom: '1rem'}}>
                             Message
                         </label>
-                        <textarea required id="service__model-input-message" className="textarea" />
-                        <button type="submit" className="b-white b-m" id="service__modal-button">Download PDF</button>
+                        <textarea required id="service__model-input-message" className="textarea"
+                            value={this.state.message} onChange={this.setMessage.bind(this)}
+                        />
+                        <button type="submit" className="b-white b-m" id="service__modal-button">
+                            {this.state.loading ? <Spinner /> : 'Download PDF'}
+                        </button>
+                        { this.state.submitted && <Snackbar success={this.state.success} onCloseSnackbar={this.onCloseSnackbar} /> }
                     </form>
                 </div>
                 </div>
