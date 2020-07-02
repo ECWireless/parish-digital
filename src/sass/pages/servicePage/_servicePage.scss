@@ -5,6 +5,10 @@
 @import './section4';
 @import './serviceModal';
 
+#service {
+    background: $color-grey-background;
+}
+
 #service__flip-section {
     @include respond(phone) {
         display: flex;

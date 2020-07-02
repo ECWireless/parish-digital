@@ -1,0 +1,8 @@
+.l--yellow {
+    height: .5rem;
+    background: $color-yellow;
+
+    @include respond(phone) {
+        height: .3rem;
+    }
+}

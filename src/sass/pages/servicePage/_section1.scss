@@ -1,18 +1,72 @@
 // Section 1
-#service__margin-1 {
-    margin-top: 8rem;
-
+#service__1-heading-container {
     @include respond(tab-land) {
-        margin-top: 6rem;
-    }
-
-    @include respond(tab-port) {
-        margin-top: 5rem;
+        flex-direction: column;
     }
 }
 
+#service__1-line-1 {
+    @include respond(big-desktop) {
+        width: 60%;
+    }
+
+    width: 45%;
+
+    @include respond(tab-land) {
+        width: 30rem;
+        margin: 4rem auto 2rem;
+    }
+
+    @include respond(tab-port) {
+        width: 20rem;
+    }
+
+    @include respond(phone) {
+        width: 15rem;
+    }
+
+    @include respond(small-phone) {
+        width: 10rem;
+        margin: 3rem auto 1.5rem;
+    }
+}
+
+#service__1-heading {
+    display: inline-block;
+    width: 220rem;
+    margin: 4rem 2rem 3rem;
+    text-align: center;
+
+    @include respond(tab-land) {
+        width: 100%;
+        margin: 0 auto 4rem;
+    }
+
+    @include respond(small-phone) {
+        margin: 0 auto 3rem;
+    }
+}
+
+#service__1-line-2 {
+    @include respond(big-desktop) {
+        width: 60%;
+    }
+
+    width: 45%;
+    height: .5rem;
+    margin-top: 7rem;
+
+    @include respond(tab-land) {
+        display: none;
+    }
+}
+
+#service__1-card-container {
+    flex-direction: column-reverse;
+}
+
 #service__description-container {
-    padding: 0 4rem 0 0;
+    padding: 0 0 0 4rem;
 
     @include respond(tab-land) {
         padding: 0 1rem 0;
@@ -23,29 +77,49 @@
     }
 }
 
+#service__1-text-variation-1 {
+    @include respond(tab-land) {
+        display: none;
+    }
+}
+
+#service__1-text-variation-2 {
+    display: none;
+
+    @include respond(tab-land) {
+        display: inline;
+    }
+}
+
 #service__video-1 {
     @include respond(big-desktop) {
-        width: 80rem;
-        height: 45rem;
+        width: 70rem;
+        height: 39rem;
     }
 
     width: 60rem;
     height: 35rem;
 
     @include respond(tab-land) {
-        width: 70rem;
-        height: 40rem;
+        width: 62rem;
+        height: 35rem;
         margin-top: 6rem;
     }
 
     @include respond(tab-port) {
-        width: 50rem;
-        height: 29rem;
+        width: 44rem;
+        height: 25rem;
     }
 
     @include respond(phone) {
-        width: 100vw;
-        height: 58vw;
+        width: 32rem;
+        height: 18rem;
+        margin-top: 4rem;
+    }
+
+    @include respond(small-phone) {
+        width: 25rem;
+        height: 15rem;
     }
 }
 
