@@ -19,10 +19,10 @@ export default class ServicePage extends Component {
                 <ServiceModal modal={this.props.modal} onModalToggle={this.props.onModalToggle} />
 
                 <ServiceSection1 onModalToggle={this.props.onModalToggle} />
-                    <div id="service__flip-section">
-                        <ServiceSection2 />
-                        <ServiceSection3 />
-                    </div>
+                <div id="service__flip-section">
+                    <ServiceSection2 />
+                    <ServiceSection3 />
+                </div>
                 <ServiceSection4 onModalToggle={this.props.onModalToggle} />
             </div>
         )

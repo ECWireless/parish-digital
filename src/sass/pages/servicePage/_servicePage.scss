@@ -10,8 +10,21 @@
 }
 
 #service__flip-section {
-    @include respond(phone) {
+    @include respond(tab-land) {
+        margin-top: 20rem;
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    @include respond(tab-port) {
+        margin-top: 18rem;
+    }
+
+    @include respond(phone) {
+        margin-top: 12rem;
+    }
+
+    @include respond(small-phone) {
+        margin-top: 10rem;
     }
 }

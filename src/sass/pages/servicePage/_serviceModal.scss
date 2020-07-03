@@ -48,10 +48,14 @@
 }
 
 #service__modal-scroll {
+    @include respond(big-desktop) {
+        border: none;
+    }
+
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     border-radius: $border-radius;
-    border: 1px solid $color-yellow;
+    border: 1px solid $color-blue-grey;
     margin: 0 1rem 1rem;
 }
 
@@ -65,19 +69,65 @@
 #service__modal-heading {
     text-align: center;
     margin-top: 3rem;
-    padding: 0 4rem;
+
+    @include respond(tab-land) {
+        width: 70rem;
+    }
+
+    @include respond(tab-port) {
+        width: 52rem;
+    }
+
+    @include respond(phone) {
+        width: 36rem;
+    }
+
+    @include respond(small-phone) {
+        width: 26rem;
+    }
 }
 
 #service__modal-paragraph-1 {
     text-align: center;
     margin-top: 2rem;
-    padding: 0 4rem;
+    width: 81rem;
+
+    @include respond(tab-land) {
+        width: 74rem;
+    }
+
+    @include respond(tab-port) {
+        width: 52rem;
+    }
+
+    @include respond(phone) {
+        width: 36rem;
+    }
+
+    @include respond(small-phone) {
+        width: 26rem;
+    }
 }
 
 #service__modal-paragraph-2 {
     text-align: center;
     margin-top: 2rem;
-    padding: 0 4rem;
+
+    @include respond(tab-land) {
+        width: 75rem;
+    }
+
+    @include respond(tab-port) {
+        width: 52rem;
+    }
+
+    @include respond(phone) {
+        width: 36rem;
+    }
+
+    @include respond(small-phone) {
+        width: 26rem;
+    }
 }
 
 #service__modal-form {

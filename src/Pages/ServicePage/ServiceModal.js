@@ -64,8 +64,8 @@ export default class ServiceModal extends Component {
                 <img src={PDLogo} alt="PD Logo" id="service__modal-logo" />
                 <div id="service__modal-scroll">
                 <div className="flex-column container" id="service__modal-text-container">
-                    <h2 className="h2 yellow" id="service__modal-heading">Thank you for your interest in a Customer Success Story!</h2>
-                    <p className="p-m white" id="service__modal-paragraph-1">Please fill out of the following to download a pricing and process PDF document.
+                    <h1 className="h1 yellow" id="service__modal-heading">Thank you for your interest in a Customer Success Story!</h1>
+                    <p className="p-l white" id="service__modal-paragraph-1">Please fill out of the following to download a pricing and process PDF document.
                         If you like what you see, reach out and let’s take the next step together.
                     </p>
                     <p className="p-s white uppercase" id="service__modal-paragraph-2">you will not be signed up for an email list, promotions, or any other annoyances.</p>
@@ -76,12 +76,12 @@ export default class ServiceModal extends Component {
                         <input required type="text" className="input" id="service__model-input-name"
                             value={this.state.name} onChange={this.setName.bind(this)}
                         />
-                        <label htmlFor="service__model-input-email" className="p-m uppercase white" style={{marginBottom: '1rem'}}>
+                        <label htmlFor="service__model-input-email" className="p-m uppercase white" style={{margin: '3rem 0 1rem'}}>
                             Email
                         </label>
                         <input required type="email" className="input" id="service__model-input-email"
                             value={this.state.email} onChange={this.setEmail.bind(this)}/>
-                        <label htmlFor="service__model-input-message" className="p-m uppercase white" style={{marginBottom: '1rem'}}>
+                        <label htmlFor="service__model-input-message" className="p-m uppercase white" style={{margin: '3rem 0 1rem'}}>
                             Message
                         </label>
                         <textarea required id="service__model-input-message" className="textarea"

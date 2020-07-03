@@ -46,6 +46,56 @@
     }
 }
 
+.h3 {
+    font-family: $font-main;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $color-grey-dark;
+
+    @include respond(tab-land) {
+        font-size: 2.6rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 2.2rem;
+    }
+
+    @include respond(phone) {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    @include respond(small-phone) {
+        font-size: 1.6rem;
+    }
+}
+
+.p-l {
+    font-family: $font-main;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 25px;
+
+    @include respond(tab-land) {
+        font-size: 2.2rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 2rem;
+        line-height: 22px;
+    }
+
+    @include respond(phone) {
+        font-size: 1.8rem;
+        line-height: 20px;
+    }
+
+    @include respond(small-phone) {
+        font-size: 1.6rem;
+        line-height: 18px;
+    }
+}
+
 .p-m {
     font-family: $font-main;
     font-size: 1.8rem;
@@ -92,11 +142,15 @@
 
 // COlORS
 .white {
-    color: #fff;
+    color: #fff !important;
+}
+
+.black {
+    color: #000 !important;
 }
 
 .yellow {
-    color: $color-yellow;
+    color: $color-yellow !important;
 }
 
 // TEXT TRANSFORMS

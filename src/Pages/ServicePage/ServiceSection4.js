@@ -1,12 +1,13 @@
 import React from 'react'
+import Section4Background from '../../assets/service-page/Section4Background.jpg'
 
 const ServiceSection4 = (props) => {
     return (
-        <div id="service__4-background">
+        <div id="service__4-background" style={{backgroundImage: `url(${Section4Background})`}}>
+            <div id="service__4-filter" />
             <div className="flex-column" id="service__4-container">
-                <h2 className="h2 white uppercase">See our pricing and our process</h2>
-                <p className="p-m white" id="service__4-paragraph">Click below to find out what a customer success story project includes</p>
-                <button onClick={props.onModalToggle} className="b-white b-l" id="service__4-button">PRICING AND PROCESS</button>
+                <h1 className="h1 white uppercase" id="service__4-heading">See our pricing and our process</h1>
+                <button onClick={props.onModalToggle} className="b-white b-l" id="service__4-button">Click to learn more</button>
             </div>
         </div>
     )
