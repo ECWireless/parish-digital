@@ -24,7 +24,7 @@ const ServiceSection1 = (props) => {
                         non-scripted feedback from your most successful, satisfied or unique customers 
                         packaged in a highly-shareable video narrative. Check out our example <span id="service__1-text-variation-1">to the left.</span><span id="service__1-text-variation-2">below.</span>
                     </p>
-                    <p className="p-m" style={{marginTop: '3rem'}}>A video testimonial packs more of a punch than a written testimonial. Our Customer 
+                    <p className="p-m" style={{marginTop: '3rem'}}>A video testimonial packs more of a punch more than a written testimonial. Our Customer 
                         Success Stories inject personality and relatability into the average B2B case study. 
                         We capture your customers interacting with your product or service in their own 
                         environment, creating a compelling case for why potential customers should consider 
