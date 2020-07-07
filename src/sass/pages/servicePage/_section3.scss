@@ -205,3 +205,10 @@
         line-height: 18px;
     }
 }
+
+#service__3-paragraph-3 {
+
+    @include respond(tab-land) {
+        display: none;
+    }
+}

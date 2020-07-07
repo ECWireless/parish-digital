@@ -40,11 +40,13 @@ export default class ServiceModal extends Component {
             if (response.status === 'success'){
                 this.resetForm();
                 this.setState({ submitted: true, success: true, loading: false, })
+                window.open('https://drive.google.com/uc?export=download&id=1DD7TmtgpqFXKaqmYYH0-zWoShxePjsM5')
             } else if(response.status === 'fail'){
                 this.setState({ submitted: true, success: false, loading: false })
             }
         })
         .catch(() => this.setState({ submitted: true, success: false }))
+
     }
 
     onCloseSnackbar = () => {

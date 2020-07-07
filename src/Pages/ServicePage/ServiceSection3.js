@@ -24,6 +24,9 @@ const ServiceSection3 = () => {
                             and authenticity, demonstrating that you have a proven track record of 
                             successfully addressing customers’ needs.
                         </p>
+                        <p className="p-m" id="service__3-paragraph-3" style={{marginTop: '3rem'}}>When prospective customers are considering investing in a product or service, they will often look
+                            to the opinions and experiences of their peers to make the correct decision.
+                        </p>
                     </div>
                 </div>
             </div>
