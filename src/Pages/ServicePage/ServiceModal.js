@@ -18,7 +18,6 @@ export default class ServiceModal extends Component {
         loading: false,
         submitted: false,
         success: false,
-        downloadable: false,
     }
 
     setName = (e) => this.setState({ ...this.state, name: e.target.value})
@@ -40,7 +39,7 @@ export default class ServiceModal extends Component {
         ).then((response)=>{
             if (response.status === 'success'){
                 this.resetForm();
-                this.setState({ submitted: true, success: true, loading: false, downloadable: true})
+                this.setState({ submitted: true, success: true, loading: false })
             } else if(response.status === 'fail'){
                 this.setState({ submitted: true, success: false, loading: false })
             }
@@ -71,7 +70,7 @@ export default class ServiceModal extends Component {
                         If you like what you see, reach out and let’s take the next step together.
                     </p>
                     <p className="p-s white uppercase" id="service__modal-paragraph-2">you will not be signed up for an email list, promotions, or any other annoyances.</p>
-                    { !this.state.downloadable ? <form onSubmit={this.onSubmit} className="flex-column" id="service__modal-form">
+                    <form onSubmit={this.onSubmit} className="flex-column" id="service__modal-form">
                         <label htmlFor="service__model-input-name" className="p-m uppercase white" style={{marginBottom: '1rem'}}>
                             Name
                         </label>
@@ -92,14 +91,7 @@ export default class ServiceModal extends Component {
                         <button type="submit" className="b-white b-m" id="service__modal-button">
                             {this.state.loading ? <Spinner /> : 'Submit'}
                         </button>
-                    </form> : (
-                        <a href="https://drive.google.com/uc?export=download&id=1DD7TmtgpqFXKaqmYYH0-zWoShxePjsM5">
-                            <button className="b-white b-m" id="service__modal-button">
-                                Download PDF
-                            </button>
-                        </a>
-                    )
-                }
+                    </form>
                 { this.state.submitted && <Snackbar success={this.state.success} onCloseSnackbar={this.onCloseSnackbar} /> }
                 </div>
                 </div>
