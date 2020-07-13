@@ -28,6 +28,7 @@ export default class ServiceModal extends Component {
         e.preventDefault();
         this.setState({ loading: true })
         fetch('https://parish-digital-backend.herokuapp.com/service',{
+        // fetch('http://localhost:8000/service',{
             method: "POST",
             body: JSON.stringify(this.state),
             headers: {
@@ -66,9 +67,7 @@ export default class ServiceModal extends Component {
                 <div id="service__modal-scroll">
                 <div className="flex-column container" id="service__modal-text-container">
                     <h1 className="h1 yellow" id="service__modal-heading">Thank you for your interest in a Customer Success Story!</h1>
-                    <p className="p-l white" id="service__modal-paragraph-1">Please fill out of the following to download a pricing and process PDF document.
-                        If you like what you see, reach out and let’s take the next step together.
-                    </p>
+                    <p className="p-l white" id="service__modal-paragraph-1">Please fill out the following to receive a Pricing and Process packet via email. If you do not receive it, please check your spam folder.</p>
                     <p className="p-s white uppercase" id="service__modal-paragraph-2">you will not be signed up for an email list, promotions, or any other annoyances.</p>
                     <form onSubmit={this.onSubmit} className="flex-column" id="service__modal-form">
                         <label htmlFor="service__model-input-name" className="p-m uppercase white" style={{marginBottom: '1rem'}}>

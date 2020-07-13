@@ -90,14 +90,14 @@
 #service__modal-paragraph-1 {
     text-align: center;
     margin-top: 2rem;
-    width: 81rem;
+    width: 77rem;
 
     @include respond(tab-land) {
-        width: 74rem;
+        width: 70rem;
     }
 
     @include respond(tab-port) {
-        width: 52rem;
+        width: 48rem;
     }
 
     @include respond(phone) {
