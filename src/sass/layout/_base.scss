@@ -19,49 +19,49 @@ body {
 .app-small {
     display: grid;
     grid-template-columns: 7rem 1fr;
-    grid-template-rows: 8rem auto 20rem;
+    grid-template-rows: 8rem auto 35rem;
 
     @include respond(tab-land) {
-        grid-template-rows: 8rem auto 20rem;
+        grid-template-rows: 8rem auto 35rem;
     }
 
     @include respond(tab-port) {
-        grid-template-rows: 8rem auto 20rem;
+        grid-template-rows: 8rem auto 35rem;
     }
 
     @include respond(phone) {
         grid-template-columns: 1fr;
-        grid-template-rows: 7rem auto 15rem 7rem;
+        grid-template-rows: 7rem auto 27rem 7rem;
     }
 
     @include respond(small-phone) {
         grid-template-columns: 1fr;
-        grid-template-rows: 7rem auto 15rem 7rem;
+        grid-template-rows: 7rem auto 27rem 7rem;
     }
 }
 
 .app-large {
     display: grid;
     grid-template-columns: 20rem 1fr;
-    grid-template-rows: 8rem auto 20rem;
+    grid-template-rows: 8rem auto 35rem;
 
     @include respond(tab-land) {
-        grid-template-rows: 8rem auto 20rem;
+        grid-template-rows: 8rem auto 35rem;
     }
 
     @include respond(tab-port) {
         grid-template-columns: 7rem 1fr;
-        grid-template-rows: 8rem auto 20rem;
+        grid-template-rows: 8rem auto 35rem;
     }
 
     @include respond(phone) {
         grid-template-columns: 1fr;
-        grid-template-rows: 7rem auto 15rem 7rem;
+        grid-template-rows: 7rem auto 27rem 7rem;
     }
 
     @include respond(small-phone) {
         grid-template-columns: 1fr;
-        grid-template-rows: 7rem auto 15rem 7rem;
+        grid-template-rows: 7rem auto 27rem 7rem;
     }
 }
 

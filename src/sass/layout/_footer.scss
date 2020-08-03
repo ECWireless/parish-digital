@@ -1,7 +1,7 @@
 .footer {
     @include respond(big-desktop) {
         grid-template-columns: 1fr 140rem 1fr;
-        grid-template-rows: 1fr 15rem 1fr;
+        grid-template-rows: 1fr 15rem 15rem 1fr;
     }
 
     grid-column: 2 / -1;
@@ -13,7 +13,7 @@
     color: #fff;
     display: grid;
     grid-template-columns: 1fr 120rem 1fr;
-    grid-template-rows: 1fr 15rem 1fr;
+    grid-template-rows: 1fr 15rem 15rem 1fr;
 
     @include respond(tab-land) {
         grid-template-columns: 1fr 70rem 1fr;
@@ -27,12 +27,12 @@
         grid-column: 1 / -1;
         grid-row: 3 / 4;
         grid-template-columns: 1fr 40rem 1fr;
-        grid-template-rows: 1fr 12rem 1fr;
+        grid-template-rows: 1fr 12rem 12rem 1fr;
     }
 
     @include respond(small-phone) {
         grid-template-columns: 1fr 30rem 1fr;
-        grid-template-rows: 1fr 11rem 1fr;
+        grid-template-rows: 1fr 11rem 12rem 1fr;
     }
 
     &__heading {
@@ -93,6 +93,39 @@
         &:hover {
             color: $color-yellow;
             transform: scale(1.05);
+        }
+    }
+
+    &__badge-link {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 10rem;
+        height: 10rem;
+        margin-top: 2rem;
+
+        @include respond(phone) {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+
+    &__badge {
+        width: 10rem;
+        height: 10rem;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+            grid-row: 3 / 4;
+            grid-template-columns: 1fr 40rem 1fr;
+            grid-template-rows: 1fr 12rem 12rem 1fr;
+        }
+
+        @include respond(phone) {
+            width: 7rem;
+            height: 7rem;
         }
     }
 }
